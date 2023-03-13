@@ -1,22 +1,24 @@
-version: '3.7'  
+version:
+  "3.7"
 
-  # NGINX Proxy
 services:
+  # NGINX Proxy
   nginx-proxy:
     build: ./config/nginx-proxy
     container_name: nginx-proxy
     ports:
       - "80:80"
       - "443:443"
+      - "8080:80"
     networks:
       - proxy-network
       - nextcloud-network
       - wordpress-network
-      - bitwarden-network
+      - vaultwarden-network
       - cryptpad-network
-      - searxng-network
       - CK_proxy-network
       - CK_wordpress-network
+      - protonvpn-network
     volumes:
       - ./volumes/nginx/html:/usr/share/nginx/html
       - ./volumes/nginx/conf:/etc/nginx/conf.d:rw
@@ -85,8 +87,8 @@ services:
   nextcloud-app:
     image: nextcloud:apache
     container_name: nextcloud-app
-    ports:
-      - 8080:80
+    # ports:
+    #   - 8080:80
     networks:
       - nextcloud-network
     volumes:
@@ -142,7 +144,7 @@ services:
       - MYSQL_PASSWORD=${WORDPRESS_MYSQL_PASSWORD}
     restart: always
 
-# Wordpress app
+  # Wordpress app
   wordpress-app:
     image: wordpress:latest
     container_name: wordpress-app
@@ -167,47 +169,10 @@ services:
       - wordpress-mariadb
     restart: always
 
-  # # Bitwarden DB
-  # bitwarden-mariadb:
-  #   image: mariadb:10.10
-  #   container_name: bitwarden-mariadb
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=${BITWARDEN_MYSQL_ROOT_PASSWORD}
-  #     - MYSQL_DATABASE=${BITWARDEN_MYSQL_DATABASE}
-  #     - MYSQL_USER=${BITWARDEN_MYSQL_USER}
-  #     - MYSQL_PASSWORD=${BITWARDEN_MYSQL_PASSWORD}
-  #   networks:
-  #     - bitwarden-network
-  #   volumes:
-  #     - ./volumes/bitwarden-mariadb:/var/lib/mysql
-  #   restart: always
-
-  # # Bitwarden app
-  # bitwarden-app:
-  #   image: vaultwarden/server:alpine
-  #   container_name: bitwarden-app
-  #   environment:      
-  #     - WEB_VAULT_ENABLED=${BITWARDEN_WEB_VAULT_ENABLED}
-  #     - SIGNUPS_ALLOWED=${BITWARDEN_SIGNUPS_ALLOWED}
-  #     - OVERWRITEPROTOCOL=${BITWARDEN_OVERWRITEPROTOCOL}
-  #     - VIRTUAL_HOST=${BITWARDEN_VIRTUAL_HOST}
-  #     - LETSENCRYPT_HOST=${BITWARDEN_LETSENCRYPT_HOST}
-  #     - LETSENCRYPT_EMAIL=${BITWARDEN_LETSENCRYPT_EMAIL}
-  #     - LETSENCRYPT_TEST=${BITWARDEN_LETSENCRYPT_TEST}
-  #   networks:
-  #     - bitwarden-network
-  #   depends_on:
-  #     - acme-companion
-  #     - nginx-proxy
-  #     - bitwarden-mariadb
-  #   restart: always
-
   # SearXNG
   searxng-app:
     build: ./config/searxng-app
     container_name: searxng-app
-    networks:
-      - searxng-network
     cap_drop:
       - ALL
     cap_add:
@@ -225,15 +190,17 @@ services:
         max-file: "1"
     environment:
       - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
-      - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
-      - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
-      - VIRTUAL_PORT=${SEARXNG_VIRTUAL_PORT}
       - SEARXNG_BASE_URL=https://${SEARXNG_VIRTUAL_HOST:-localhost}/
+      - BIND_ADDRESS=0.0.0.0:8080
+      - INSTANCE_NAME=searxng-app
+      - TZ=Europe/London
+      - user=1000:1000
     depends_on:
-      - acme-companion
-      - nginx-proxy
       - searxng-redis
+      - protonvpn
+    networks:
+      - searxng-network
+    network_mode: service:protonvpn
     restart: always
 
   # Redis SearXNG
@@ -242,6 +209,7 @@ services:
     container_name: searxng-redis
     networks:
       - searxng-network
+    network_mode: service:protonvpn
     cap_drop:
       - ALL
     cap_add:
@@ -250,6 +218,8 @@ services:
       - DAC_OVERRIDE
     command: redis-server --save "" --appendonly "no"
     restart: always
+    depends_on:
+      - protonvpn
 
   # Cryptpad
   cryptpad-app:
@@ -280,7 +250,6 @@ services:
       - acme-companion
       - nginx-proxy
     restart: always
-      
 
   # Wordpress DB
   CK_wordpress-mariadb:
@@ -298,7 +267,7 @@ services:
       - MYSQL_PASSWORD=${CK_WORDPRESS_MYSQL_PASSWORD}
     restart: always
 
-# Wordpress app
+  # Wordpress app
   CK_wordpress-app:
     image: wordpress:latest
     container_name: CK_wordpress-app
@@ -322,20 +291,74 @@ services:
       - CK_wordpress-mariadb
     restart: always
 
-# Networks
+  # vaultwarden app
+  vaultwarden-app:
+    image: vaultwarden/server:alpine
+    container_name: vaultwarden-app
+    environment:
+      - WEBSOCKET_ENABLED=${VAULTWARDEN_WEBSOCKET_ENABLED}
+      # - WEB_VAULT_ENABLED=${VAULTWARDEN_WEB_VAULT_ENABLED}
+      # - SIGNUPS_ALLOWED=${VAULTWARDEN_SIGNUPS_ALLOWED}
+      # - OVERWRITEPROTOCOL=${VAULTWARDEN_OVERWRITEPROTOCOL}
+      - VIRTUAL_HOST=${VAULTWARDEN_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${VAULTWARDEN_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${VAULTWARDEN_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${VAULTWARDEN_LETSENCRYPT_TEST}
+      # - BIND_ADDRESS=0.0.0.0:3012
+      - INSTANCE_NAME=vaultwarden-app
+      - TZ=Europe/London
+      - user=1000:1000
+    networks:
+      - vaultwarden-network
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - ./volumes/vaultwarden-app:/data/
+    restart: always
 
+  protonvpn:
+    container_name: protonvpn
+    environment:
+      - PROTONVPN_USERNAME=${PROTONVPN_USERNAME}
+      - PROTONVPN_PASSWORD=${PROTONVPN_PASSWORD}
+      - PROTONVPN_SERVER=${PROTONVPN_SERVER}
+      - PROTONVPN_TIER=${PROTONVPN_TIER}
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
+    image: ghcr.io/tprasadtp/protonvpn:5.2.1
+    networks:
+      - protonvpn-network
+      - searxng-network
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    expose:
+      - 8080 #SearXNG container port
+    restart: always
+    depends_on:
+      - nginx-proxy
+      - acme-companion
+
+# Networks
 networks:
   # Rayray
   proxy-network:
   nextcloud-network:
   wordpress-network:
-  bitwarden-network:
+  vaultwarden-network:
   searxng-network:
     ipam:
       driver: default
   send-network:
   cryptpad-network:
   standardnotes-network:
+  protonvpn-network:
 
   #Chadz
   CK_proxy-network:

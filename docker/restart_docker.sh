@@ -8,7 +8,7 @@ WATCH_PATH="/usr/local/scripts/docker"
 #Set the path to the destination
 DEST_PATH="/var/lib/"
 
-cp -r "$WATCH_PATH" "$DEST_PATH"
+sudo cp -r "$WATCH_PATH" "$DEST_PATH"
 
 sleep 0.2
 
