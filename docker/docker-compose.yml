@@ -221,36 +221,6 @@ services:
     depends_on:
       - protonvpn
 
-  # Cryptpad
-  cryptpad-app:
-    build: ./config/cryptpad-app
-    container_name: cryptpad-app
-    ports:
-      - "0.0.0.0:3000:3000"
-      - "0.0.0.0:3001:3001"
-    networks:
-      - cryptpad-network
-    volumes:
-      - ./volumes/cryptpad/blob:/cryptpad/blob
-      - ./volumes/cryptpad/block:/cryptpad/block
-      - ./volumes/cryptpad/customize:/cryptpad/customize
-      - ./volumes/cryptpad/data:/cryptpad/data
-      - ./volumes/cryptpad/datastore:/cryptpad/datastore
-      - ./volumes/cryptpad/config/config.js:/cryptpad/config/config.js
-    environment:
-      - VIRTUAL_HOST=${CRYPTPAD_VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${CRYPTPAD_LETSENCRYPT_HOST}
-      - LETSENCRYPT_EMAIL=${CRYPTPAD_LETSENCRYPT_EMAIL}
-      - LETSENCRYPT_TEST=${CRYPTPAD_LETSENCRYPT_TEST}
-      - CPAD_MAIN_DOMAIN=${CRYPTPAD_CPAD_MAIN_DOMAIN}
-      - CPAD_SANDBOX_DOMAIN=${CRYPTPAD_CPAD_SANDBOX_DOMAIN}
-      - CPAD_HTTP2_DISABLE=${CRYPTPAD_CPAD_HTTP2_DISABLE}
-      - VIRTUAL_PORT=${CRYPTPAD_VIRTUAL_PORT}
-    depends_on:
-      - acme-companion
-      - nginx-proxy
-    restart: always
-
   # Wordpress DB
   CK_wordpress-mariadb:
     image: mariadb:10.10
