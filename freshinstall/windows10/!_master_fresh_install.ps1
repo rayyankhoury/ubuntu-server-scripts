@@ -68,3 +68,9 @@ choco install malwarebytes -y #Malwarebytes is an anti-malware program used to d
 ##########
 choco install discord -y #Discord is a voice and text chat platform used to communicate with others.
 choco install signal -y #Signal is a secure messaging application used to send text messages, voice calls and video calls.
+
+################
+# Productivity #
+################
+#ColdTurkey is an application that stops certain applications at certain times.
+Start-BitsTransfer -Source "https://getcoldturkey.com/files/Cold_Turkey_Installer.exe" -Destination "C:\Temp\Cold_Turkey_Installer.exe" -Asynchronous; Wait-Job; Start-Process -FilePath "C:\Temp\Cold_Turkey_Installer.exe" -Wait; Read-Host -Prompt "Press any key to continue..."
