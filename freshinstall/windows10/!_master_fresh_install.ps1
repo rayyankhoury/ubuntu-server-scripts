@@ -56,9 +56,9 @@ choco install k-litecodecpackfull -y #K-Lite Codec Pack is a collection of audio
 ############
 # Security #
 ############
-choco install protonvpn.install -y #ProtonVPN is a virtual private network (VPN) service used to secure internet connections.
-choco install protonmailbridge.install -y #ProtonMail Bridge is an application used to securely access ProtonMail accounts.
-choco install yubico-authenticator.install -y #Yubico Authenticator is a two-factor authentication app used to add an extra layer of security.
+choco install protonvpn -y #ProtonVPN is a virtual private network (VPN) service used to secure internet connections.
+choco install protonmailbridge -y #ProtonMail Bridge is an application used to securely access ProtonMail accounts.
+choco install yubico-authenticator -y #Yubico Authenticator is a two-factor authentication app used to add an extra layer of security.
 choco install cryptomator -y #Cryptomator is an encryption tool used to secure files stored in the cloud.
 choco install veracrypt -y #VeraCrypt is a disk encryption tool used to protect files and folders.
 choco install malwarebytes -y #Malwarebytes is an anti-malware program used to detect and remove malicious software.
