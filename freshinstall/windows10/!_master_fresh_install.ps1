@@ -38,7 +38,7 @@ choco install ddu -y #Display Driver Uninstaller (DDU) is a tool used to complet
 choco install rufus -y #Rufus is a bootable USB creator used to create bootable Windows or Linux USB drives.
 choco install qbittorrent -y #qBittorrent is a cross-platform BitTorrent client used to download and share files.
 choco install f.lux -y #f.lux is a screen dimming application used to adjust the color temperature of a display.
-choco install librefox-firefox -y #Librefox (Firefox) is a web browser used to access the internet.
+choco install librewolf -y #LibreWolf is a web browser used to access the internet.
 choco install launchy -y #Launchy is a program launcher used to quickly open applications.
 choco install winaero-tweaker -y #Winaero Tweaker is a utility used to customize the Windows user interface.
 choco install smartty3 -y #Smartty3 is a command line tool used to manage Windows processes.
