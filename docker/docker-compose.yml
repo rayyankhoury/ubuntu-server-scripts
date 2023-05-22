@@ -16,6 +16,7 @@ services:
       - wordpress-network
       - vaultwarden-network
       - cryptpad-network
+      - whiteboards-network
       - CK_proxy-network
       - CK_wordpress-network
       - protonvpn-network
@@ -169,6 +170,7 @@ services:
       - wordpress-mariadb
     restart: always
 
+ 
   # SearXNG
   searxng-app:
     build: ./config/searxng-app
@@ -198,8 +200,8 @@ services:
     depends_on:
       - searxng-redis
       - protonvpn
-    networks:
-      - searxng-network
+    # networks:
+    #   - searxng-network
     network_mode: service:protonvpn
     restart: always
 
@@ -207,8 +209,8 @@ services:
   searxng-redis:
     image: "redis:alpine"
     container_name: searxng-redis
-    networks:
-      - searxng-network
+    # networks:
+    #   - searxng-network
     network_mode: service:protonvpn
     cap_drop:
       - ALL
@@ -287,6 +289,7 @@ services:
     restart: always
 
   protonvpn:
+    image: ghcr.io/tprasadtp/protonvpn:5.2.1
     container_name: protonvpn
     environment:
       - PROTONVPN_USERNAME=${PROTONVPN_USERNAME}
@@ -300,7 +303,6 @@ services:
       - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
       - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
       - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
-    image: ghcr.io/tprasadtp/protonvpn:5.2.1
     networks:
       - protonvpn-network
       - searxng-network
@@ -315,6 +317,27 @@ services:
       - nginx-proxy
       - acme-companion
 
+  whiteboards-app:
+    build: ./config/whiteboards-app
+    # entrypoint: sh entrypoint.sh
+    working_dir: /home/node
+    container_name: whiteboards-app
+    environment:
+      - VIRTUAL_HOST=${WHITEBOARDS_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${WHITEBOARDS_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${WHITEBOARDS_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${WHITEBOARDS_LETSENCRYPT_TEST}
+    networks:
+      - whiteboards-network
+    # ports:
+    #   - 3004:3004
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+    volumes:
+      - ./volumes/whiteboards-app:/home/node
+    restart: always
+
 # Networks
 networks:
   # Rayray
@@ -328,6 +351,7 @@ networks:
   send-network:
   cryptpad-network:
   standardnotes-network:
+  whiteboards-network:
   protonvpn-network:
 
   #Chadz
