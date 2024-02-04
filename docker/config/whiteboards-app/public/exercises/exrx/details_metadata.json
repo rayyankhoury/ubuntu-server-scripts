@@ -1,0 +1,6128 @@
+{
+  "NeckCBNeckFlx": {
+    "folder": "./Neck/Sternocleidomastoid/cable",
+    "websiteid": "CBNeckFlx"
+  },
+  "NeckCBNeckFlxBelt": {
+    "folder": "./Neck/Sternocleidomastoid/cable",
+    "websiteid": "CBNeckFlxBelt"
+  },
+  "NeckCBNeckRotationBelt": {
+    "folder": "./Neck/Sternocleidomastoid/cable",
+    "websiteid": "CBNeckRotationBelt"
+  },
+  "NeckCBNeckLtrFlxBelt": {
+    "folder": "./Neck/Sternocleidomastoid/cable",
+    "websiteid": "CBNeckLtrFlxBelt"
+  },
+  "NeckLVNeckFlexionH": {
+    "folder": "./Neck/Sternocleidomastoid/lever(plateloaded)",
+    "websiteid": "LVNeckFlexionH"
+  },
+  "NeckLVLateralNeckFlexionH": {
+    "folder": "./Neck/Sternocleidomastoid/lever(plateloaded)",
+    "websiteid": "LVLateralNeckFlexionH"
+  },
+  "NeckLVNeckFlx": {
+    "folder": "./Neck/Sternocleidomastoid/lever(selectorized)",
+    "websiteid": "LVNeckFlx"
+  },
+  "NeckLVNeckLtrFlx": {
+    "folder": "./Neck/Sternocleidomastoid/lever(selectorized)",
+    "websiteid": "LVNeckLtrFlx"
+  },
+  "NeckWtLyingNeckFlexion": {
+    "folder": "./Neck/Sternocleidomastoid/weighted",
+    "websiteid": "WtLyingNeckFlexion"
+  },
+  "NeckWtNeckFlx": {
+    "folder": "./Neck/Sternocleidomastoid/weighted",
+    "websiteid": "WtNeckFlx"
+  },
+  "NeckWtNeckLateralFlex": {
+    "folder": "./Neck/Sternocleidomastoid/weighted",
+    "websiteid": "WtNeckLateralFlex"
+  },
+  "NeckBWFrontNeckBridge": {
+    "folder": "./Neck/Sternocleidomastoid/bodyweight",
+    "websiteid": "BWFrontNeckBridge"
+  },
+  "NeckBWWallFrontNeckBridge": {
+    "folder": "./Neck/Sternocleidomastoid/bodyweight",
+    "websiteid": "BWWallFrontNeckBridge"
+  },
+  "NeckBWWallSideNeckBridge": {
+    "folder": "./Neck/Sternocleidomastoid/bodyweight",
+    "websiteid": "BWWallSideNeckBridge"
+  },
+  "NeckNeckRetraction": {
+    "folder": "./Neck/Sternocleidomastoid/stretch",
+    "websiteid": "NeckRetraction"
+  },
+  "NeckNeckRotation": {
+    "folder": "./Neck/Sternocleidomastoid/stretch",
+    "websiteid": "NeckRotation"
+  },
+  "NeckSTNeckFlexion": {
+    "folder": "./Neck/Sternocleidomastoid/suspended",
+    "websiteid": "STNeckFlexion"
+  },
+  "NeckSTNeckLateralExtension": {
+    "folder": "./Neck/Sternocleidomastoid/suspended",
+    "websiteid": "STNeckLateralExtension"
+  },
+  "NeckCBNeckExt": {
+    "folder": "./Neck/Splenius/cable",
+    "websiteid": "CBNeckExt"
+  },
+  "NeckCBNeckExtBelt": {
+    "folder": "./Neck/Splenius/cable",
+    "websiteid": "CBNeckExtBelt"
+  },
+  "NeckLVNeckExtentionH": {
+    "folder": "./Neck/Splenius/lever(plateloaded)",
+    "websiteid": "LVNeckExtentionH"
+  },
+  "NeckLVNeckExt": {
+    "folder": "./Neck/Splenius/lever(selectorized)",
+    "websiteid": "LVNeckExt"
+  },
+  "NeckWtLyingNeckExtension": {
+    "folder": "./Neck/Splenius/weighted",
+    "websiteid": "WtLyingNeckExtension"
+  },
+  "NeckWtNeckExtension": {
+    "folder": "./Neck/Splenius/weighted",
+    "websiteid": "WtNeckExtension"
+  },
+  "NeckWtNeckExt": {
+    "folder": "./Neck/Splenius/weighted",
+    "websiteid": "WtNeckExt"
+  },
+  "NeckWtNeckHarnessExt": {
+    "folder": "./Neck/Splenius/weighted",
+    "websiteid": "WtNeckHarnessExt"
+  },
+  "NeckBRNeckRetraction": {
+    "folder": "./Neck/Splenius/bandresistive",
+    "websiteid": "BRNeckRetraction"
+  },
+  "NeckBWRearNeckBridge": {
+    "folder": "./Neck/Splenius/bodyweight",
+    "websiteid": "BWRearNeckBridge"
+  },
+  "NeckBWWallRearNeckBridge": {
+    "folder": "./Neck/Splenius/bodyweight",
+    "websiteid": "BWWallRearNeckBridge"
+  },
+  "NeckLyingIsometricNeckRetr": {
+    "folder": "./Neck/Splenius/isometric",
+    "websiteid": "LyingIsometricNeckRetr"
+  },
+  "NeckNeck": { "folder": "./Neck/Splenius/stretch", "websiteid": "Neck" },
+  "NeckSTNeckExtension": {
+    "folder": "./Neck/Splenius/suspended",
+    "websiteid": "STNeckExtension"
+  },
+  "ShouldersBBBehindNeckPress": {
+    "folder": "./Shoulders/DeltoidAnterior/barbell",
+    "websiteid": "BBBehindNeckPress"
+  },
+  "ShouldersBBFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/barbell",
+    "websiteid": "BBFrontRaise"
+  },
+  "ShouldersBBInclineFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/barbell",
+    "websiteid": "BBInclineFrontRaise"
+  },
+  "ShouldersBBMilitaryPress": {
+    "folder": "./Shoulders/DeltoidAnterior/barbell",
+    "websiteid": "BBMilitaryPress"
+  },
+  "ShouldersBBSeatedMilitaryPress": {
+    "folder": "./Shoulders/DeltoidAnterior/barbell",
+    "websiteid": "BBSeatedMilitaryPress"
+  },
+  "ShouldersBBShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/barbell",
+    "websiteid": "BBShoulderPress"
+  },
+  "ShouldersCBBarBehindNeckPress": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBBarBehindNeckPress"
+  },
+  "ShouldersCBBarMilitaryPress": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBBarMilitaryPress"
+  },
+  "ShouldersCBBarShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBBarShoulderPress"
+  },
+  "ShouldersCBSeatedFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBSeatedFrontRaise"
+  },
+  "ShouldersCBAlternatingFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBAlternatingFrontRaise"
+  },
+  "ShouldersCBAlternatingSeatedFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBAlternatingSeatedFrontRaise"
+  },
+  "ShouldersCBFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBFrontRaise"
+  },
+  "ShouldersCBFrontRaiseRope": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBFrontRaiseRope"
+  },
+  "ShouldersCBStandingShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBStandingShoulderPress"
+  },
+  "ShouldersCBShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBShoulderPress"
+  },
+  "ShouldersCBTwistingOverheadPress": {
+    "folder": "./Shoulders/DeltoidAnterior/cable",
+    "websiteid": "CBTwistingOverheadPress"
+  },
+  "ShouldersDBArnoldPress": {
+    "folder": "./Shoulders/DeltoidAnterior/dumbbell",
+    "websiteid": "DBArnoldPress"
+  },
+  "ShouldersDBFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/dumbbell",
+    "websiteid": "DBFrontRaise"
+  },
+  "ShouldersDBAlternatingFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/dumbbell",
+    "websiteid": "DBAlternatingFrontRaise"
+  },
+  "ShouldersDBAlternInclineFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/dumbbell",
+    "websiteid": "DBAlternInclineFrontRaise"
+  },
+  "ShouldersDBShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/dumbbell",
+    "websiteid": "DBShoulderPress"
+  },
+  "ShouldersDBOneArmShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/dumbbell",
+    "websiteid": "DBOneArmShoulderPress"
+  },
+  "ShouldersLVBehindNeckPressH": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVBehindNeckPressH"
+  },
+  "ShouldersLVBBBehindNeckPress": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVBBBehindNeckPress"
+  },
+  "ShouldersLVMilitaryPressH": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVMilitaryPressH"
+  },
+  "ShouldersLVReclinedShoulderPressPL": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVReclinedShoulderPressPL"
+  },
+  "ShouldersLVShoulderPressH": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVShoulderPressH"
+  },
+  "ShouldersLVBBShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVBBShoulderPress"
+  },
+  "ShouldersLVOneArmShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(plateloaded)",
+    "websiteid": "LVOneArmShoulderPress"
+  },
+  "ShouldersLVFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(selectorized)",
+    "websiteid": "LVFrontRaise"
+  },
+  "ShouldersLVReclinedShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(selectorized)",
+    "websiteid": "LVReclinedShoulderPress"
+  },
+  "ShouldersLVReclinedShoulderPressParGrip": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(selectorized)",
+    "websiteid": "LVReclinedShoulderPressParGrip"
+  },
+  "ShouldersLVShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(selectorized)",
+    "websiteid": "LVShoulderPress"
+  },
+  "ShouldersLVShoulderPressParGrip": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(selectorized)",
+    "websiteid": "LVShoulderPressParGrip"
+  },
+  "ShouldersLVAlternatingShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/lever(selectorized)",
+    "websiteid": "LVAlternatingShoulderPress"
+  },
+  "ShouldersSLShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/sled",
+    "websiteid": "SLShoulderPress"
+  },
+  "ShouldersSLShoulderPressParGrip": {
+    "folder": "./Shoulders/DeltoidAnterior/sled",
+    "websiteid": "SLShoulderPressParGrip"
+  },
+  "ShouldersSMBehindNeckPress": {
+    "folder": "./Shoulders/DeltoidAnterior/smith",
+    "websiteid": "SMBehindNeckPress"
+  },
+  "ShouldersSMShoulderPress": {
+    "folder": "./Shoulders/DeltoidAnterior/smith",
+    "websiteid": "SMShoulderPress"
+  },
+  "ShouldersBWHandstandPressBench": {
+    "folder": "./Shoulders/DeltoidAnterior/bodyweight",
+    "websiteid": "BWHandstandPressBench"
+  },
+  "ShouldersBWPikePress": {
+    "folder": "./Shoulders/DeltoidAnterior/bodyweight",
+    "websiteid": "BWPikePress"
+  },
+  "ShouldersBWDeclinePikePress": {
+    "folder": "./Shoulders/DeltoidAnterior/bodyweight",
+    "websiteid": "BWDeclinePikePress"
+  },
+  "ShouldersSTFrontRaise": {
+    "folder": "./Shoulders/DeltoidAnterior/suspended",
+    "websiteid": "STFrontRaise"
+  },
+  "ShouldersDoorway": {
+    "folder": "./Shoulders/DeltoidAnterior/stretch",
+    "websiteid": "Doorway"
+  },
+  "ShouldersSeated": {
+    "folder": "./Shoulders/DeltoidAnterior/stretch",
+    "websiteid": "Seated"
+  },
+  "ShouldersPNFSeated": {
+    "folder": "./Shoulders/DeltoidAnterior/stretch",
+    "websiteid": "PNFSeated"
+  },
+  "ShouldersWall": {
+    "folder": "./Shoulders/DeltoidAnterior/stretch",
+    "websiteid": "Wall"
+  },
+  "ShouldersBBUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/barbell",
+    "websiteid": "BBUprightRow"
+  },
+  "ShouldersBBWideGripUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/barbell",
+    "websiteid": "BBWideGripUprightRow"
+  },
+  "ShouldersCBLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBLateralRaise"
+  },
+  "ShouldersCBOneArmLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBOneArmLateralRaise"
+  },
+  "ShouldersCBLateralRaiseClose": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBLateralRaiseClose"
+  },
+  "ShouldersCBSeatedLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBSeatedLateralRaise"
+  },
+  "ShouldersCBUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBUprightRow"
+  },
+  "ShouldersCBBarUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBBarUprightRow"
+  },
+  "ShouldersCBUprightRowDualPulley": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBUprightRowDualPulley"
+  },
+  "ShouldersCBOneArmUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBOneArmUprightRow"
+  },
+  "ShouldersCBUprightRowRope": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBUprightRowRope"
+  },
+  "ShouldersCBUprightRowStirrups": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBUprightRowStirrups"
+  },
+  "ShouldersCBWideGripUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBWideGripUprightRow"
+  },
+  "ShouldersCBYRaise": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBYRaise"
+  },
+  "ShouldersCBSeatedYRaise": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBSeatedYRaise"
+  },
+  "ShouldersCBSeatedYRaiseRope": {
+    "folder": "./Shoulders/DeltoidLateral/cable",
+    "websiteid": "CBSeatedYRaiseRope"
+  },
+  "ShouldersDBLyingLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBLyingLateralRaise"
+  },
+  "ShouldersDBOneArmSeatedLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBOneArmSeatedLateralRaise"
+  },
+  "ShouldersDBSeatedUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBSeatedUprightRow"
+  },
+  "ShouldersDBRaises": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBRaises"
+  },
+  "ShouldersDBLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBLateralRaise"
+  },
+  "ShouldersDBOneArmLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBOneArmLateralRaise"
+  },
+  "ShouldersDBOneArmUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBOneArmUprightRow"
+  },
+  "ShouldersDBInclineLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBInclineLateralRaise"
+  },
+  "ShouldersDBUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/dumbbell",
+    "websiteid": "DBUprightRow"
+  },
+  "ShouldersLVBBUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/lever(plateloaded)",
+    "websiteid": "LVBBUprightRow"
+  },
+  "ShouldersLVLateralRaiseH": {
+    "folder": "./Shoulders/DeltoidLateral/lever(plateloaded)",
+    "websiteid": "LVLateralRaiseH"
+  },
+  "ShouldersLVLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/lever(selectorized)",
+    "websiteid": "LVLateralRaise"
+  },
+  "ShouldersLVExtendedArmLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/lever(selectorized)",
+    "websiteid": "LVExtendedArmLateralRaise"
+  },
+  "ShouldersLVExtendedArmKneelingLateralRaise": {
+    "folder": "./Shoulders/DeltoidLateral/lever(selectorized)",
+    "websiteid": "LVExtendedArmKneelingLateralRaise"
+  },
+  "ShouldersLVLateralRaise2": {
+    "folder": "./Shoulders/DeltoidLateral/lever(selectorized)",
+    "websiteid": "LVLateralRaise2"
+  },
+  "ShouldersSMUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/smith",
+    "websiteid": "SMUprightRow"
+  },
+  "ShouldersSMWideGripUprightRow": {
+    "folder": "./Shoulders/DeltoidLateral/smith",
+    "websiteid": "SMWideGripUprightRow"
+  },
+  "ShouldersFixedBar": {
+    "folder": "./Shoulders/DeltoidLateral/stretch",
+    "websiteid": "FixedBar"
+  },
+  "ShouldersSideDelt": {
+    "folder": "./Shoulders/DeltoidLateral/stretch",
+    "websiteid": "SideDelt"
+  },
+  "ShouldersSTYShoulderRaise": {
+    "folder": "./Shoulders/DeltoidLateral/suspended",
+    "websiteid": "STYShoulderRaise"
+  },
+  "ShouldersBBRearDeltRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/barbell",
+    "websiteid": "BBRearDeltRaise"
+  },
+  "ShouldersBBRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/barbell",
+    "websiteid": "BBRearDeltRow"
+  },
+  "ShouldersBBLyingRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/barbell",
+    "websiteid": "BBLyingRearDeltRow"
+  },
+  "ShouldersCBStandingReverseFly": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBStandingReverseFly"
+  },
+  "ShouldersCBSeatedRearDeltPull": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBSeatedRearDeltPull"
+  },
+  "ShouldersCBRearDeltPull": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBRearDeltPull"
+  },
+  "ShouldersCBSupineRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBSupineRearLateralRaise"
+  },
+  "ShouldersCBRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBRearDeltRow"
+  },
+  "ShouldersCBOneArmRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBOneArmRearDeltRow"
+  },
+  "ShouldersCBStandingRearDeltRowRope": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBStandingRearDeltRowRope"
+  },
+  "ShouldersCBRearDeltRowStirrups": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBRearDeltRowStirrups"
+  },
+  "ShouldersCBSeatedRearDeltRowStirrups": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBSeatedRearDeltRowStirrups"
+  },
+  "ShouldersCBStandingRearDeltRowStirrups": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBStandingRearDeltRowStirrups"
+  },
+  "ShouldersCBRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBRearLateralRaise"
+  },
+  "ShouldersCBOneArmRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBOneArmRearLateralRaise"
+  },
+  "ShouldersCBSeatedRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBSeatedRearLateralRaise"
+  },
+  "ShouldersCBStandingCrossRow": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBStandingCrossRow"
+  },
+  "ShouldersCBOneArmCrossRow": {
+    "folder": "./Shoulders/DeltoidPosterior/cable",
+    "websiteid": "CBOneArmCrossRow"
+  },
+  "ShouldersDBLyingRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBLyingRearDeltRow"
+  },
+  "ShouldersDBLyingRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBLyingRearLateralRaise"
+  },
+  "ShouldersDBOneArmRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBOneArmRearLateralRaise"
+  },
+  "ShouldersDBRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBRearLateralRaise"
+  },
+  "ShouldersDBRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBRearDeltRow"
+  },
+  "ShouldersDBSeatedRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBSeatedRearLateralRaise"
+  },
+  "ShouldersDBLyingRearDeltRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/dumbbell",
+    "websiteid": "DBLyingRearDeltRaise"
+  },
+  "ShouldersLVInclineRearDeltRowPL": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVInclineRearDeltRowPL"
+  },
+  "ShouldersLVLyingRearLateralRaiseH": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVLyingRearLateralRaiseH"
+  },
+  "ShouldersLVRearDeltRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVRearDeltRaise"
+  },
+  "ShouldersLVRearDeltRowHammer": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVRearDeltRowHammer"
+  },
+  "ShouldersLVRearDeltRowC": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVRearDeltRowC"
+  },
+  "ShouldersLVSeatedRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVSeatedRearLateralRaise"
+  },
+  "ShouldersLVTBarRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(plateloaded)",
+    "websiteid": "LVTBarRearDeltRow"
+  },
+  "ShouldersLVLyingRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVLyingRearLateralRaise"
+  },
+  "ShouldersLVRearLateralRaiseOnLatRsMch": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVRearLateralRaiseOnLatRsMch"
+  },
+  "ShouldersLVRearLateralRaiseOnExtArmLatRsMch": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVRearLateralRaiseOnExtArmLatRsMch"
+  },
+  "ShouldersLVRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVRearDeltRow"
+  },
+  "ShouldersLVRearLateralRaise": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVRearLateralRaise"
+  },
+  "ShouldersLVSeatedRearDeltFly": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVSeatedRearDeltFly"
+  },
+  "ShouldersLVRearDeltFlyGriplessPecDeck": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVRearDeltFlyGriplessPecDeck"
+  },
+  "ShouldersLVReverseFlyOverhand": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVReverseFlyOverhand"
+  },
+  "ShouldersLVReverseFlyPronated": {
+    "folder": "./Shoulders/DeltoidPosterior/lever(selectorized)",
+    "websiteid": "LVReverseFlyPronated"
+  },
+  "ShouldersSMRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/smith",
+    "websiteid": "SMRearDeltRow"
+  },
+  "ShouldersBWRearDeltInvertedRow": {
+    "folder": "./Shoulders/DeltoidPosterior/bodyweight",
+    "websiteid": "BWRearDeltInvertedRow"
+  },
+  "ShouldersBWRearDeltInvertedRowHigh": {
+    "folder": "./Shoulders/DeltoidPosterior/bodyweight",
+    "websiteid": "BWRearDeltInvertedRowHigh"
+  },
+  "ShouldersBWRearDeltInvertedRowHips": {
+    "folder": "./Shoulders/DeltoidPosterior/bodyweight",
+    "websiteid": "BWRearDeltInvertedRowHips"
+  },
+  "ShouldersSTRearDeltRow": {
+    "folder": "./Shoulders/DeltoidPosterior/suspended",
+    "websiteid": "STRearDeltRow"
+  },
+  "ShouldersSTReverseFly": {
+    "folder": "./Shoulders/DeltoidPosterior/suspended",
+    "websiteid": "STReverseFly"
+  },
+  "ShouldersFixedBar": {
+    "folder": "./Shoulders/DeltoidPosterior/stretch",
+    "websiteid": "FixedBar"
+  },
+  "ShouldersRearDelt": {
+    "folder": "./Shoulders/DeltoidPosterior/stretch",
+    "websiteid": "RearDelt"
+  },
+  "ShouldersCBFrontLateralRaise": {
+    "folder": "./Shoulders/Supraspinatus/cable",
+    "websiteid": "CBFrontLateralRaise"
+  },
+  "ShouldersCBSeatedFrontLateralRaise": {
+    "folder": "./Shoulders/Supraspinatus/cable",
+    "websiteid": "CBSeatedFrontLateralRaise"
+  },
+  "ShouldersDBFrontLateralRaise": {
+    "folder": "./Shoulders/Supraspinatus/dumbbell",
+    "websiteid": "DBFrontLateralRaise"
+  },
+  "ShouldersDBFrontLateralRaiseSeated": {
+    "folder": "./Shoulders/Supraspinatus/dumbbell",
+    "websiteid": "DBFrontLateralRaiseSeated"
+  },
+  "ShouldersDBFullCanLateralRaise": {
+    "folder": "./Shoulders/Supraspinatus/dumbbell",
+    "websiteid": "DBFullCanLateralRaise"
+  },
+  "UpperArmsASTriDip": {
+    "folder": "./UpperArms/Triceps/assisted",
+    "websiteid": "ASTriDip"
+  },
+  "UpperArmsASTriDipKneeling": {
+    "folder": "./UpperArms/Triceps/assisted",
+    "websiteid": "ASTriDipKneeling"
+  },
+  "UpperArmsBBCloseGripBenchPress": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBCloseGripBenchPress"
+  },
+  "UpperArmsBBCloseGripInclineBenchPress": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBCloseGripInclineBenchPress"
+  },
+  "UpperArmsBBJMPress": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBJMPress"
+  },
+  "UpperArmsBBLyingTriExt": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBLyingTriExt"
+  },
+  "UpperArmsBBDeclineTriExt": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBDeclineTriExt"
+  },
+  "UpperArmsBBInclineTriExt": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBInclineTriExt"
+  },
+  "UpperArmsBBLyingTriExtSC": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBLyingTriExtSC"
+  },
+  "UpperArmsBBTriExt": {
+    "folder": "./UpperArms/Triceps/barbell",
+    "websiteid": "BBTriExt"
+  },
+  "UpperArmsCBBentoverTriExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBBentoverTriExt"
+  },
+  "UpperArmsCBBentoverTriExtRope": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBBentoverTriExtRope"
+  },
+  "UpperArmsCBForwardTricepsExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBForwardTricepsExt"
+  },
+  "UpperArmsCBInclineTriExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBInclineTriExt"
+  },
+  "UpperArmsCBKneelingTriExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBKneelingTriExt"
+  },
+  "UpperArmsCBLyingTriExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBLyingTriExt"
+  },
+  "UpperArmsCBDeclineTricepsExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBDeclineTricepsExt"
+  },
+  "UpperArmsCBPushdown": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBPushdown"
+  },
+  "UpperArmsCBAlternatingSeatedPushdown": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBAlternatingSeatedPushdown"
+  },
+  "UpperArmsCBBarPushdown": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBBarPushdown"
+  },
+  "UpperArmsCBPushdownHeavy": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBPushdownHeavy"
+  },
+  "UpperArmsCBInclinePushdown": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBInclinePushdown"
+  },
+  "UpperArmsCBOneArmPushdown": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBOneArmPushdown"
+  },
+  "UpperArmsCBPushdownSupport": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBPushdownSupport"
+  },
+  "UpperArmsCBPushdownRope": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBPushdownRope"
+  },
+  "UpperArmsCBPushdownVBar": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBPushdownVBar"
+  },
+  "UpperArmsCBSideTricepsExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBSideTricepsExt"
+  },
+  "UpperArmsCBTriDip": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBTriDip"
+  },
+  "UpperArmsCBTriExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBTriExt"
+  },
+  "UpperArmsCBOneArmTriExtPronated": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBOneArmTriExtPronated"
+  },
+  "UpperArmsCBOneArmTriExt": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBOneArmTriExt"
+  },
+  "UpperArmsCBStandingTricepsExtensionRope": {
+    "folder": "./UpperArms/Triceps/cable",
+    "websiteid": "CBStandingTricepsExtensionRope"
+  },
+  "UpperArmsDBKickback": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBKickback"
+  },
+  "UpperArmsDBLyingTriExt": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBLyingTriExt"
+  },
+  "UpperArmsDBDeclineTriExt": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBDeclineTriExt"
+  },
+  "UpperArmsDBInclineTricepsExt": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBInclineTricepsExt"
+  },
+  "UpperArmsDBOneArmTriExt": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBOneArmTriExt"
+  },
+  "UpperArmsDBOneArmTriExtBench": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBOneArmTriExtBench"
+  },
+  "UpperArmsDBTriExt": {
+    "folder": "./UpperArms/Triceps/dumbbell",
+    "websiteid": "DBTriExt"
+  },
+  "UpperArmsLVCloseGripBenchPressH": {
+    "folder": "./UpperArms/Triceps/lever(plateloaded)",
+    "websiteid": "LVCloseGripBenchPressH"
+  },
+  "UpperArmsLVBBCloseGripBenchPress": {
+    "folder": "./UpperArms/Triceps/lever(plateloaded)",
+    "websiteid": "LVBBCloseGripBenchPress"
+  },
+  "UpperArmsLVTriExtGripless": {
+    "folder": "./UpperArms/Triceps/lever(plateloaded)",
+    "websiteid": "LVTriExtGripless"
+  },
+  "UpperArmsLVTricepsExtensionNoSeatPL": {
+    "folder": "./UpperArms/Triceps/lever(plateloaded)",
+    "websiteid": "LVTricepsExtensionNoSeatPL"
+  },
+  "UpperArmsLVTriDipH": {
+    "folder": "./UpperArms/Triceps/lever(plateloaded)",
+    "websiteid": "LVTriDipH"
+  },
+  "UpperArmsLVInclineTricepsExtension": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVInclineTricepsExtension"
+  },
+  "UpperArmsLVTricepsExtensionOH": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVTricepsExtensionOH"
+  },
+  "UpperArmsLVPushdown": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVPushdown"
+  },
+  "UpperArmsLVSeatedCloseGripPress": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVSeatedCloseGripPress"
+  },
+  "UpperArmsLVCloseGripInclineBenchPress": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVCloseGripInclineBenchPress"
+  },
+  "UpperArmsLVTriDip": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVTriDip"
+  },
+  "UpperArmsLVTriDip2": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVTriDip2"
+  },
+  "UpperArmsLVOverhandTriDip": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVOverhandTriDip"
+  },
+  "UpperArmsLVTriExt": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVTriExt"
+  },
+  "UpperArmsLVTriExt2": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVTriExt2"
+  },
+  "UpperArmsLVAltTriExt": {
+    "folder": "./UpperArms/Triceps/lever(selectorized)",
+    "websiteid": "LVAltTriExt"
+  },
+  "UpperArmsSLStandingTricepsDip": {
+    "folder": "./UpperArms/Triceps/sled",
+    "websiteid": "SLStandingTricepsDip"
+  },
+  "UpperArmsSMCloseGripBenchPress": {
+    "folder": "./UpperArms/Triceps/smith",
+    "websiteid": "SMCloseGripBenchPress"
+  },
+  "UpperArmsSMCloseGripInclineBenchPress": {
+    "folder": "./UpperArms/Triceps/smith",
+    "websiteid": "SMCloseGripInclineBenchPress"
+  },
+  "UpperArmsWtBenchDip": {
+    "folder": "./UpperArms/Triceps/weighted",
+    "websiteid": "WtBenchDip"
+  },
+  "UpperArmsWtPushup": {
+    "folder": "./UpperArms/Triceps/weighted",
+    "websiteid": "WtPushup"
+  },
+  "UpperArmsWtTriDip": {
+    "folder": "./UpperArms/Triceps/weighted",
+    "websiteid": "WtTriDip"
+  },
+  "UpperArmsASTricepsDipBand": {
+    "folder": "./UpperArms/Triceps/band-assisted",
+    "websiteid": "ASTricepsDipBand"
+  },
+  "UpperArmsBWBenchDip": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWBenchDip"
+  },
+  "UpperArmsBWBenchDipBentKnee": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWBenchDipBentKnee"
+  },
+  "UpperArmsBWBenchDipFloor": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWBenchDipFloor"
+  },
+  "UpperArmsBWCloseGripPushup": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWCloseGripPushup"
+  },
+  "UpperArmsBWCloseGripPushupKnees": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWCloseGripPushupKnees"
+  },
+  "UpperArmsBWCloseGripPushupMB": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWCloseGripPushupMB"
+  },
+  "UpperArmsBWCloseGripInclinePushupBar": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWCloseGripInclinePushupBar"
+  },
+  "UpperArmsBWSuspendedTricepsExtension": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWSuspendedTricepsExtension"
+  },
+  "UpperArmsBWTriDip": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWTriDip"
+  },
+  "UpperArmsBWTriDipBenches": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWTriDipBenches"
+  },
+  "UpperArmsBWTriDipBenchesBentKnees": {
+    "folder": "./UpperArms/Triceps/bodyweight",
+    "websiteid": "BWTriDipBenchesBentKnees"
+  },
+  "UpperArmsSTTriDip": {
+    "folder": "./UpperArms/Triceps/suspended",
+    "websiteid": "STTriDip"
+  },
+  "UpperArmsSTSelfAssistedTricepsDip": {
+    "folder": "./UpperArms/Triceps/suspended",
+    "websiteid": "STSelfAssistedTricepsDip"
+  },
+  "UpperArmsSTTricepsExtension": {
+    "folder": "./UpperArms/Triceps/suspended",
+    "websiteid": "STTricepsExtension"
+  },
+  "UpperArmsBWSuspendedTricepsExtension": {
+    "folder": "./UpperArms/Triceps/suspended",
+    "websiteid": "BWSuspendedTricepsExtension"
+  },
+  "UpperArmsASTricepsDipSelf": {
+    "folder": "./UpperArms/Triceps/self-assisted",
+    "websiteid": "ASTricepsDipSelf"
+  },
+  "UpperArmsOverhead": {
+    "folder": "./UpperArms/Triceps/stretch",
+    "websiteid": "Overhead"
+  },
+  "UpperArmsPNFOverhead": {
+    "folder": "./UpperArms/Triceps/stretch",
+    "websiteid": "PNFOverhead"
+  },
+  "UpperArmsTowel": {
+    "folder": "./UpperArms/Triceps/stretch",
+    "websiteid": "Towel"
+  },
+  "UpperArmsBBCurl": {
+    "folder": "./UpperArms/Biceps/barbell",
+    "websiteid": "BBCurl"
+  },
+  "UpperArmsBBDragCurl": {
+    "folder": "./UpperArms/Biceps/barbell",
+    "websiteid": "BBDragCurl"
+  },
+  "UpperArmsCBAlternatingCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBAlternatingCurl"
+  },
+  "UpperArmsCBAlternatingSeatedCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBAlternatingSeatedCurl"
+  },
+  "UpperArmsCBCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBCurl"
+  },
+  "UpperArmsCBBarCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBBarCurl"
+  },
+  "UpperArmsCBCurlStirrups": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBCurlStirrups"
+  },
+  "UpperArmsCBSeatedCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBSeatedCurl"
+  },
+  "UpperArmsCBOneArmCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBOneArmCurl"
+  },
+  "UpperArmsCBSupineCurl": {
+    "folder": "./UpperArms/Biceps/cable",
+    "websiteid": "CBSupineCurl"
+  },
+  "UpperArmsDBCurl": {
+    "folder": "./UpperArms/Biceps/dumbbell",
+    "websiteid": "DBCurl"
+  },
+  "UpperArmsDBInclineCurl": {
+    "folder": "./UpperArms/Biceps/dumbbell",
+    "websiteid": "DBInclineCurl"
+  },
+  "UpperArmsLVCurl": {
+    "folder": "./UpperArms/Biceps/lever(selectorized)",
+    "websiteid": "LVCurl"
+  },
+  "UpperArmsLVAlternatingCurl": {
+    "folder": "./UpperArms/Biceps/lever(selectorized)",
+    "websiteid": "LVAlternatingCurl"
+  },
+  "UpperArmsDoorway": {
+    "folder": "./UpperArms/Biceps/stretch",
+    "websiteid": "Doorway"
+  },
+  "UpperArmsSeated": {
+    "folder": "./UpperArms/Biceps/stretch",
+    "websiteid": "Seated"
+  },
+  "UpperArmsPNFSeated": {
+    "folder": "./UpperArms/Biceps/stretch",
+    "websiteid": "PNFSeated"
+  },
+  "UpperArmsStanding": {
+    "folder": "./UpperArms/Biceps/stretch",
+    "websiteid": "Standing"
+  },
+  "UpperArmsWall": {
+    "folder": "./UpperArms/Biceps/stretch",
+    "websiteid": "Wall"
+  },
+  "UpperArmsBBPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/barbell",
+    "websiteid": "BBPreacherCurl"
+  },
+  "UpperArmsBBStandingPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/barbell",
+    "websiteid": "BBStandingPreacherCurl"
+  },
+  "UpperArmsBBProneInclineCurl": {
+    "folder": "./UpperArms/Brachialis/barbell",
+    "websiteid": "BBProneInclineCurl"
+  },
+  "UpperArmsCBConcentrationCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBConcentrationCurl"
+  },
+  "UpperArmsCBPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBPreacherCurl"
+  },
+  "UpperArmsCBAlternatingPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBAlternatingPreacherCurl"
+  },
+  "UpperArmsCBStandingPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBStandingPreacherCurl"
+  },
+  "UpperArmsCBOneArmStandingPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBOneArmStandingPreacherCurl"
+  },
+  "UpperArmsCBOneArmPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBOneArmPreacherCurl"
+  },
+  "UpperArmsCBPreacherCurlStirrups": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBPreacherCurlStirrups"
+  },
+  "UpperArmsCBProneInclineCurl": {
+    "folder": "./UpperArms/Brachialis/cable",
+    "websiteid": "CBProneInclineCurl"
+  },
+  "UpperArmsDBConcentrationCurl": {
+    "folder": "./UpperArms/Brachialis/dumbbell",
+    "websiteid": "DBConcentrationCurl"
+  },
+  "UpperArmsDBPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/dumbbell",
+    "websiteid": "DBPreacherCurl"
+  },
+  "UpperArmsDBStandingPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/dumbbell",
+    "websiteid": "DBStandingPreacherCurl"
+  },
+  "UpperArmsDBProneInclineCurl": {
+    "folder": "./UpperArms/Brachialis/dumbbell",
+    "websiteid": "DBProneInclineCurl"
+  },
+  "UpperArmsLVPreacherCurlH": {
+    "folder": "./UpperArms/Brachialis/lever(plateloaded)",
+    "websiteid": "LVPreacherCurlH"
+  },
+  "UpperArmsLVPreacherCurlHighPL": {
+    "folder": "./UpperArms/Brachialis/lever(plateloaded)",
+    "websiteid": "LVPreacherCurlHighPL"
+  },
+  "UpperArmsLVAlterPreacherCurlHighPL": {
+    "folder": "./UpperArms/Brachialis/lever(plateloaded)",
+    "websiteid": "LVAlterPreacherCurlHighPL"
+  },
+  "UpperArmsLVPreacherCurlNoSeatPL": {
+    "folder": "./UpperArms/Brachialis/lever(plateloaded)",
+    "websiteid": "LVPreacherCurlNoSeatPL"
+  },
+  "UpperArmsLVPreacherCurl": {
+    "folder": "./UpperArms/Brachialis/lever(selectorized)",
+    "websiteid": "LVPreacherCurl"
+  },
+  "UpperArmsLVPreacherCurlHigh": {
+    "folder": "./UpperArms/Brachialis/lever(selectorized)",
+    "websiteid": "LVPreacherCurlHigh"
+  },
+  "UpperArmsLVAlterPreacherCurlHigh": {
+    "folder": "./UpperArms/Brachialis/lever(selectorized)",
+    "websiteid": "LVAlterPreacherCurlHigh"
+  },
+  "UpperArmsLVPreacherCurlNoSeat": {
+    "folder": "./UpperArms/Brachialis/lever(selectorized)",
+    "websiteid": "LVPreacherCurlNoSeat"
+  },
+  "UpperArmsSTArmCurl": {
+    "folder": "./UpperArms/Brachialis/suspended",
+    "websiteid": "STArmCurl"
+  },
+  "ForearmsBBReverseCurl": {
+    "folder": "./Forearms/Brachioradialis/barbell",
+    "websiteid": "BBReverseCurl"
+  },
+  "ForearmsBBReversePreacherCurl": {
+    "folder": "./Forearms/Brachioradialis/barbell",
+    "websiteid": "BBReversePreacherCurl"
+  },
+  "ForearmsBBStandingReversePreacherCurl": {
+    "folder": "./Forearms/Brachioradialis/barbell",
+    "websiteid": "BBStandingReversePreacherCurl"
+  },
+  "ForearmsCBHammerCurl": {
+    "folder": "./Forearms/Brachioradialis/cable",
+    "websiteid": "CBHammerCurl"
+  },
+  "ForearmsCBReverseCurl": {
+    "folder": "./Forearms/Brachioradialis/cable",
+    "websiteid": "CBReverseCurl"
+  },
+  "ForearmsCBBarReverseCurl": {
+    "folder": "./Forearms/Brachioradialis/cable",
+    "websiteid": "CBBarReverseCurl"
+  },
+  "ForearmsCBReversePreacherCurl": {
+    "folder": "./Forearms/Brachioradialis/cable",
+    "websiteid": "CBReversePreacherCurl"
+  },
+  "ForearmsCBStandingReversePreacherCurl": {
+    "folder": "./Forearms/Brachioradialis/cable",
+    "websiteid": "CBStandingReversePreacherCurl"
+  },
+  "ForearmsDBHammerCurl": {
+    "folder": "./Forearms/Brachioradialis/dumbbell",
+    "websiteid": "DBHammerCurl"
+  },
+  "ForearmsLVHammerPreacherCurl": {
+    "folder": "./Forearms/Brachioradialis/lever(selectorized)",
+    "websiteid": "LVHammerPreacherCurl"
+  },
+  "ForearmsLVReverseCurl": {
+    "folder": "./Forearms/Brachioradialis/lever(selectorized)",
+    "websiteid": "LVReverseCurl"
+  },
+  "ForearmsLVReversePreacherCurl": {
+    "folder": "./Forearms/Brachioradialis/lever(selectorized)",
+    "websiteid": "LVReversePreacherCurl"
+  },
+  "ForearmsStanding": {
+    "folder": "./Forearms/Brachioradialis/stretch",
+    "websiteid": "Standing"
+  },
+  "ForearmsBBWristCurl": {
+    "folder": "./Forearms/WristFlexors/barbell",
+    "websiteid": "BBWristCurl"
+  },
+  "ForearmsCBWristCurl": {
+    "folder": "./Forearms/WristFlexors/cable",
+    "websiteid": "CBWristCurl"
+  },
+  "ForearmsCBOneArmWristCurl": {
+    "folder": "./Forearms/WristFlexors/cable",
+    "websiteid": "CBOneArmWristCurl"
+  },
+  "ForearmsCBRollerWristFlexion": {
+    "folder": "./Forearms/WristFlexors/cable",
+    "websiteid": "CBRollerWristFlexion"
+  },
+  "ForearmsDBWristCurl": {
+    "folder": "./Forearms/WristFlexors/dumbbell",
+    "websiteid": "DBWristCurl"
+  },
+  "ForearmsDBUlnarFlexion": {
+    "folder": "./Forearms/WristFlexors/dumbbell",
+    "websiteid": "DBUlnarFlexion"
+  },
+  "ForearmsLVGripPL": {
+    "folder": "./Forearms/WristFlexors/lever(plateloaded)",
+    "websiteid": "LVGripPL"
+  },
+  "ForearmsLVWristCurlPL": {
+    "folder": "./Forearms/WristFlexors/lever(plateloaded)",
+    "websiteid": "LVWristCurlPL"
+  },
+  "ForearmsLVGrip": {
+    "folder": "./Forearms/WristFlexors/lever(selectorized)",
+    "websiteid": "LVGrip"
+  },
+  "ForearmsLVUlnarFlexion": {
+    "folder": "./Forearms/WristFlexors/lever(selectorized)",
+    "websiteid": "LVUlnarFlexion"
+  },
+  "ForearmsLVWristCurl": {
+    "folder": "./Forearms/WristFlexors/lever(selectorized)",
+    "websiteid": "LVWristCurl"
+  },
+  "ForearmsLVRollerWristFlexion": {
+    "folder": "./Forearms/WristFlexors/lever(selectorized)",
+    "websiteid": "LVRollerWristFlexion"
+  },
+  "ForearmsLVRollerUlnarFlexion": {
+    "folder": "./Forearms/WristFlexors/lever(selectorized)",
+    "websiteid": "LVRollerUlnarFlexion"
+  },
+  "ForearmsSLGrip": {
+    "folder": "./Forearms/WristFlexors/sled(selectorized)",
+    "websiteid": "SLGrip"
+  },
+  "ForearmsSLGripPlateLoaded": {
+    "folder": "./Forearms/WristFlexors/sled(plateloaded)",
+    "websiteid": "SLGripPlateLoaded"
+  },
+  "ForearmsSLOneHandGripPlateLoaded": {
+    "folder": "./Forearms/WristFlexors/sled(plateloaded)",
+    "websiteid": "SLOneHandGripPlateLoaded"
+  },
+  "ForearmsSLOneHandPinchGripPL": {
+    "folder": "./Forearms/WristFlexors/sled(plateloaded)",
+    "websiteid": "SLOneHandPinchGripPL"
+  },
+  "ForearmsPraying": {
+    "folder": "./Forearms/WristFlexors/stretch",
+    "websiteid": "Praying"
+  },
+  "ForearmsSeated": {
+    "folder": "./Forearms/WristFlexors/stretch",
+    "websiteid": "Seated"
+  },
+  "ForearmsSingle": {
+    "folder": "./Forearms/WristFlexors/stretch",
+    "websiteid": "Single"
+  },
+  "ForearmsKneeling": {
+    "folder": "./Forearms/WristFlexors/stretch",
+    "websiteid": "Kneeling"
+  },
+  "ForearmsBBReverseWristCurl": {
+    "folder": "./Forearms/WristExtensors/barbell",
+    "websiteid": "BBReverseWristCurl"
+  },
+  "ForearmsCBReverseWristCurl": {
+    "folder": "./Forearms/WristExtensors/cable",
+    "websiteid": "CBReverseWristCurl"
+  },
+  "ForearmsCBOneArmReverseWristCurl": {
+    "folder": "./Forearms/WristExtensors/cable",
+    "websiteid": "CBOneArmReverseWristCurl"
+  },
+  "ForearmsCBRollerWristExtention": {
+    "folder": "./Forearms/WristExtensors/cable",
+    "websiteid": "CBRollerWristExtention"
+  },
+  "ForearmsDBRadialFlexion": {
+    "folder": "./Forearms/WristExtensors/dumbbell",
+    "websiteid": "DBRadialFlexion"
+  },
+  "ForearmsDBReverseWristCurl": {
+    "folder": "./Forearms/WristExtensors/dumbbell",
+    "websiteid": "DBReverseWristCurl"
+  },
+  "ForearmsLVReverseWristCurlPL": {
+    "folder": "./Forearms/WristExtensors/lever(plateloaded)",
+    "websiteid": "LVReverseWristCurlPL"
+  },
+  "ForearmsLVRadialFlexion": {
+    "folder": "./Forearms/WristExtensors/lever(selectorized)",
+    "websiteid": "LVRadialFlexion"
+  },
+  "ForearmsLVReverseWristCurl": {
+    "folder": "./Forearms/WristExtensors/lever(selectorized)",
+    "websiteid": "LVReverseWristCurl"
+  },
+  "ForearmsLVRollerWristExtention": {
+    "folder": "./Forearms/WristExtensors/lever(selectorized)",
+    "websiteid": "LVRollerWristExtention"
+  },
+  "ForearmsLVRollerRadialFlexion": {
+    "folder": "./Forearms/WristExtensors/lever(selectorized)",
+    "websiteid": "LVRollerRadialFlexion"
+  },
+  "ForearmsKneeling": {
+    "folder": "./Forearms/WristExtensors/stretch",
+    "websiteid": "Kneeling"
+  },
+  "ForearmsSingle": {
+    "folder": "./Forearms/WristExtensors/stretch",
+    "websiteid": "Single"
+  },
+  "ForearmsDBLyingPronationUp": {
+    "folder": "./Forearms/Pronators/dumbbell",
+    "websiteid": "DBLyingPronationUp"
+  },
+  "ForearmsDBLyingPronationDown": {
+    "folder": "./Forearms/Pronators/dumbbell",
+    "websiteid": "DBLyingPronationDown"
+  },
+  "ForearmsDBSeatedPronation": {
+    "folder": "./Forearms/Pronators/dumbbell",
+    "websiteid": "DBSeatedPronation"
+  },
+  "ForearmsLVSeatedPronation": {
+    "folder": "./Forearms/Pronators/lever(selectorized)",
+    "websiteid": "LVSeatedPronation"
+  },
+  "ForearmsLVPronation": {
+    "folder": "./Forearms/Pronators/lever(selectorized)",
+    "websiteid": "LVPronation"
+  },
+  "ForearmsDBLyingSupinationUp": {
+    "folder": "./Forearms/Supinators/dumbbell",
+    "websiteid": "DBLyingSupinationUp"
+  },
+  "ForearmsDBLyingSupinationDown": {
+    "folder": "./Forearms/Supinators/dumbbell",
+    "websiteid": "DBLyingSupinationDown"
+  },
+  "ForearmsDBSeatedSupination": {
+    "folder": "./Forearms/Supinators/dumbbell",
+    "websiteid": "DBSeatedSupination"
+  },
+  "ForearmsLVSeatedSupination": {
+    "folder": "./Forearms/Supinators/lever(selectorized)",
+    "websiteid": "LVSeatedSupination"
+  },
+  "ForearmsLVSupination": {
+    "folder": "./Forearms/Supinators/lever(selectorized)",
+    "websiteid": "LVSupination"
+  },
+  "BackBBBentOverRow": {
+    "folder": "./Back/BackGeneral/barbell",
+    "websiteid": "BBBentOverRow"
+  },
+  "BackBBCloseGripBentOverRow": {
+    "folder": "./Back/BackGeneral/barbell",
+    "websiteid": "BBCloseGripBentOverRow"
+  },
+  "BackBBUnderhandBentOverRow": {
+    "folder": "./Back/BackGeneral/barbell",
+    "websiteid": "BBUnderhandBentOverRow"
+  },
+  "BackCamberedBarLyingRow": {
+    "folder": "./Back/BackGeneral/barbell",
+    "websiteid": "CamberedBarLyingRow"
+  },
+  "BackCBOneArmRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmRow"
+  },
+  "BackCBOneArmStrBackHighRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmStrBackHighRow"
+  },
+  "BackCBWideGripSeatedRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBWideGripSeatedRow"
+  },
+  "BackCBOneArmTwistingHighRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmTwistingHighRow"
+  },
+  "BackCBStraightBackSeatedRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBStraightBackSeatedRow"
+  },
+  "BackCBOneArmKneelingRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmKneelingRow"
+  },
+  "BackCBSeatedRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBSeatedRow"
+  },
+  "BackCBAlternatingHighRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBAlternatingHighRow"
+  },
+  "BackCBSeatedHighRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBSeatedHighRow"
+  },
+  "BackCBInclineRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBInclineRow"
+  },
+  "BackCBLyingRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBLyingRow"
+  },
+  "BackCBOneArmStandingRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmStandingRow"
+  },
+  "BackCBOneArmBentoverRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmBentoverRow"
+  },
+  "BackCBWideGripSeatedRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBWideGripSeatedRow"
+  },
+  "BackCBOneArmHighRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmHighRow"
+  },
+  "BackCBWideGripStrBackSeatedRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBWideGripStrBackSeatedRow"
+  },
+  "BackCBStandingTwistingHighRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBStandingTwistingHighRow"
+  },
+  "BackCBStraightBackInclineRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBStraightBackInclineRow"
+  },
+  "BackCBOneArmTwistingRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmTwistingRow"
+  },
+  "BackCBOneArmStandingLowRow": {
+    "folder": "./Back/BackGeneral/cable",
+    "websiteid": "CBOneArmStandingLowRow"
+  },
+  "BackDBBentOverRow": {
+    "folder": "./Back/BackGeneral/dumbbell",
+    "websiteid": "DBBentOverRow"
+  },
+  "BackDBLyingRow": {
+    "folder": "./Back/BackGeneral/dumbbell",
+    "websiteid": "DBLyingRow"
+  },
+  "BackLVBentOverRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVBentOverRowH"
+  },
+  "BackLVBBBentOverRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVBBBentOverRow"
+  },
+  "BackLVOneArmBentOverRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVOneArmBentOverRow"
+  },
+  "BackLVWideGripBentOverRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVWideGripBentOverRowH"
+  },
+  "BackLVInclineRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVInclineRow"
+  },
+  "BackLVCloseGripInclineRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVCloseGripInclineRow"
+  },
+  "BackLVOneArmStandingRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVOneArmStandingRow"
+  },
+  "BackLVNarrowGripSeatedRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVNarrowGripSeatedRowH"
+  },
+  "BackLVAlternatingNarrowGripSeatedRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVAlternatingNarrowGripSeatedRow"
+  },
+  "BackLVWideGripSeatedRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVWideGripSeatedRowH"
+  },
+  "BackLVAlternatingWideGripSeatedRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVAlternatingWideGripSeatedRow"
+  },
+  "BackLVWideLowGripSeatedRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVWideLowGripSeatedRowH"
+  },
+  "BackLVSeatedRowNoPadPL": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVSeatedRowNoPadPL"
+  },
+  "BackLVStraightBackSeatedRowNoPadPL": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVStraightBackSeatedRowNoPadPL"
+  },
+  "BackLVSeatedLowRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVSeatedLowRow"
+  },
+  "BackLVSeatedHighRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVSeatedHighRow"
+  },
+  "BackLVSeatedUnderhandRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVSeatedUnderhandRowH"
+  },
+  "BackLVAlternatingSeatedUnderhandRowH": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVAlternatingSeatedUnderhandRowH"
+  },
+  "BackLVTBarRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVTBarRow"
+  },
+  "BackLVTBarRowLM": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVTBarRowLM"
+  },
+  "BackLVCloseGripTBarRow": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVCloseGripTBarRow"
+  },
+  "BackLVCloseGripTBarRowLM": {
+    "folder": "./Back/BackGeneral/lever(plateloaded)",
+    "websiteid": "LVCloseGripTBarRowLM"
+  },
+  "BackLVSeatedHighRowC": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVSeatedHighRowC"
+  },
+  "BackLVAlternatingSeatedHighRow": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVAlternatingSeatedHighRow"
+  },
+  "BackLVSeatedHighRowB": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVSeatedHighRowB"
+  },
+  "BackLVSeatedRow": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVSeatedRow"
+  },
+  "BackLVWideGripSeatedRow": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVWideGripSeatedRow"
+  },
+  "BackLVSeatedRowNoPad": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVSeatedRowNoPad"
+  },
+  "BackLVStraightBackSeatedRowNoPad": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVStraightBackSeatedRowNoPad"
+  },
+  "BackLVSeatedUnderhandRowS": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVSeatedUnderhandRowS"
+  },
+  "BackLVSeatedUnderhandRow": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVSeatedUnderhandRow"
+  },
+  "BackLVAlternatingSeatedUnderhandRow": {
+    "folder": "./Back/BackGeneral/lever(selectorized)",
+    "websiteid": "LVAlternatingSeatedUnderhandRow"
+  },
+  "BackSMBentOverRow": {
+    "folder": "./Back/BackGeneral/smith",
+    "websiteid": "SMBentOverRow"
+  },
+  "BackWTSupineRow": {
+    "folder": "./Back/BackGeneral/weighted",
+    "websiteid": "WTSupineRow"
+  },
+  "BackBWSupineRow": {
+    "folder": "./Back/BackGeneral/bodyweight",
+    "websiteid": "BWSupineRow"
+  },
+  "BackBWSupineRowFeetElevated": {
+    "folder": "./Back/BackGeneral/bodyweight",
+    "websiteid": "BWSupineRowFeetElevated"
+  },
+  "BackBWSupineRowHigh": {
+    "folder": "./Back/BackGeneral/bodyweight",
+    "websiteid": "BWSupineRowHigh"
+  },
+  "BackBWSupineRowHips": {
+    "folder": "./Back/BackGeneral/bodyweight",
+    "websiteid": "BWSupineRowHips"
+  },
+  "BackBWUnderhandSupineRow": {
+    "folder": "./Back/BackGeneral/bodyweight",
+    "websiteid": "BWUnderhandSupineRow"
+  },
+  "BackBWUnderhandSupineRowHigh": {
+    "folder": "./Back/BackGeneral/bodyweight",
+    "websiteid": "BWUnderhandSupineRowHigh"
+  },
+  "BackSTInvertedRow": {
+    "folder": "./Back/BackGeneral/suspended",
+    "websiteid": "STInvertedRow"
+  },
+  "BackSTBentKneeInvertedRow": {
+    "folder": "./Back/BackGeneral/suspended",
+    "websiteid": "STBentKneeInvertedRow"
+  },
+  "BackSTPowerPull": {
+    "folder": "./Back/BackGeneral/suspended",
+    "websiteid": "STPowerPull"
+  },
+  "BackSTRow": {
+    "folder": "./Back/BackGeneral/suspended",
+    "websiteid": "STRow"
+  },
+  "BackFixedBar": {
+    "folder": "./Back/BackGeneral/stretch",
+    "websiteid": "FixedBar"
+  },
+  "BackPCCrossHand": {
+    "folder": "./Back/BackGeneral/stretch",
+    "websiteid": "PCCrossHand"
+  },
+  "BackAsUnderhandChinup": {
+    "folder": "./Back/LatissimusDorsi/assisted(machine)",
+    "websiteid": "AsUnderhandChinup"
+  },
+  "BackAsCloseGripChinupKneeling": {
+    "folder": "./Back/LatissimusDorsi/assisted(machine)",
+    "websiteid": "AsCloseGripChinupKneeling"
+  },
+  "BackAsCloseGripChinup": {
+    "folder": "./Back/LatissimusDorsi/assisted(machine)",
+    "websiteid": "AsCloseGripChinup"
+  },
+  "BackAsPullupKneeling": {
+    "folder": "./Back/LatissimusDorsi/assisted(machine)",
+    "websiteid": "AsPullupKneeling"
+  },
+  "BackAsPullupOpenKneeling": {
+    "folder": "./Back/LatissimusDorsi/assisted(machine)",
+    "websiteid": "AsPullupOpenKneeling"
+  },
+  "BackAsPullupOpen": {
+    "folder": "./Back/LatissimusDorsi/assisted(machine)",
+    "websiteid": "AsPullupOpen"
+  },
+  "BackBBPullover": {
+    "folder": "./Back/LatissimusDorsi/barbell",
+    "websiteid": "BBPullover"
+  },
+  "BackBBBentArmPullover": {
+    "folder": "./Back/LatissimusDorsi/barbell",
+    "websiteid": "BBBentArmPullover"
+  },
+  "BackCBCloseGripPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBCloseGripPulldown"
+  },
+  "BackCBAlternatingCloseGripPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBAlternatingCloseGripPulldown"
+  },
+  "BackCBOneArmPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBOneArmPulldown"
+  },
+  "BackCBOneArmKneelingPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBOneArmKneelingPulldown"
+  },
+  "BackCBCloseGripPulldownStirrups": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBCloseGripPulldownStirrups"
+  },
+  "BackCBKneelingBentoverPullover": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBKneelingBentoverPullover"
+  },
+  "BackCBFrontPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBFrontPulldown"
+  },
+  "BackCBAlternatingPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBAlternatingPulldown"
+  },
+  "BackCBParallelGripPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBParallelGripPulldown"
+  },
+  "BackCBFrontPulldownProLatBar": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBFrontPulldownProLatBar"
+  },
+  "BackCBPulldownStirrups": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBPulldownStirrups"
+  },
+  "BackCBPullover": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBPullover"
+  },
+  "BackCBBentoverPullover": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBBentoverPullover"
+  },
+  "BackCBSeatedStraightArmPullover": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBSeatedStraightArmPullover"
+  },
+  "BackCBUnderhandChinup": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBUnderhandChinup"
+  },
+  "BackCBParallelCloseGripChinup": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBParallelCloseGripChinup"
+  },
+  "BackCBParallelGripChinup": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBParallelGripChinup"
+  },
+  "BackCBPullup": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBPullup"
+  },
+  "BackCBRearPullup": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBRearPullup"
+  },
+  "BackCBRearPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBRearPulldown"
+  },
+  "BackCBTwistingOverheadPull": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBTwistingOverheadPull"
+  },
+  "BackCBUnderhandPulldown": {
+    "folder": "./Back/LatissimusDorsi/cable",
+    "websiteid": "CBUnderhandPulldown"
+  },
+  "BackLVCloseGripPulldownPL": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVCloseGripPulldownPL"
+  },
+  "BackLVFrontPulldownPL": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVFrontPulldownPL"
+  },
+  "BackLVPulldownH": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVPulldownH"
+  },
+  "BackLVPulloverH": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVPulloverH"
+  },
+  "BackLVRearPulldownPL": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVRearPulldownPL"
+  },
+  "BackLVUnderhandPulldownH": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVUnderhandPulldownH"
+  },
+  "BackLVUnderhandPulldownPL": {
+    "folder": "./Back/LatissimusDorsi/lever(plateloaded)",
+    "websiteid": "LVUnderhandPulldownPL"
+  },
+  "BackLVCloseGripPulldown": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVCloseGripPulldown"
+  },
+  "BackLVCloseGripPulldown2": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVCloseGripPulldown2"
+  },
+  "BackLVFrontPulldown": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVFrontPulldown"
+  },
+  "BackLVIronCross": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVIronCross"
+  },
+  "BackLVPulldown": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVPulldown"
+  },
+  "BackLVPulldown2": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVPulldown2"
+  },
+  "BackLVPulldownParallelGrip": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVPulldownParallelGrip"
+  },
+  "BackLVPullover": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVPullover"
+  },
+  "BackLVUnderhandPulldownS": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVUnderhandPulldownS"
+  },
+  "BackLVUnderhandPulldown": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVUnderhandPulldown"
+  },
+  "BackLVAltUnderhandPulldownS": {
+    "folder": "./Back/LatissimusDorsi/lever(selectorized)",
+    "websiteid": "LVAltUnderhandPulldownS"
+  },
+  "BackWtUnderhandChinup": {
+    "folder": "./Back/LatissimusDorsi/weighted",
+    "websiteid": "WtUnderhandChinup"
+  },
+  "BackWtCloseGripChinup": {
+    "folder": "./Back/LatissimusDorsi/weighted",
+    "websiteid": "WtCloseGripChinup"
+  },
+  "BackWtPullup": {
+    "folder": "./Back/LatissimusDorsi/weighted",
+    "websiteid": "WtPullup"
+  },
+  "BackWtPullupN": {
+    "folder": "./Back/LatissimusDorsi/weighted",
+    "websiteid": "WtPullupN"
+  },
+  "BackWtPullupOpen": {
+    "folder": "./Back/LatissimusDorsi/weighted",
+    "websiteid": "WtPullupOpen"
+  },
+  "BackWtRearPullup": {
+    "folder": "./Back/LatissimusDorsi/weighted",
+    "websiteid": "WtRearPullup"
+  },
+  "BackASChinupBand": {
+    "folder": "./Back/LatissimusDorsi/band-assisted",
+    "websiteid": "ASChinupBand"
+  },
+  "BackASPullupBand": {
+    "folder": "./Back/LatissimusDorsi/band-assisted",
+    "websiteid": "ASPullupBand"
+  },
+  "BackASNeutralGripPullupFootBand": {
+    "folder": "./Back/LatissimusDorsi/band-assisted",
+    "websiteid": "ASNeutralGripPullupFootBand"
+  },
+  "BackASParallelGripPullupBand": {
+    "folder": "./Back/LatissimusDorsi/band-assisted",
+    "websiteid": "ASParallelGripPullupBand"
+  },
+  "BackASRearPullupBand": {
+    "folder": "./Back/LatissimusDorsi/band-assisted",
+    "websiteid": "ASRearPullupBand"
+  },
+  "BackBWUnderhandChinup": {
+    "folder": "./Back/LatissimusDorsi/bodyweight",
+    "websiteid": "BWUnderhandChinup"
+  },
+  "BackBWCloseGripChinup": {
+    "folder": "./Back/LatissimusDorsi/bodyweight",
+    "websiteid": "BWCloseGripChinup"
+  },
+  "BackBWPullup": {
+    "folder": "./Back/LatissimusDorsi/bodyweight",
+    "websiteid": "BWPullup"
+  },
+  "BackBWPullupN": {
+    "folder": "./Back/LatissimusDorsi/bodyweight",
+    "websiteid": "BWPullupN"
+  },
+  "BackBWPullupOpen": {
+    "folder": "./Back/LatissimusDorsi/bodyweight",
+    "websiteid": "BWPullupOpen"
+  },
+  "BackBWRearPullup": {
+    "folder": "./Back/LatissimusDorsi/bodyweight",
+    "websiteid": "BWRearPullup"
+  },
+  "BackAsUnderhandChinupPartner": {
+    "folder": "./Back/LatissimusDorsi/assisted(partner)",
+    "websiteid": "AsUnderhandChinupPartner"
+  },
+  "BackAsChinupPartner": {
+    "folder": "./Back/LatissimusDorsi/assisted(partner)",
+    "websiteid": "AsChinupPartner"
+  },
+  "BackAsRearPullupPartner": {
+    "folder": "./Back/LatissimusDorsi/assisted(partner)",
+    "websiteid": "AsRearPullupPartner"
+  },
+  "BackAsUnderhandChinupSelf": {
+    "folder": "./Back/LatissimusDorsi/self-assisted",
+    "websiteid": "AsUnderhandChinupSelf"
+  },
+  "BackAsChinupSelf": {
+    "folder": "./Back/LatissimusDorsi/self-assisted",
+    "websiteid": "AsChinupSelf"
+  },
+  "BackASRearPullupSelf": {
+    "folder": "./Back/LatissimusDorsi/self-assisted",
+    "websiteid": "ASRearPullupSelf"
+  },
+  "BackSTPullup": {
+    "folder": "./Back/LatissimusDorsi/suspension",
+    "websiteid": "STPullup"
+  },
+  "BackSTSelfAssistedPullup": {
+    "folder": "./Back/LatissimusDorsi/suspension",
+    "websiteid": "STSelfAssistedPullup"
+  },
+  "BackBar": { "folder": "./Back/LatissimusDorsi/stretch", "websiteid": "Bar" },
+  "BackBentoverFloor": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "BentoverFloor"
+  },
+  "BackBentover": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "Bentover"
+  },
+  "BackPCUnderhand": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "PCUnderhand"
+  },
+  "BackOverhead": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "Overhead"
+  },
+  "BackPNFOverhead": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "PNFOverhead"
+  },
+  "BackSeatedSideReach": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "SeatedSideReach"
+  },
+  "BackStandingSideReach": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "StandingSideReach"
+  },
+  "BackWall": {
+    "folder": "./Back/LatissimusDorsi/stretch",
+    "websiteid": "Wall"
+  },
+  "BackCBSeatShrug": {
+    "folder": "./Back/TrapeziusUpper/barbell",
+    "websiteid": "CBSeatShrug"
+  },
+  "BackBBShrug": {
+    "folder": "./Back/TrapeziusUpper/barbell",
+    "websiteid": "BBShrug"
+  },
+  "BackTBShrug": {
+    "folder": "./Back/TrapeziusUpper/barbell",
+    "websiteid": "TBShrug"
+  },
+  "BackSBShrugStand": {
+    "folder": "./Back/TrapeziusUpper/barbell",
+    "websiteid": "SBShrugStand"
+  },
+  "BackCBShrug": {
+    "folder": "./Back/TrapeziusUpper/cable",
+    "websiteid": "CBShrug"
+  },
+  "BackCBBarShrug": {
+    "folder": "./Back/TrapeziusUpper/cable",
+    "websiteid": "CBBarShrug"
+  },
+  "BackCBShrugDualPulley": {
+    "folder": "./Back/TrapeziusUpper/cable",
+    "websiteid": "CBShrugDualPulley"
+  },
+  "BackCBShrugStirrups": {
+    "folder": "./Back/TrapeziusUpper/cable",
+    "websiteid": "CBShrugStirrups"
+  },
+  "BackCBOneArmShrug": {
+    "folder": "./Back/TrapeziusUpper/cable",
+    "websiteid": "CBOneArmShrug"
+  },
+  "BackDBShrug": {
+    "folder": "./Back/TrapeziusUpper/dumbbell",
+    "websiteid": "DBShrug"
+  },
+  "BackLVXGripShrugPL": {
+    "folder": "./Back/TrapeziusUpper/lever(plateloaded)",
+    "websiteid": "LVXGripShrugPL"
+  },
+  "BackLVSeatedShrug": {
+    "folder": "./Back/TrapeziusUpper/lever(plateloaded)",
+    "websiteid": "LVSeatedShrug"
+  },
+  "BackLVShrugH": {
+    "folder": "./Back/TrapeziusUpper/lever(plateloaded)",
+    "websiteid": "LVShrugH"
+  },
+  "BackLVBBShrug": {
+    "folder": "./Back/TrapeziusUpper/lever(plateloaded)",
+    "websiteid": "LVBBShrug"
+  },
+  "BackLVShrugNarrowH": {
+    "folder": "./Back/TrapeziusUpper/lever(plateloaded)",
+    "websiteid": "LVShrugNarrowH"
+  },
+  "BackLVXGripShrug": {
+    "folder": "./Back/TrapeziusUpper/lever(selectorized)",
+    "websiteid": "LVXGripShrug"
+  },
+  "BackLVSeatXGripShrug": {
+    "folder": "./Back/TrapeziusUpper/lever(selectorized)",
+    "websiteid": "LVSeatXGripShrug"
+  },
+  "BackLVShrug": {
+    "folder": "./Back/TrapeziusUpper/lever(selectorized)",
+    "websiteid": "LVShrug"
+  },
+  "BackSLXGripShrug": {
+    "folder": "./Back/TrapeziusUpper/sled",
+    "websiteid": "SLXGripShrug"
+  },
+  "BackSMShrug": {
+    "folder": "./Back/TrapeziusUpper/smith",
+    "websiteid": "SMShrug"
+  },
+  "BackBWInvertedShrugPB": {
+    "folder": "./Back/TrapeziusUpper/bodyweight",
+    "websiteid": "BWInvertedShrugPB"
+  },
+  "BackBWInvertedShrugRings": {
+    "folder": "./Back/TrapeziusUpper/suspended",
+    "websiteid": "BWInvertedShrugRings"
+  },
+  "BackTrap": {
+    "folder": "./Back/TrapeziusUpper/stretch",
+    "websiteid": "Trap"
+  },
+  "BackFixedBar": {
+    "folder": "./Back/Rhomboids/stretch",
+    "websiteid": "FixedBar"
+  },
+  "BackHugging": {
+    "folder": "./Back/Rhomboids/stretch",
+    "websiteid": "Hugging"
+  },
+  "BackCBSeatedExternalRotation": {
+    "folder": "./Back/Infraspinatus/cable",
+    "websiteid": "CBSeatedExternalRotation"
+  },
+  "BackCBStandingExternalRotation": {
+    "folder": "./Back/Infraspinatus/cable",
+    "websiteid": "CBStandingExternalRotation"
+  },
+  "BackCBUprightExternalRotation": {
+    "folder": "./Back/Infraspinatus/cable",
+    "websiteid": "CBUprightExternalRotation"
+  },
+  "BackDBLyingExternalRotation": {
+    "folder": "./Back/Infraspinatus/dumbbell",
+    "websiteid": "DBLyingExternalRotation"
+  },
+  "BackDBInclineExternalRotation": {
+    "folder": "./Back/Infraspinatus/dumbbell",
+    "websiteid": "DBInclineExternalRotation"
+  },
+  "BackDBSeatedExternalRotation": {
+    "folder": "./Back/Infraspinatus/dumbbell",
+    "websiteid": "DBSeatedExternalRotation"
+  },
+  "BackDBUprightExternalRotation": {
+    "folder": "./Back/Infraspinatus/dumbbell",
+    "websiteid": "DBUprightExternalRotation"
+  },
+  "BackDBUprightExternalRotationSupport": {
+    "folder": "./Back/Infraspinatus/dumbbell",
+    "websiteid": "DBUprightExternalRotationSupport"
+  },
+  "BackLVShoulderExternalRotationPL": {
+    "folder": "./Back/Infraspinatus/lever(plateloaded)",
+    "websiteid": "LVShoulderExternalRotationPL"
+  },
+  "BackLVExternalRotation": {
+    "folder": "./Back/Infraspinatus/lever(selectorized)",
+    "websiteid": "LVExternalRotation"
+  },
+  "BackLVUprightExternalRotation": {
+    "folder": "./Back/Infraspinatus/lever(selectorized)",
+    "websiteid": "LVUprightExternalRotation"
+  },
+  "BackBroomstick": {
+    "folder": "./Back/Infraspinatus/stretch",
+    "websiteid": "Broomstick"
+  },
+  "BackBentover": {
+    "folder": "./Back/Infraspinatus/stretch",
+    "websiteid": "Bentover"
+  },
+  "BackSeatedBentover": {
+    "folder": "./Back/Infraspinatus/stretch",
+    "websiteid": "SeatedBentover"
+  },
+  "BackSideLying": {
+    "folder": "./Back/Infraspinatus/stretch",
+    "websiteid": "SideLying"
+  },
+  "BackSideLyingTeresMinor": {
+    "folder": "./Back/Infraspinatus/stretch",
+    "websiteid": "SideLyingTeresMinor"
+  },
+  "BackSTShoulderExternalRotation": {
+    "folder": "./Back/Infraspinatus/suspended",
+    "websiteid": "STShoulderExternalRotation"
+  },
+  "BackCBInternalRotation": {
+    "folder": "./Back/Subscapularis/cable",
+    "websiteid": "CBInternalRotation"
+  },
+  "BackCBStandingInternalRotation": {
+    "folder": "./Back/Subscapularis/cable",
+    "websiteid": "CBStandingInternalRotation"
+  },
+  "BackDBInternalRotation": {
+    "folder": "./Back/Subscapularis/dumbbell",
+    "websiteid": "DBInternalRotation"
+  },
+  "BackDBInternalRotationFloor": {
+    "folder": "./Back/Subscapularis/dumbbell",
+    "websiteid": "DBInternalRotationFloor"
+  },
+  "BackLVShoulderInternalRotationPL": {
+    "folder": "./Back/Subscapularis/lever(plateloaded)",
+    "websiteid": "LVShoulderInternalRotationPL"
+  },
+  "BackLVInternalRotation": {
+    "folder": "./Back/Subscapularis/lever(selectorized)",
+    "websiteid": "LVInternalRotation"
+  },
+  "BackLVUprightInternalRotation": {
+    "folder": "./Back/Subscapularis/lever(selectorized)",
+    "websiteid": "LVUprightInternalRotation"
+  },
+  "BackBroomstick": {
+    "folder": "./Back/Subscapularis/stretch",
+    "websiteid": "Broomstick"
+  },
+  "BackDoorway": {
+    "folder": "./Back/Subscapularis/stretch",
+    "websiteid": "Doorway"
+  },
+  "ChestAsChestDipKneeling": {
+    "folder": "./Chest/PectoralSternal/assisted",
+    "websiteid": "AsChestDipKneeling"
+  },
+  "ChestAsChestDip": {
+    "folder": "./Chest/PectoralSternal/assisted",
+    "websiteid": "AsChestDip"
+  },
+  "ChestBBBenchPress": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBBenchPress"
+  },
+  "ChestBBBenchPressPowerLift": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBBenchPressPowerLift"
+  },
+  "ChestBBBoardPress": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBBoardPress"
+  },
+  "ChestBBFloorPress": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBFloorPress"
+  },
+  "ChestBBGuillotineBenchPress": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBGuillotineBenchPress"
+  },
+  "ChestBBBenchPressChain": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBBenchPressChain"
+  },
+  "ChestBBDeclineBenchPress": {
+    "folder": "./Chest/PectoralSternal/barbell",
+    "websiteid": "BBDeclineBenchPress"
+  },
+  "ChestCBStandingChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBStandingChestPress"
+  },
+  "ChestCBBarBenchPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBBarBenchPress"
+  },
+  "ChestCBBenchPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBBenchPress"
+  },
+  "ChestCBTwistingChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBTwistingChestPress"
+  },
+  "ChestCBDeclineChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBDeclineChestPress"
+  },
+  "ChestCBSeatedFly": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBSeatedFly"
+  },
+  "ChestCBChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBChestPress"
+  },
+  "ChestCBOneArmChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBOneArmChestPress"
+  },
+  "ChestCBDeclineFly": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBDeclineFly"
+  },
+  "ChestCBStandingDeclineChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBStandingDeclineChestPress"
+  },
+  "ChestCBTwistingStandingChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBTwistingStandingChestPress"
+  },
+  "ChestCBLyingFly": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBLyingFly"
+  },
+  "ChestCBStandingFly": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBStandingFly"
+  },
+  "ChestCBBarStandingChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBBarStandingChestPress"
+  },
+  "ChestCBBarStandingDeclineChestPress": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBBarStandingDeclineChestPress"
+  },
+  "ChestCBChestDip": {
+    "folder": "./Chest/PectoralSternal/cable",
+    "websiteid": "CBChestDip"
+  },
+  "ChestDBBenchPress": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBBenchPress"
+  },
+  "ChestDBDeclineBenchPress": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBDeclineBenchPress"
+  },
+  "ChestDBDeclineFly": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBDeclineFly"
+  },
+  "ChestDBFly": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBFly"
+  },
+  "ChestDBPullover": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBPullover"
+  },
+  "ChestDBPulloverAp": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBPulloverAp"
+  },
+  "ChestDBPulloverArchedBench": {
+    "folder": "./Chest/PectoralSternal/dumbbell",
+    "websiteid": "DBPulloverArchedBench"
+  },
+  "ChestLVBenchPressH": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVBenchPressH"
+  },
+  "ChestLVBBBenchPress": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVBBBenchPress"
+  },
+  "ChestLVChestDipH": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVChestDipH"
+  },
+  "ChestLVChestPressH": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVChestPressH"
+  },
+  "ChestLVDeclineChestPressH": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVDeclineChestPressH"
+  },
+  "ChestLVDeclineChestPressPL": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVDeclineChestPressPL"
+  },
+  "ChestLVWideGripChestPress": {
+    "folder": "./Chest/PectoralSternal/lever(plateloaded)",
+    "websiteid": "LVWideGripChestPress"
+  },
+  "ChestLVSeatedDeclineFly": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVSeatedDeclineFly"
+  },
+  "ChestLVChestDip2": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVChestDip2"
+  },
+  "ChestLVChestDip": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVChestDip"
+  },
+  "ChestLVBenchPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVBenchPress"
+  },
+  "ChestLVChestPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVChestPress"
+  },
+  "ChestLVLyingFly": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVLyingFly"
+  },
+  "ChestLVDeclineBenchPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVDeclineBenchPress"
+  },
+  "ChestLVParallelGripChestPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVParallelGripChestPress"
+  },
+  "ChestLVSeatedIronCrossFly": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVSeatedIronCrossFly"
+  },
+  "ChestLVPecDeckFly": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVPecDeckFly"
+  },
+  "ChestLVBentoverFlyIronCross": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVBentoverFlyIronCross"
+  },
+  "ChestLVSeatedFly2": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVSeatedFly2"
+  },
+  "ChestLVAlternatingChestPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVAlternatingChestPress"
+  },
+  "ChestLVSeatedFly": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVSeatedFly"
+  },
+  "ChestLVSeatedFlyGripless": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVSeatedFlyGripless"
+  },
+  "ChestLVDeclineChestPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVDeclineChestPress"
+  },
+  "ChestLVChestPressS": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVChestPressS"
+  },
+  "ChestLVAlternatingDeclineChestPress": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVAlternatingDeclineChestPress"
+  },
+  "ChestLVDeclineFly": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVDeclineFly"
+  },
+  "ChestLVChestDip": {
+    "folder": "./Chest/PectoralSternal/lever(selectorized)",
+    "websiteid": "LVChestDip"
+  },
+  "ChestSLStandingChestDip": {
+    "folder": "./Chest/PectoralSternal/sled",
+    "websiteid": "SLStandingChestDip"
+  },
+  "ChestSLStandingChestDipWideHorizontalGrip": {
+    "folder": "./Chest/PectoralSternal/sled",
+    "websiteid": "SLStandingChestDipWideHorizontalGrip"
+  },
+  "ChestSMBenchPress": {
+    "folder": "./Chest/PectoralSternal/smith",
+    "websiteid": "SMBenchPress"
+  },
+  "ChestSMDeclineBenchPress": {
+    "folder": "./Chest/PectoralSternal/smith",
+    "websiteid": "SMDeclineBenchPress"
+  },
+  "ChestWtPushup": {
+    "folder": "./Chest/PectoralSternal/weighted",
+    "websiteid": "WtPushup"
+  },
+  "ChestWtChestDip": {
+    "folder": "./Chest/PectoralSternal/weighted",
+    "websiteid": "WtChestDip"
+  },
+  "ChestWtPushupHandles": {
+    "folder": "./Chest/PectoralSternal/weighted",
+    "websiteid": "WtPushupHandles"
+  },
+  "ChestASChestDipBand": {
+    "folder": "./Chest/PectoralSternal/band-assisted",
+    "websiteid": "ASChestDipBand"
+  },
+  "ChestBWChestDip": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWChestDip"
+  },
+  "ChestBWPushupKnee": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWPushupKnee"
+  },
+  "ChestBWInclinePushup": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWInclinePushup"
+  },
+  "ChestBWPushup": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWPushup"
+  },
+  "ChestBWChestDipBenchesBentKnee": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWChestDipBenchesBentKnee"
+  },
+  "ChestBWInclinePushupBar": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWInclinePushupBar"
+  },
+  "ChestBWChestDipBenches": {
+    "folder": "./Chest/PectoralSternal/bodyweight",
+    "websiteid": "BWChestDipBenches"
+  },
+  "ChestAsChestDipSelf": {
+    "folder": "./Chest/PectoralSternal/self-assisted",
+    "websiteid": "AsChestDipSelf"
+  },
+  "ChestSTSelfAssistedChestDip": {
+    "folder": "./Chest/PectoralSternal/suspended",
+    "websiteid": "STSelfAssistedChestDip"
+  },
+  "ChestSTChestPress": {
+    "folder": "./Chest/PectoralSternal/suspended",
+    "websiteid": "STChestPress"
+  },
+  "ChestSTChestDip": {
+    "folder": "./Chest/PectoralSternal/suspended",
+    "websiteid": "STChestDip"
+  },
+  "ChestSTFly": {
+    "folder": "./Chest/PectoralSternal/suspended",
+    "websiteid": "STFly"
+  },
+  "ChestBehindHead": {
+    "folder": "./Chest/PectoralSternal/stretch",
+    "websiteid": "BehindHead"
+  },
+  "ChestStraightArm": {
+    "folder": "./Chest/PectoralSternal/stretch",
+    "websiteid": "StraightArm"
+  },
+  "ChestDoorway": {
+    "folder": "./Chest/PectoralSternal/stretch",
+    "websiteid": "Doorway"
+  },
+  "ChestPNFChestBehindHead": {
+    "folder": "./Chest/PectoralSternal/stretch",
+    "websiteid": "PNFChestBehindHead"
+  },
+  "ChestBBInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/barbell",
+    "websiteid": "BBInclineBenchPress"
+  },
+  "ChestCBInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBInclineBenchPress"
+  },
+  "ChestCBBarInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBBarInclineBenchPress"
+  },
+  "ChestCBInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBInclineChestPress"
+  },
+  "ChestCBStandingInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBStandingInclineChestPress"
+  },
+  "ChestCBBarStandingInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBBarStandingInclineChestPress"
+  },
+  "ChestCBStandTwistInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBStandTwistInclineChestPress"
+  },
+  "ChestCBInclineFly": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBInclineFly"
+  },
+  "ChestCBStandingInclineFly": {
+    "folder": "./Chest/PectoralClavicular/cable",
+    "websiteid": "CBStandingInclineFly"
+  },
+  "ChestDBInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/dumbbell",
+    "websiteid": "DBInclineBenchPress"
+  },
+  "ChestDBInclineFly": {
+    "folder": "./Chest/PectoralClavicular/dumbbell",
+    "websiteid": "DBInclineFly"
+  },
+  "ChestLVInclineBenchPressPL": {
+    "folder": "./Chest/PectoralClavicular/lever(plateloaded)",
+    "websiteid": "LVInclineBenchPressPL"
+  },
+  "ChestLVBBInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/lever(plateloaded)",
+    "websiteid": "LVBBInclineBenchPress"
+  },
+  "ChestLVParallelGripInclineBenchPressPL": {
+    "folder": "./Chest/PectoralClavicular/lever(plateloaded)",
+    "websiteid": "LVParallelGripInclineBenchPressPL"
+  },
+  "ChestLVInclineChestPressH": {
+    "folder": "./Chest/PectoralClavicular/lever(plateloaded)",
+    "websiteid": "LVInclineChestPressH"
+  },
+  "ChestLVInclineChestPressOnHammerMilitaryPress": {
+    "folder": "./Chest/PectoralClavicular/lever(plateloaded)",
+    "websiteid": "LVInclineChestPressOnHammerMilitaryPress"
+  },
+  "ChestLVInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/lever(selectorized)",
+    "websiteid": "LVInclineBenchPress"
+  },
+  "ChestLVParallelGripInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/lever(selectorized)",
+    "websiteid": "LVParallelGripInclineBenchPress"
+  },
+  "ChestLVInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/lever(selectorized)",
+    "websiteid": "LVInclineChestPress"
+  },
+  "ChestLVAlternatingInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/lever(selectorized)",
+    "websiteid": "LVAlternatingInclineChestPress"
+  },
+  "ChestLVParallelGripInclineChestPress": {
+    "folder": "./Chest/PectoralClavicular/lever(selectorized)",
+    "websiteid": "LVParallelGripInclineChestPress"
+  },
+  "ChestLVInclineFly": {
+    "folder": "./Chest/PectoralClavicular/lever(selectorized)",
+    "websiteid": "LVInclineFly"
+  },
+  "ChestSMInclineBenchPress": {
+    "folder": "./Chest/PectoralClavicular/smith",
+    "websiteid": "SMInclineBenchPress"
+  },
+  "ChestBWDeclinePushup": {
+    "folder": "./Chest/PectoralClavicular/bodyweight",
+    "websiteid": "BWDeclinePushup"
+  },
+  "ChestBWDeclinePushupOnBall": {
+    "folder": "./Chest/PectoralClavicular/bodyweight",
+    "websiteid": "BWDeclinePushupOnBall"
+  },
+  "ChestBWPikePushup": {
+    "folder": "./Chest/PectoralClavicular/bodyweight",
+    "websiteid": "BWPikePushup"
+  },
+  "ChestDoorway": {
+    "folder": "./Chest/PectoralisMinor/stretch",
+    "websiteid": "Doorway"
+  },
+  "ChestLying": {
+    "folder": "./Chest/PectoralisMinor/stretch",
+    "websiteid": "Lying"
+  },
+  "ChestTowel": {
+    "folder": "./Chest/PectoralisMinor/stretch",
+    "websiteid": "Towel"
+  },
+  "ChestWall": {
+    "folder": "./Chest/PectoralisMinor/stretch",
+    "websiteid": "Wall"
+  },
+  "ChestBBInclineShoulderRaise": {
+    "folder": "./Chest/SerratusAnterior/barbell",
+    "websiteid": "BBInclineShoulderRaise"
+  },
+  "ChestCBInclineShoulderRaise": {
+    "folder": "./Chest/SerratusAnterior/cable",
+    "websiteid": "CBInclineShoulderRaise"
+  },
+  "ChestCBOneArmInclinePush": {
+    "folder": "./Chest/SerratusAnterior/cable",
+    "websiteid": "CBOneArmInclinePush"
+  },
+  "ChestDBInclineShoulderRaise": {
+    "folder": "./Chest/SerratusAnterior/dumbbell",
+    "websiteid": "DBInclineShoulderRaise"
+  },
+  "ChestLVInclineShoulderRaisePL": {
+    "folder": "./Chest/SerratusAnterior/lever(plateloaded)",
+    "websiteid": "LVInclineShoulderRaisePL"
+  },
+  "ChestLVInclineShoulderRaise": {
+    "folder": "./Chest/SerratusAnterior/lever(selectorized)",
+    "websiteid": "LVInclineShoulderRaise"
+  },
+  "ChestSMInclineShoulderRaise": {
+    "folder": "./Chest/SerratusAnterior/smith",
+    "websiteid": "SMInclineShoulderRaise"
+  },
+  "ChestBWPushUpPlus": {
+    "folder": "./Chest/SerratusAnterior/bodyweight",
+    "websiteid": "BWPushUpPlus"
+  },
+  "WaistBWSitUpX": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWSitUpX"
+  },
+  "WaistBWCrunchX": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWCrunchX"
+  },
+  "WaistBWInclineCrunchDown": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWInclineCrunchDown"
+  },
+  "WaistBWInclineLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWInclineLegHipRaise"
+  },
+  "WaistBWLegHipRaiseExBall": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWLegHipRaiseExBall"
+  },
+  "WaistBWHangingStraightLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWHangingStraightLegHipRaise"
+  },
+  "WaistBWBallRollout": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWBallRollout"
+  },
+  "WaistBWLyingLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWLyingLegHipRaise"
+  },
+  "WaistBWBallCrunchX": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWBallCrunchX"
+  },
+  "WaistBWVerticalLegHipRaisePB": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWVerticalLegHipRaisePB"
+  },
+  "WaistBWVerticalLegHipRaiseBosa": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWVerticalLegHipRaiseBosa"
+  },
+  "WaistBWInvertedSitup": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWInvertedSitup"
+  },
+  "WaistBWCrunch": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWCrunch"
+  },
+  "WaistBWCrunchUp": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWCrunchUp"
+  },
+  "WaistWtJackKnifeSitUp": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "WtJackKnifeSitUp"
+  },
+  "WaistWtVUp": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "WtVUp"
+  },
+  "WaistBWCrunchAD": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWCrunchAD"
+  },
+  "WaistBWInclineSitUpX": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWInclineSitUpX"
+  },
+  "WaistBWBallCrunch": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWBallCrunch"
+  },
+  "WaistBWVertStraightLegHipRaisePB": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWVertStraightLegHipRaisePB"
+  },
+  "WaistBWHangingLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWHangingLegHipRaise"
+  },
+  "WaistBWSitUp": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWSitUp"
+  },
+  "WaistBWVerticalLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWVerticalLegHipRaise"
+  },
+  "WaistBWKneelingWheelRollout": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWKneelingWheelRollout"
+  },
+  "WaistBWInclineSitUp": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWInclineSitUp"
+  },
+  "WaistBWSitUpAD": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWSitUpAD"
+  },
+  "WaistBWInclineCrunch": {
+    "folder": "./Waist/RectusAbdominis/bodyweight",
+    "websiteid": "BWInclineCrunch"
+  },
+  "WaistSTPullThrough": {
+    "folder": "./Waist/RectusAbdominis/suspended",
+    "websiteid": "STPullThrough"
+  },
+  "WaistSTRollout": {
+    "folder": "./Waist/RectusAbdominis/suspended",
+    "websiteid": "STRollout"
+  },
+  "WaistSTJackknife": {
+    "folder": "./Waist/RectusAbdominis/suspended",
+    "websiteid": "STJackknife"
+  },
+  "WaistSTJackknifePike": {
+    "folder": "./Waist/RectusAbdominis/suspended",
+    "websiteid": "STJackknifePike"
+  },
+  "WaistSTRollout": {
+    "folder": "./Waist/RectusAbdominis/suspended",
+    "websiteid": "STRollout"
+  },
+  "WaistBBPushCrunch": {
+    "folder": "./Waist/RectusAbdominis/barbell",
+    "websiteid": "BBPushCrunch"
+  },
+  "WaistBBPushSitUp": {
+    "folder": "./Waist/RectusAbdominis/barbell",
+    "websiteid": "BBPushSitUp"
+  },
+  "WaistCBLyingCrunchStabilityBall": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBLyingCrunchStabilityBall"
+  },
+  "WaistCBLyingLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBLyingLegHipRaise"
+  },
+  "WaistCBLyingLegHipRaiseBench": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBLyingLegHipRaiseBench"
+  },
+  "WaistCBLyingStraightLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBLyingStraightLegHipRaise"
+  },
+  "WaistCBKneelingCrunch": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBKneelingCrunch"
+  },
+  "WaistCBSeatedCrunch": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBSeatedCrunch"
+  },
+  "WaistCBOverheadSeatedCrunch": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBOverheadSeatedCrunch"
+  },
+  "WaistCBSeatedCrunchPL": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBSeatedCrunchPL"
+  },
+  "WaistCBStandingCrunch": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBStandingCrunch"
+  },
+  "WaistCBStandingOverheadCrunch": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBStandingOverheadCrunch"
+  },
+  "WaistCBStandingOverheadCrunchMultiBar": {
+    "folder": "./Waist/RectusAbdominis/cable",
+    "websiteid": "CBStandingOverheadCrunchMultiBar"
+  },
+  "WaistDBPushCrunch": {
+    "folder": "./Waist/RectusAbdominis/dumbbell",
+    "websiteid": "DBPushCrunch"
+  },
+  "WaistDBPushSitUp": {
+    "folder": "./Waist/RectusAbdominis/dumbbell",
+    "websiteid": "DBPushSitUp"
+  },
+  "WaistLVLegRaiseCrunch": {
+    "folder": "./Waist/RectusAbdominis/lever(plateloaded)",
+    "websiteid": "LVLegRaiseCrunch"
+  },
+  "WaistLVLyingCrunchPL": {
+    "folder": "./Waist/RectusAbdominis/lever(plateloaded)",
+    "websiteid": "LVLyingCrunchPL"
+  },
+  "WaistLVLyingLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/lever(plateloaded)",
+    "websiteid": "LVLyingLegHipRaise"
+  },
+  "WaistLVSeatedLegRaiseCrunchPL": {
+    "folder": "./Waist/RectusAbdominis/lever(plateloaded)",
+    "websiteid": "LVSeatedLegRaiseCrunchPL"
+  },
+  "WaistLVVerticalLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/lever(plateloaded)",
+    "websiteid": "LVVerticalLegHipRaise"
+  },
+  "WaistLVLyingCrunch": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVLyingCrunch"
+  },
+  "WaistLVPushCrunch": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVPushCrunch"
+  },
+  "WaistLVSeatedCrunch": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVSeatedCrunch"
+  },
+  "WaistLVSeatedCrunchArmBar": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVSeatedCrunchArmBar"
+  },
+  "WaistLVSeatedCrunchArmPad": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVSeatedCrunchArmPad"
+  },
+  "WaistLVSeatedCrunchChestPad": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVSeatedCrunchChestPad"
+  },
+  "WaistLVSeatedLegRaiseCrunch": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVSeatedLegRaiseCrunch"
+  },
+  "WaistLVSideLyingLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/lever(selectorized)",
+    "websiteid": "LVSideLyingLegHipRaise"
+  },
+  "WaistSLLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/sled",
+    "websiteid": "SLLegHipRaise"
+  },
+  "WaistWtCrunch": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtCrunch"
+  },
+  "WaistWtCrunchX": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtCrunchX"
+  },
+  "WaistWtBallCrunch": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtBallCrunch"
+  },
+  "WaistWtOverheadBallCrunch": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtOverheadBallCrunch"
+  },
+  "WaistWtInclineCrunch": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtInclineCrunch"
+  },
+  "WaistWtInclineCrunchX": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtInclineCrunchX"
+  },
+  "WaistWtInclineSitUp": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtInclineSitUp"
+  },
+  "WaistWtInclineSitUpX": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtInclineSitUpX"
+  },
+  "WaistMBSitUp": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "MBSitUp"
+  },
+  "WaistMBSitUpChest": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "MBSitUpChest"
+  },
+  "WaistWtSitUp": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtSitUp"
+  },
+  "WaistWtSitUpX": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtSitUpX"
+  },
+  "WaistWtHangingLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtHangingLegHipRaise"
+  },
+  "WaistWtInclineLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtInclineLegHipRaise"
+  },
+  "WaistWtLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtLegHipRaise"
+  },
+  "WaistWtVerticalLegHipRaise": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtVerticalLegHipRaise"
+  },
+  "WaistWTVerticalLegHipRaiseBosa": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WTVerticalLegHipRaiseBosa"
+  },
+  "WaistWtVerticalLegHipRaisePB": {
+    "folder": "./Waist/RectusAbdominis/weighted",
+    "websiteid": "WtVerticalLegHipRaisePB"
+  },
+  "WaistBWFrontPlank": {
+    "folder": "./Waist/RectusAbdominis/isometric",
+    "websiteid": "BWFrontPlank"
+  },
+  "WaistBWBallRollout": {
+    "folder": "./Waist/RectusAbdominis/isometric",
+    "websiteid": "BWBallRollout"
+  },
+  "WaistKneeling": {
+    "folder": "./Waist/RectusAbdominis/stretch",
+    "websiteid": "Kneeling"
+  },
+  "WaistProne": {
+    "folder": "./Waist/RectusAbdominis/stretch",
+    "websiteid": "Prone"
+  },
+  "WaistSupine": {
+    "folder": "./Waist/RectusAbdominis/stretch",
+    "websiteid": "Supine"
+  },
+  "WaistStanding": {
+    "folder": "./Waist/RectusAbdominis/stretch",
+    "websiteid": "Standing"
+  },
+  "WaistCBCrossArmTwist": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBCrossArmTwist"
+  },
+  "WaistCBStandingTwistingCrunchSingle": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBStandingTwistingCrunchSingle"
+  },
+  "WaistCBDownUpTwist": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBDownUpTwist"
+  },
+  "WaistCBSideBend": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBSideBend"
+  },
+  "WaistCBTwist": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBTwist"
+  },
+  "WaistCBSideCrunch": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBSideCrunch"
+  },
+  "WaistCBSeatedTwist": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBSeatedTwist"
+  },
+  "WaistCBUpDownTwist": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBUpDownTwist"
+  },
+  "WaistCBRussianTwistBall": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBRussianTwistBall"
+  },
+  "WaistCBKneelingTwistingCrunch": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBKneelingTwistingCrunch"
+  },
+  "WaistCBStandingTwistingCrunch": {
+    "folder": "./Waist/Obliques/cable",
+    "websiteid": "CBStandingTwistingCrunch"
+  },
+  "WaistLVBBSideBend": {
+    "folder": "./Waist/Obliques/lever(plateloaded)",
+    "websiteid": "LVBBSideBend"
+  },
+  "WaistLVSeatedTwistingLegRaiseCrunch": {
+    "folder": "./Waist/Obliques/lever(plateloaded)",
+    "websiteid": "LVSeatedTwistingLegRaiseCrunch"
+  },
+  "WaistLVSeatedSideLegRaiseCrunch": {
+    "folder": "./Waist/Obliques/lever(plateloaded)",
+    "websiteid": "LVSeatedSideLegRaiseCrunch"
+  },
+  "WaistWtInclineTwistingCrunch": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtInclineTwistingCrunch"
+  },
+  "WaistWtBentKneeLyingTwist": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtBentKneeLyingTwist"
+  },
+  "WaistWtTwistingSitUpX": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtTwistingSitUpX"
+  },
+  "WaistWtTwistingCrunch": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtTwistingCrunch"
+  },
+  "WaistWtInclineTwistingSitUp": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtInclineTwistingSitUp"
+  },
+  "WaistWtTwistingSitUp": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtTwistingSitUp"
+  },
+  "WaistWtSideCrunch": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtSideCrunch"
+  },
+  "WaistWTBallSideBend": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WTBallSideBend"
+  },
+  "WaistWT45SideBend": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WT45SideBend"
+  },
+  "WaistWtTwistingBallCrunch": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtTwistingBallCrunch"
+  },
+  "WaistWTSideCrunchOnBall": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WTSideCrunchOnBall"
+  },
+  "WaistWtLyingTwist": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtLyingTwist"
+  },
+  "WaistWtInclineTwistingSitUpX": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WtInclineTwistingSitUpX"
+  },
+  "WaistWTRussianTwistBall": {
+    "folder": "./Waist/Obliques/weighted",
+    "websiteid": "WTRussianTwistBall"
+  },
+  "WaistDB45SideBend": {
+    "folder": "./Waist/Obliques/dumbbell",
+    "websiteid": "DB45SideBend"
+  },
+  "WaistDBRussianTwistBall": {
+    "folder": "./Waist/Obliques/dumbbell",
+    "websiteid": "DBRussianTwistBall"
+  },
+  "WaistDBSideBend": {
+    "folder": "./Waist/Obliques/dumbbell",
+    "websiteid": "DBSideBend"
+  },
+  "WaistLVKneelingTwist": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVKneelingTwist"
+  },
+  "WaistLVLyingTwist": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVLyingTwist"
+  },
+  "WaistLVSeatedSideBend": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVSeatedSideBend"
+  },
+  "WaistLVTwist": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVTwist"
+  },
+  "WaistLVTwistLower": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVTwistLower"
+  },
+  "WaistLVTwistAltMach": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVTwistAltMach"
+  },
+  "WaistLVTwistGripless": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVTwistGripless"
+  },
+  "WaistLVSideCrunch": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVSideCrunch"
+  },
+  "WaistLVStandingSideBend": {
+    "folder": "./Waist/Obliques/lever(selectorized)",
+    "websiteid": "LVStandingSideBend"
+  },
+  "WaistSLSideHipRaiseAbCoaster": {
+    "folder": "./Waist/Obliques/sled",
+    "websiteid": "SLSideHipRaiseAbCoaster"
+  },
+  "WaistBWLyingTwist": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWLyingTwist"
+  },
+  "WaistBWInclineTwistingSitUp": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWInclineTwistingSitUp"
+  },
+  "WaistBWTwistingSitUpX": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWTwistingSitUpX"
+  },
+  "WaistBWSideCrunch": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWSideCrunch"
+  },
+  "WaistBWTwistingSitUp": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWTwistingSitUp"
+  },
+  "WaistBWTwistingCrunch": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWTwistingCrunch"
+  },
+  "WaistBWSideBridge": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWSideBridge"
+  },
+  "WaistBWAngledSideBridge": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWAngledSideBridge"
+  },
+  "WaistBWInclineTwistingCrunchX": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWInclineTwistingCrunchX"
+  },
+  "WaistBWInclineTwistingCrunch": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWInclineTwistingCrunch"
+  },
+  "WaistBWInclineTwistingSitUpX": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWInclineTwistingSitUpX"
+  },
+  "WaistBWBentKneeSideBridge": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWBentKneeSideBridge"
+  },
+  "WaistBWBentKneeSideBridge": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWBentKneeSideBridge"
+  },
+  "WaistBWBallSideBend": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWBallSideBend"
+  },
+  "WaistBWTwistingCrunchX": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWTwistingCrunchX"
+  },
+  "WaistBWBentKneeLyingTwist": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWBentKneeLyingTwist"
+  },
+  "WaistBWExerciseBallPlankTwist": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWExerciseBallPlankTwist"
+  },
+  "WaistBWSideCrunchOnBall": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWSideCrunchOnBall"
+  },
+  "WaistBWTwistingBallCrunch": {
+    "folder": "./Waist/Obliques/bodyweight",
+    "websiteid": "BWTwistingBallCrunch"
+  },
+  "WaistSTTwist": {
+    "folder": "./Waist/Obliques/suspended",
+    "websiteid": "STTwist"
+  },
+  "WaistSTSideBend": {
+    "folder": "./Waist/Obliques/suspended",
+    "websiteid": "STSideBend"
+  },
+  "WaistSTTwist": {
+    "folder": "./Waist/Obliques/suspended",
+    "websiteid": "STTwist"
+  },
+  "WaistSTTwistingJackknife": {
+    "folder": "./Waist/Obliques/suspended",
+    "websiteid": "STTwistingJackknife"
+  },
+  "WaistSTSideBridge": {
+    "folder": "./Waist/Obliques/suspended",
+    "websiteid": "STSideBridge"
+  },
+  "WaistBWSidePlank": {
+    "folder": "./Waist/Obliques/isometric",
+    "websiteid": "BWSidePlank"
+  },
+  "WaistBWBentKneeSidePlank": {
+    "folder": "./Waist/Obliques/isometric",
+    "websiteid": "BWBentKneeSidePlank"
+  },
+  "WaistSeatedBentLeg": {
+    "folder": "./Waist/Obliques/stretch",
+    "websiteid": "SeatedBentLeg"
+  },
+  "WaistLyingBentLeg": {
+    "folder": "./Waist/Obliques/stretch",
+    "websiteid": "LyingBentLeg"
+  },
+  "WaistLyingCrossover": {
+    "folder": "./Waist/Obliques/stretch",
+    "websiteid": "LyingCrossover"
+  },
+  "WaistPretzel": {
+    "folder": "./Waist/Obliques/stretch",
+    "websiteid": "Pretzel"
+  },
+  "WaistBBHyperextension": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBHyperextension"
+  },
+  "WaistBBBackExtension": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBBackExtension"
+  },
+  "WaistBB45Hyperextension": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BB45Hyperextension"
+  },
+  "WaistBB45BackExtension": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BB45BackExtension"
+  },
+  "WaistBBBentKneeGoodMorning": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBBentKneeGoodMorning"
+  },
+  "WaistBBDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBDeadlift"
+  },
+  "WaistBBBlockPull": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBBlockPull"
+  },
+  "WaistBBDeficitDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBDeficitDeadlift"
+  },
+  "WaistBBRackPull": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBRackPull"
+  },
+  "WaistBBSumoDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBSumoDeadlift"
+  },
+  "WaistBBSumoBlockPull": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBSumoBlockPull"
+  },
+  "WaistBBStiffLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBStiffLegDeadlift"
+  },
+  "WaistBBStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "BBStraightLegDeadlift"
+  },
+  "WaistTBDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "TBDeadlift"
+  },
+  "WaistTBStiffLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "TBStiffLegDeadlift"
+  },
+  "WaistTBStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/barbell",
+    "websiteid": "TBStraightLegDeadlift"
+  },
+  "WaistCBStiffLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/cable",
+    "websiteid": "CBStiffLegDeadlift"
+  },
+  "WaistCBStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/cable",
+    "websiteid": "CBStraightLegDeadlift"
+  },
+  "WaistDBStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/dumbbell",
+    "websiteid": "DBStraightLegDeadlift"
+  },
+  "WaistDBOneArmStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/dumbbell",
+    "websiteid": "DBOneArmStraightLegDeadlift"
+  },
+  "WaistLVDeadlift": {
+    "folder": "./Waist/ErectorSpinae/lever(plateloaded)",
+    "websiteid": "LVDeadlift"
+  },
+  "WaistLVStiffLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/lever(plateloaded)",
+    "websiteid": "LVStiffLegDeadlift"
+  },
+  "WaistLVStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/lever(plateloaded)",
+    "websiteid": "LVStraightLegDeadlift"
+  },
+  "WaistLVBackExtensionN": {
+    "folder": "./Waist/ErectorSpinae/lever(selectorized)",
+    "websiteid": "LVBackExtensionN"
+  },
+  "WaistLVBackExtension": {
+    "folder": "./Waist/ErectorSpinae/lever(selectorized)",
+    "websiteid": "LVBackExtension"
+  },
+  "WaistLVBackExtensionMedEx": {
+    "folder": "./Waist/ErectorSpinae/lever(selectorized)",
+    "websiteid": "LVBackExtensionMedEx"
+  },
+  "WaistLVKneelingBackExtension": {
+    "folder": "./Waist/ErectorSpinae/lever(selectorized)",
+    "websiteid": "LVKneelingBackExtension"
+  },
+  "WaistSMBentKneeGoodMorning": {
+    "folder": "./Waist/ErectorSpinae/smith",
+    "websiteid": "SMBentKneeGoodMorning"
+  },
+  "WaistSMDeadlift": {
+    "folder": "./Waist/ErectorSpinae/smith",
+    "websiteid": "SMDeadlift"
+  },
+  "WaistSMStiffLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/smith",
+    "websiteid": "SMStiffLegDeadlift"
+  },
+  "WaistSMStraightLegDeadlift": {
+    "folder": "./Waist/ErectorSpinae/smith",
+    "websiteid": "SMStraightLegDeadlift"
+  },
+  "WaistWtHyperextension": {
+    "folder": "./Waist/ErectorSpinae/weighted",
+    "websiteid": "WtHyperextension"
+  },
+  "WaistWtBackExtension": {
+    "folder": "./Waist/ErectorSpinae/weighted",
+    "websiteid": "WtBackExtension"
+  },
+  "WaistWtBallHyperextension": {
+    "folder": "./Waist/ErectorSpinae/weighted",
+    "websiteid": "WtBallHyperextension"
+  },
+  "WaistWt45Hyperextension": {
+    "folder": "./Waist/ErectorSpinae/weighted",
+    "websiteid": "Wt45Hyperextension"
+  },
+  "WaistWt45BackExtension": {
+    "folder": "./Waist/ErectorSpinae/weighted",
+    "websiteid": "Wt45BackExtension"
+  },
+  "WaistBWHyperextensionBall": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHyperextensionBall"
+  },
+  "WaistBWHyperextensionBallArmsCrossed": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHyperextensionBallArmsCrossed"
+  },
+  "WaistBWHyperextensionBallArmsUp": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHyperextensionBallArmsUp"
+  },
+  "WaistBWBirdDog": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWBirdDog"
+  },
+  "WaistBWAlternatingBirdDog": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWAlternatingBirdDog"
+  },
+  "WaistBWBirdDogExBall": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWBirdDogExBall"
+  },
+  "WaistBWAlternatingBirdDogExBall": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWAlternatingBirdDogExBall"
+  },
+  "WaistBWHangingHyperextension": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHangingHyperextension"
+  },
+  "WaistBWHyperextensionHead": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHyperextensionHead"
+  },
+  "WaistBWHyperextensionX": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHyperextensionX"
+  },
+  "WaistBWHyperextensionHips": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "BWHyperextensionHips"
+  },
+  "WaistSuperman": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "Superman"
+  },
+  "WaistContraLateralSuperman": {
+    "folder": "./Waist/ErectorSpinae/bodyweight",
+    "websiteid": "ContraLateralSuperman"
+  },
+  "WaistSTHyperextension": {
+    "folder": "./Waist/ErectorSpinae/suspended",
+    "websiteid": "STHyperextension"
+  },
+  "WaistSTPullThrough": {
+    "folder": "./Waist/ErectorSpinae/suspended",
+    "websiteid": "STPullThrough"
+  },
+  "WaistRearDeclinePlank": {
+    "folder": "./Waist/ErectorSpinae/isometric",
+    "websiteid": "RearDeclinePlank"
+  },
+  "WaistRearInclinePlank": {
+    "folder": "./Waist/ErectorSpinae/isometric",
+    "websiteid": "RearInclinePlank"
+  },
+  "WaistCat": { "folder": "./Waist/ErectorSpinae/stretch", "websiteid": "Cat" },
+  "WaistCatMovement": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "CatMovement"
+  },
+  "WaistBentoverCat": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "BentoverCat"
+  },
+  "WaistPCLowBack": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "PCLowBack"
+  },
+  "WaistLying": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "Lying"
+  },
+  "WaistSeatedFloor": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "SeatedFloor"
+  },
+  "WaistSeatedBentover": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "SeatedBentover"
+  },
+  "WaistSquatting": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "Squatting"
+  },
+  "WaistPlow": {
+    "folder": "./Waist/ErectorSpinae/stretch",
+    "websiteid": "Plow"
+  },
+  "HipsBBBentKneeGoodMorning": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBBentKneeGoodMorning"
+  },
+  "HipsBBSeatedGoodMorning": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSeatedGoodMorning"
+  },
+  "HipsBBDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBDeadlift"
+  },
+  "HipsBBBlockPull": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBBlockPull"
+  },
+  "HipsBBDeficitDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBDeficitDeadlift"
+  },
+  "HipsBBRackPull": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBRackPull"
+  },
+  "HipsBBSumoDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSumoDeadlift"
+  },
+  "HipsBBSumoBlockPull": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSumoBlockPull"
+  },
+  "HipsBBStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBStiffLegDeadlift"
+  },
+  "HipsBBSingleLegStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSingleLegStiffLegDeadlift"
+  },
+  "HipsBBStrBackStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBStrBackStiffLegDeadlift"
+  },
+  "HipsBBHipThrust": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBHipThrust"
+  },
+  "HipsBBLunge": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBLunge"
+  },
+  "HipsBBRearLunge": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBRearLunge"
+  },
+  "HipsBBSideLunge": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSideLunge"
+  },
+  "HipsBBWalkingLunge": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBWalkingLunge"
+  },
+  "HipsBBSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSingleLegSplitSquat"
+  },
+  "HipsBBSideSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSideSplitSquat"
+  },
+  "HipsBBSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSingleLegSquat"
+  },
+  "HipsBBSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSplitSquat"
+  },
+  "HipsBBSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSquat"
+  },
+  "HipsBBBoxSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBBoxSquat"
+  },
+  "HipsBBFrontSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBFrontSquat"
+  },
+  "HipsBBFullSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBFullSquat"
+  },
+  "HipsBBHackSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBHackSquat"
+  },
+  "HipsSBSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "SBSquat"
+  },
+  "HipsSBSquatHandles": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "SBSquatHandles"
+  },
+  "HipsSBSquatSelfSpot": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "SBSquatSelfSpot"
+  },
+  "HipsTBSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "TBSquat"
+  },
+  "HipsBBSquatChains": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBSquatChains"
+  },
+  "HipsBBZercherSquat": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBZercherSquat"
+  },
+  "HipsBBStepUp": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBStepUp"
+  },
+  "HipsBBLateralStepUp": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "BBLateralStepUp"
+  },
+  "HipsTBDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "TBDeadlift"
+  },
+  "HipsTBStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "TBStiffLegDeadlift"
+  },
+  "HipsTBStrBackStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/barbell",
+    "websiteid": "TBStrBackStiffLegDeadlift"
+  },
+  "HipsCBRearLunge": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBRearLunge"
+  },
+  "HipsCBRearStepdownLunge": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBRearStepdownLunge"
+  },
+  "HipsCBSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBSingleLegSplitSquat"
+  },
+  "HipsCBSingleLegSplitSquatOneArm": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBSingleLegSplitSquatOneArm"
+  },
+  "HipsCBLunge": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBLunge"
+  },
+  "HipsCBLungeTwoArm": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBLungeTwoArm"
+  },
+  "HipsCBLungeOneArm": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBLungeOneArm"
+  },
+  "HipsCBSquat": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBSquat"
+  },
+  "HipsCBBarSquat": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBBarSquat"
+  },
+  "HipsCBSquatBelt": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBSquatBelt"
+  },
+  "HipsCBStandingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBStandingHipExtension"
+  },
+  "HipsCBBentOverHipExtension": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBBentOverHipExtension"
+  },
+  "HipsCBStepUp": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBStepUp"
+  },
+  "HipsCBStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBStiffLegDeadlift"
+  },
+  "HipsCBStrBackStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/cable",
+    "websiteid": "CBStrBackStiffLegDeadlift"
+  },
+  "HipsDBLunge": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBLunge"
+  },
+  "HipsDBSideLunge": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSideLunge"
+  },
+  "HipsDBRearLunge": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBRearLunge"
+  },
+  "HipsDBSideLunge2": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSideLunge2"
+  },
+  "HipsDBWalkingLunge": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBWalkingLunge"
+  },
+  "HipsDBSingleLegStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSingleLegStiffLegDeadlift"
+  },
+  "HipsDBSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSingleLegSplitSquat"
+  },
+  "HipsDBSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSingleLegSquat"
+  },
+  "HipsDBSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSplitSquat"
+  },
+  "HipsDBSquat": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBSquat"
+  },
+  "HipsDBFrontSquat": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBFrontSquat"
+  },
+  "HipsDBStepUp": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBStepUp"
+  },
+  "HipsDBLateralStepUp": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBLateralStepUp"
+  },
+  "HipsDBStepDown": {
+    "folder": "./Hips/GluteusMaximus/dumbbell",
+    "websiteid": "DBStepDown"
+  },
+  "HipsLVBentOverRearKickPL": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVBentOverRearKickPL"
+  },
+  "HipsLVDeadlift": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVDeadlift"
+  },
+  "HipsLVStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVStiffLegDeadlift"
+  },
+  "HipsLVStrBackStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVStrBackStiffLegDeadlift"
+  },
+  "HipsLV45LegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LV45LegPress"
+  },
+  "HipsLVSingleLeg45LegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSingleLeg45LegPress"
+  },
+  "HipsLVHackPress": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVHackPress"
+  },
+  "HipsLVLyingLegPressH": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVLyingLegPressH"
+  },
+  "HipsLVLyingLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVLyingLegPress"
+  },
+  "HipsLVSingleLegLyingLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSingleLegLyingLegPress"
+  },
+  "HipsLVSeatedLegPressH": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSeatedLegPressH"
+  },
+  "HipsLVAlternatingLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVAlternatingLegPress"
+  },
+  "HipsLVSingleLegPressH": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSingleLegPressH"
+  },
+  "HipsLVLyingHipExtensionH": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVLyingHipExtensionH"
+  },
+  "HipsLVPowerRunnerPL": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVPowerRunnerPL"
+  },
+  "HipsLVRearLunge": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVRearLunge"
+  },
+  "HipsLVBBRearLunge": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVBBRearLunge"
+  },
+  "HipsLVReverseHyperextension": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVReverseHyperextension"
+  },
+  "HipsLVSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSingleLegSplitSquat"
+  },
+  "HipsLVBBSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVBBSingleLegSplitSquat"
+  },
+  "HipsLVSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSingleLegSquat"
+  },
+  "HipsLVSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSplitSquat"
+  },
+  "HipsLVBBSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVBBSplitSquat"
+  },
+  "HipsLVSlidingSplitSquatPL": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSlidingSplitSquatPL"
+  },
+  "HipsLVSquatPL": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSquatPL"
+  },
+  "HipsLVSquatPL3": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVSquatPL3"
+  },
+  "HipsLVBBSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVBBSquat"
+  },
+  "HipsLVFrontSquatPL": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVFrontSquatPL"
+  },
+  "HipsLVFullSquatPL": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVFullSquatPL"
+  },
+  "HipsLVHackSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVHackSquat"
+  },
+  "HipsLVVSquatH": {
+    "folder": "./Hips/GluteusMaximus/lever(plateloaded)",
+    "websiteid": "LVVSquatH"
+  },
+  "HipsLVBentOverHipExtension": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVBentOverHipExtension"
+  },
+  "HipsLVKneelingHipExtensionRoller": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVKneelingHipExtensionRoller"
+  },
+  "HipsLVAlternatingKneelingHipExtRoll": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVAlternatingKneelingHipExtRoll"
+  },
+  "HipsLVLyingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVLyingHipExtension"
+  },
+  "HipsLVAlternatingLyingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVAlternatingLyingHipExtension"
+  },
+  "HipsLVStandingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVStandingHipExtension"
+  },
+  "HipsLVStandingHipExtensionTech": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVStandingHipExtensionTech"
+  },
+  "HipsLVAlternatingLyingLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVAlternatingLyingLegPress"
+  },
+  "HipsLVSeatedLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVSeatedLegPress"
+  },
+  "HipsLVSingleLegLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVSingleLegLegPress"
+  },
+  "HipsLVBentOverRearKick": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVBentOverRearKick"
+  },
+  "HipsLVKneelingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVKneelingHipExtension"
+  },
+  "HipsLVSingleLegStandingLegPress": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVSingleLegStandingLegPress"
+  },
+  "HipsLVSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVSquat"
+  },
+  "HipsLVVSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVVSquat"
+  },
+  "HipsLVSingleLegVSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVSingleLegVSquat"
+  },
+  "HipsLVSingleLegSplitVSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVSingleLegSplitVSquat"
+  },
+  "HipsLVAlternatingSingleLegSplitVSquat": {
+    "folder": "./Hips/GluteusMaximus/lever(selectorized)",
+    "websiteid": "LVAlternatingSingleLegSplitVSquat"
+  },
+  "HipsSL45LegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SL45LegPress"
+  },
+  "HipsSLAlternating45LegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLAlternating45LegPress"
+  },
+  "HipsSLSingleLeg45LegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSingleLeg45LegPress"
+  },
+  "HipsSLHackPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLHackPress"
+  },
+  "HipsSLLyingLegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLLyingLegPress"
+  },
+  "HipsSLLyingLegPressPL": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLLyingLegPressPL"
+  },
+  "HipsSLSingleLegLyingLegPressPL": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSingleLegLyingLegPressPL"
+  },
+  "HipsSLSingleLegLyingLegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSingleLegLyingLegPress"
+  },
+  "HipsSLSeatedLegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSeatedLegPress"
+  },
+  "HipsSLVerticalLegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLVerticalLegPress"
+  },
+  "HipsSLSingleLegVerticalLegPress": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSingleLegVerticalLegPress"
+  },
+  "HipsSLKneelingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLKneelingHipExtension"
+  },
+  "HipsSLStandingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLStandingHipExtension"
+  },
+  "HipsSLRearLunge": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLRearLunge"
+  },
+  "HipsSLSquat": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSquat"
+  },
+  "HipsSLHackSquat": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLHackSquat"
+  },
+  "HipsSLSingleLegHackSquat": {
+    "folder": "./Hips/GluteusMaximus/sled",
+    "websiteid": "SLSingleLegHackSquat"
+  },
+  "HipsSMBentKneeGoodMorning": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMBentKneeGoodMorning"
+  },
+  "HipsSMDeadlift": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMDeadlift"
+  },
+  "HipsSMStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMStiffLegDeadlift"
+  },
+  "HipsSMStrBackStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMStrBackStiffLegDeadlift"
+  },
+  "HipsSMRearLunge": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMRearLunge"
+  },
+  "HipsSMSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMSingleLegSplitSquat"
+  },
+  "HipsSMSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMSplitSquat"
+  },
+  "HipsSMSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMSquat"
+  },
+  "HipsSMSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMSingleLegSquat"
+  },
+  "HipsSMFrontSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMFrontSquat"
+  },
+  "HipsSMHackSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMHackSquat"
+  },
+  "HipsSMWideSquat": {
+    "folder": "./Hips/GluteusMaximus/smith",
+    "websiteid": "SMWideSquat"
+  },
+  "HipsWtSquat": {
+    "folder": "./Hips/GluteusMaximus/weighted",
+    "websiteid": "WtSquat"
+  },
+  "HipsWTFrontSquat": {
+    "folder": "./Hips/GluteusMaximus/weighted",
+    "websiteid": "WTFrontSquat"
+  },
+  "HipsWtReverseHyperextension": {
+    "folder": "./Hips/GluteusMaximus/weighted",
+    "websiteid": "WtReverseHyperextension"
+  },
+  "HipsWtSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/weighted",
+    "websiteid": "WtSingleLegSquat"
+  },
+  "HipsBWLunge": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWLunge"
+  },
+  "HipsBWReverseHyperextension": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWReverseHyperextension"
+  },
+  "HipsBWReverseHyperextensionBall": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWReverseHyperextensionBall"
+  },
+  "HipsBWLyingHipExtension": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWLyingHipExtension"
+  },
+  "HipsBWSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSingleLegSquat"
+  },
+  "HipsBWSingleLegBoxSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSingleLegBoxSquat"
+  },
+  "HipsBWSingleLegSquatLegBack": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSingleLegSquatLegBack"
+  },
+  "HipsBWSingleLegRecliningSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSingleLegRecliningSquat"
+  },
+  "HipsBWSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSplitSquat"
+  },
+  "HipsBWSingleLegSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSingleLegSplitSquat"
+  },
+  "HipsBWSingleLegStiffLegDeadlift": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSingleLegStiffLegDeadlift"
+  },
+  "HipsBWSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWSquat"
+  },
+  "HipsBalanceBoardSquat": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BalanceBoardSquat"
+  },
+  "HipsBWStepUp": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWStepUp"
+  },
+  "HipsBWLateralStepUp": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWLateralStepUp"
+  },
+  "HipsBWStepDown": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWStepDown"
+  },
+  "HipsBWAlternatingStepDown": {
+    "folder": "./Hips/GluteusMaximus/bodyweight",
+    "websiteid": "BWAlternatingStepDown"
+  },
+  "HipsAsSingleLegSquatSelf": {
+    "folder": "./Hips/GluteusMaximus/self-assisted",
+    "websiteid": "AsSingleLegSquatSelf"
+  },
+  "HipsASSingleLegSquatSelfPole": {
+    "folder": "./Hips/GluteusMaximus/self-assisted",
+    "websiteid": "ASSingleLegSquatSelfPole"
+  },
+  "HipsAsSingleLegSquatLegSelf": {
+    "folder": "./Hips/GluteusMaximus/self-assisted",
+    "websiteid": "AsSingleLegSquatLegSelf"
+  },
+  "HipsASStepDownSelf": {
+    "folder": "./Hips/GluteusMaximus/self-assisted",
+    "websiteid": "ASStepDownSelf"
+  },
+  "HipsSTHipBridge": {
+    "folder": "./Hips/GluteusMaximus/suspended",
+    "websiteid": "STHipBridge"
+  },
+  "HipsSTSingleLegSquat": {
+    "folder": "./Hips/GluteusMaximus/suspended",
+    "websiteid": "STSingleLegSquat"
+  },
+  "HipsSTSplitSquat": {
+    "folder": "./Hips/GluteusMaximus/suspended",
+    "websiteid": "STSplitSquat"
+  },
+  "HipsSTSingleLegSplitSquatSelfAss": {
+    "folder": "./Hips/GluteusMaximus/suspended",
+    "websiteid": "STSingleLegSplitSquatSelfAss"
+  },
+  "HipsPCGlute": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "PCGlute"
+  },
+  "HipsLying": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "Lying"
+  },
+  "HipsLyingModified": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "LyingModified"
+  },
+  "HipsPNFLying": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "PNFLying"
+  },
+  "HipsLyingTowel": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "LyingTowel"
+  },
+  "HipsLyingWall": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "LyingWall"
+  },
+  "HipsProneGlute": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "ProneGlute"
+  },
+  "HipsSeatedBentover": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "SeatedBentover"
+  },
+  "HipsSeatedBench": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "SeatedBench"
+  },
+  "HipsSeated": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "Seated"
+  },
+  "HipsSeatedFloor": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "SeatedFloor"
+  },
+  "HipsPNFSeated": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "PNFSeated"
+  },
+  "HipsStandingGlute": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "StandingGlute"
+  },
+  "HipsSquatting": {
+    "folder": "./Hips/GluteusMaximus/stretch",
+    "websiteid": "Squatting"
+  },
+  "HipsKneeHug": {
+    "folder": "./Hips/GluteusMaximus/dynamicstretch",
+    "websiteid": "KneeHug"
+  },
+  "HipsWalkingAnkleGrab": {
+    "folder": "./Hips/GluteusMaximus/dynamicstretch",
+    "websiteid": "WalkingAnkleGrab"
+  },
+  "HipsLyingCrossover": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "LyingCrossover"
+  },
+  "HipsPNFLyingCrossover": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "PNFLyingCrossover"
+  },
+  "HipsLyingPretzel": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "LyingPretzel"
+  },
+  "HipsSeatedHipInternalRotator": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "SeatedHipInternalRotator"
+  },
+  "HipsSeatedHipInternalRotatorBentLegUnder": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "SeatedHipInternalRotatorBentLegUnder"
+  },
+  "HipsSeatedHipInternalRotatorChair": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "SeatedHipInternalRotatorChair"
+  },
+  "HipsPretzel": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "Pretzel"
+  },
+  "HipsSidePretzel": {
+    "folder": "./Hips/HipAbductors/stretch(gluteusmedius&minimus)",
+    "websiteid": "SidePretzel"
+  },
+  "HipsLyingIliotibial": {
+    "folder": "./Hips/HipAbductors/stretch(tensorfasciaelatae)",
+    "websiteid": "LyingIliotibial"
+  },
+  "HipsSquattingIliotibial": {
+    "folder": "./Hips/HipAbductors/stretch(tensorfasciaelatae)",
+    "websiteid": "SquattingIliotibial"
+  },
+  "HipsStandingIliotibial": {
+    "folder": "./Hips/HipAbductors/stretch(tensorfasciaelatae)",
+    "websiteid": "StandingIliotibial"
+  },
+  "HipsWallIliotibial": {
+    "folder": "./Hips/HipAbductors/stretch(tensorfasciaelatae)",
+    "websiteid": "WallIliotibial"
+  },
+  "HipsCBHipAbduction": {
+    "folder": "./Hips/HipAbductors/cable",
+    "websiteid": "CBHipAbduction"
+  },
+  "HipsCBLyingHipInternalRotation": {
+    "folder": "./Hips/HipAbductors/cable",
+    "websiteid": "CBLyingHipInternalRotation"
+  },
+  "HipsCBSeatedHipInternalRotation": {
+    "folder": "./Hips/HipAbductors/cable",
+    "websiteid": "CBSeatedHipInternalRotation"
+  },
+  "HipsDBLyingHipAbduction": {
+    "folder": "./Hips/HipAbductors/dumbbell",
+    "websiteid": "DBLyingHipAbduction"
+  },
+  "HipsLVSeatedHipAbductionH": {
+    "folder": "./Hips/HipAbductors/lever(plateloaded)",
+    "websiteid": "LVSeatedHipAbductionH"
+  },
+  "HipsLVStandHipAbduction": {
+    "folder": "./Hips/HipAbductors/lever(selectorized)",
+    "websiteid": "LVStandHipAbduction"
+  },
+  "HipsLVSeatedHipAbduction": {
+    "folder": "./Hips/HipAbductors/lever(selectorized)",
+    "websiteid": "LVSeatedHipAbduction"
+  },
+  "HipsLVLyingHipAbduction": {
+    "folder": "./Hips/HipAbductors/lever(selectorized)",
+    "websiteid": "LVLyingHipAbduction"
+  },
+  "HipsWtLyingHipAbduction": {
+    "folder": "./Hips/HipAbductors/weighted",
+    "websiteid": "WtLyingHipAbduction"
+  },
+  "HipsBWSideBridgeHipAbduction": {
+    "folder": "./Hips/HipAbductors/bodyweight",
+    "websiteid": "BWSideBridgeHipAbduction"
+  },
+  "HipsBWAngledSideBridgeHipAbduction": {
+    "folder": "./Hips/HipAbductors/bodyweight",
+    "websiteid": "BWAngledSideBridgeHipAbduction"
+  },
+  "HipsBWBentKneeSideBridgeHipAbduction": {
+    "folder": "./Hips/HipAbductors/bodyweight",
+    "websiteid": "BWBentKneeSideBridgeHipAbduction"
+  },
+  "HipsSTHipAbduction": {
+    "folder": "./Hips/HipAbductors/suspended",
+    "websiteid": "STHipAbduction"
+  },
+  "HipsCBAssistedKneelingWheelRollout": {
+    "folder": "./Hips/HipFlexors/cable",
+    "websiteid": "CBAssistedKneelingWheelRollout"
+  },
+  "HipsCBLyingLegRaise": {
+    "folder": "./Hips/HipFlexors/cable",
+    "websiteid": "CBLyingLegRaise"
+  },
+  "HipsCBLyingLegRaiseBench": {
+    "folder": "./Hips/HipFlexors/cable",
+    "websiteid": "CBLyingLegRaiseBench"
+  },
+  "HipsCBLyingStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/cable",
+    "websiteid": "CBLyingStraightLegRaise"
+  },
+  "HipsCBStandingLegRaise": {
+    "folder": "./Hips/HipFlexors/cable",
+    "websiteid": "CBStandingLegRaise"
+  },
+  "HipsCBStandingStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/cable",
+    "websiteid": "CBStandingStraightLegRaise"
+  },
+  "HipsLVHipFlexion": {
+    "folder": "./Hips/HipFlexors/lever",
+    "websiteid": "LVHipFlexion"
+  },
+  "HipsLVLyingLegRaiseN": {
+    "folder": "./Hips/HipFlexors/lever",
+    "websiteid": "LVLyingLegRaiseN"
+  },
+  "HipsLVVerticalLegRaise": {
+    "folder": "./Hips/HipFlexors/lever",
+    "websiteid": "LVVerticalLegRaise"
+  },
+  "HipsWtDeclineSitup": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtDeclineSitup"
+  },
+  "HipsWtHangLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtHangLegRaise"
+  },
+  "HipsWtHangingStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtHangingStraightLegRaise"
+  },
+  "HipsWtInclineLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtInclineLegRaise"
+  },
+  "HipsWtInclineLegRaiseArmPads": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtInclineLegRaiseArmPads"
+  },
+  "HipsWtInclineStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtInclineStraightLegRaise"
+  },
+  "HipsWtInclineStraightLegRaiseArmPads": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtInclineStraightLegRaiseArmPads"
+  },
+  "HipsWtLyingLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtLyingLegRaise"
+  },
+  "HipsWtRomanChairSitup": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtRomanChairSitup"
+  },
+  "HipsWtSeatedLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtSeatedLegRaise"
+  },
+  "HipsWtVerticalLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtVerticalLegRaise"
+  },
+  "HipsWtVerticalLegRaisePB": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtVerticalLegRaisePB"
+  },
+  "HipsWtVerticalStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/weighted",
+    "websiteid": "WtVerticalStraightLegRaise"
+  },
+  "HipsBWHangingLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWHangingLegRaise"
+  },
+  "HipsBWHangingLegRaiseAbStrap": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWHangingLegRaiseAbStrap"
+  },
+  "HipsBWHangingStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWHangingStraightLegRaise"
+  },
+  "HipsBWInclineLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWInclineLegRaise"
+  },
+  "HipsBWInclineLegRaiseArmPads": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWInclineLegRaiseArmPads"
+  },
+  "HipsBWInclineStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWInclineStraightLegRaise"
+  },
+  "HipsBWInclineStraightLegRaiseArmPads": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWInclineStraightLegRaiseArmPads"
+  },
+  "HipsBWLyingLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWLyingLegRaise"
+  },
+  "HipsBWSimAltLyingLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWSimAltLyingLegRaise"
+  },
+  "HipsBWLyingLegRaiseFloor": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWLyingLegRaiseFloor"
+  },
+  "HipsBWStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWStraightLegRaise"
+  },
+  "HipsBWSimAltStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWSimAltStraightLegRaise"
+  },
+  "HipsBWSeatedLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWSeatedLegRaise"
+  },
+  "HipsBWVerticalLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWVerticalLegRaise"
+  },
+  "HipsBWVerticalLegRaisePB": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWVerticalLegRaisePB"
+  },
+  "HipsBWVerticalStraightLegRaise": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWVerticalStraightLegRaise"
+  },
+  "HipsBWJackKnifeBall": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWJackKnifeBall"
+  },
+  "HipsBWRomanChairSitup": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWRomanChairSitup"
+  },
+  "HipsBWScissorKick": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWScissorKick"
+  },
+  "HipsBWJackKnifeWheel": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWJackKnifeWheel"
+  },
+  "HipsBWKneelingWheelRollout": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWKneelingWheelRollout"
+  },
+  "HipsBWPikeWheel": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWPikeWheel"
+  },
+  "HipsBWPikeDiscs": {
+    "folder": "./Hips/HipFlexors/bodyweight",
+    "websiteid": "BWPikeDiscs"
+  },
+  "HipsSTMountainClimber": {
+    "folder": "./Hips/HipFlexors/suspended",
+    "websiteid": "STMountainClimber"
+  },
+  "HipsSTPike": {
+    "folder": "./Hips/HipFlexors/suspended",
+    "websiteid": "STPike"
+  },
+  "HipsBentoverLungeHipFlexor": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "BentoverLungeHipFlexor"
+  },
+  "HipsKneelingHipFlexor": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "KneelingHipFlexor"
+  },
+  "HipsPCHipFlexor": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "PCHipFlexor"
+  },
+  "HipsLungingHipFlexor": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "LungingHipFlexor"
+  },
+  "HipsLyingHipFlexor": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "LyingHipFlexor"
+  },
+  "HipsSLLungingHipFlexor": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "SLLungingHipFlexor"
+  },
+  "HipsStanding": {
+    "folder": "./Hips/HipFlexors/stretch(iliopsoas)",
+    "websiteid": "Standing"
+  },
+  "HipsLyingIliotibial": {
+    "folder": "./Hips/HipFlexors/stretch(tensorfasciaelatae)",
+    "websiteid": "LyingIliotibial"
+  },
+  "HipsSquattingIliotibial": {
+    "folder": "./Hips/HipFlexors/stretch(tensorfasciaelatae)",
+    "websiteid": "SquattingIliotibial"
+  },
+  "HipsStandingIliotibial": {
+    "folder": "./Hips/HipFlexors/stretch(tensorfasciaelatae)",
+    "websiteid": "StandingIliotibial"
+  },
+  "HipsWallIliotibial": {
+    "folder": "./Hips/HipFlexors/stretch(tensorfasciaelatae)",
+    "websiteid": "WallIliotibial"
+  },
+  "HipsLyingHipExternalRotator": {
+    "folder": "./Hips/HipExternalRotators/stretch",
+    "websiteid": "LyingHipExternalRotator"
+  },
+  "HipsSeatedHipExternalRotator": {
+    "folder": "./Hips/HipExternalRotators/stretch",
+    "websiteid": "SeatedHipExternalRotator"
+  },
+  "HipsPCPiriformis": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "PCPiriformis"
+  },
+  "HipsLyingPiriformis": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "LyingPiriformis"
+  },
+  "HipsLyingPiriformisMod": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "LyingPiriformisMod"
+  },
+  "HipsPNFLyingPiriformis": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "PNFLyingPiriformis"
+  },
+  "HipsSeatedPiriformis": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "SeatedPiriformis"
+  },
+  "HipsSeatedPiriformisChair": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "SeatedPiriformisChair"
+  },
+  "HipsPNFSeatedPiriformis": {
+    "folder": "./Hips/HipExternalRotators/stretch(piriformis)",
+    "websiteid": "PNFSeatedPiriformis"
+  },
+  "HipsCBLyingHipExternalRotation": {
+    "folder": "./Hips/HipExternalRotators/cable",
+    "websiteid": "CBLyingHipExternalRotation"
+  },
+  "HipsCBSeatedHipExternalRotation": {
+    "folder": "./Hips/HipExternalRotators/cable",
+    "websiteid": "CBSeatedHipExternalRotation"
+  },
+  "ThighsBBLunge": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBLunge"
+  },
+  "ThighsBBRearLunge": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBRearLunge"
+  },
+  "ThighsBBSideLunge": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSideLunge"
+  },
+  "ThighsBBWalkingLunge": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBWalkingLunge"
+  },
+  "ThighsBBSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSingleLegSplitSquat"
+  },
+  "ThighsBBSideSplitSqaut": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSideSplitSqaut"
+  },
+  "ThighsBBSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSingleLegSquat"
+  },
+  "ThighsBBSplitSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSplitSquat"
+  },
+  "ThighsBBSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSquat"
+  },
+  "ThighsBBFrontSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBFrontSquat"
+  },
+  "ThighsBBFullSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBFullSquat"
+  },
+  "ThighsBBHackSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBHackSquat"
+  },
+  "ThighsSBSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "SBSquat"
+  },
+  "ThighsSBSquatHandles": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "SBSquatHandles"
+  },
+  "ThighsSBSquatSelfSpot": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "SBSquatSelfSpot"
+  },
+  "ThighsTBSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "TBSquat"
+  },
+  "ThighsBBSquatChains": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBSquatChains"
+  },
+  "ThighsBBZercherSquat": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBZercherSquat"
+  },
+  "ThighsBBStepUp": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBStepUp"
+  },
+  "ThighsBBLateralStepUp": {
+    "folder": "./Thighs/Quadriceps/barbell",
+    "websiteid": "BBLateralStepUp"
+  },
+  "ThighsCBRearLunge": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBRearLunge"
+  },
+  "ThighsCBRearStepDownLunge": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBRearStepDownLunge"
+  },
+  "ThighsCBSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBSingleLegSplitSquat"
+  },
+  "ThighsCBSingleLegSplitSquatOneArm": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBSingleLegSplitSquatOneArm"
+  },
+  "ThighsCBLunge": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBLunge"
+  },
+  "ThighsCBLungeTwoArm": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBLungeTwoArm"
+  },
+  "ThighsCBLungeOneArm": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBLungeOneArm"
+  },
+  "ThighsCBSquat": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBSquat"
+  },
+  "ThighsCBBarSquat": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBBarSquat"
+  },
+  "ThighsCBSquatBelt": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBSquatBelt"
+  },
+  "ThighsCB3QuarterSquatDipBelt": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CB3QuarterSquatDipBelt"
+  },
+  "ThighsCBStandingLegExtension": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBStandingLegExtension"
+  },
+  "ThighsCBSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBSingleLegSquat"
+  },
+  "ThighsCBStepUp": {
+    "folder": "./Thighs/Quadriceps/cable",
+    "websiteid": "CBStepUp"
+  },
+  "ThighsDBLunge": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBLunge"
+  },
+  "ThighsDBSideLunge": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBSideLunge"
+  },
+  "ThighsDBRearLunge": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBRearLunge"
+  },
+  "ThighsDBSideLunge2": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBSideLunge2"
+  },
+  "ThighsDBWalkingLunge": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBWalkingLunge"
+  },
+  "ThighsDBSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBSingleLegSplitSquat"
+  },
+  "ThighsDBSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBSingleLegSquat"
+  },
+  "ThighsDBSplitSquat": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBSplitSquat"
+  },
+  "ThighsDBSquat": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBSquat"
+  },
+  "ThighsDBFrontSquat": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBFrontSquat"
+  },
+  "ThighsDBStepUp": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBStepUp"
+  },
+  "ThighsDBLateralStepUp": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBLateralStepUp"
+  },
+  "ThighsDBStepDown": {
+    "folder": "./Thighs/Quadriceps/dumbbell",
+    "websiteid": "DBStepDown"
+  },
+  "ThighsLVLegExtensionH": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVLegExtensionH"
+  },
+  "ThighsLVAlternatingLegExtensionH": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVAlternatingLegExtensionH"
+  },
+  "ThighsLV45LegPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LV45LegPress"
+  },
+  "ThighsLVSingleLeg45LegPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSingleLeg45LegPress"
+  },
+  "ThighsLVHackPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVHackPress"
+  },
+  "ThighsLVLyingLegPressH": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVLyingLegPressH"
+  },
+  "ThighsLVLyingLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVLyingLegPress"
+  },
+  "ThighsLVSingleLegLyingLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSingleLegLyingLegPress"
+  },
+  "ThighsLVSeatedLegPressH": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSeatedLegPressH"
+  },
+  "ThighsLVAlternatingLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVAlternatingLegPress"
+  },
+  "ThighsLVSingleLegPressH": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSingleLegPressH"
+  },
+  "ThighsLVSingleLegStandingLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSingleLegStandingLegPress"
+  },
+  "ThighsLVRearLunge": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVRearLunge"
+  },
+  "ThighsLVBBRearLunge": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVBBRearLunge"
+  },
+  "ThighsLVSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSingleLegSplitSquat"
+  },
+  "ThighsLVBBSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVBBSingleLegSplitSquat"
+  },
+  "ThighsLVSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSingleLegSquat"
+  },
+  "ThighsLVSplitSquat": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSplitSquat"
+  },
+  "ThighsLVBBSplitSquat": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVBBSplitSquat"
+  },
+  "ThighsLVSquatPL": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSquatPL"
+  },
+  "ThighsLVSquatPL3": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVSquatPL3"
+  },
+  "ThighsLVBBSquat": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVBBSquat"
+  },
+  "ThighsLVFrontSquatPL": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVFrontSquatPL"
+  },
+  "ThighsLVFullSquatPL": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVFullSquatPL"
+  },
+  "ThighsLVHackSquatPL": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVHackSquatPL"
+  },
+  "ThighsLVVSquatH": {
+    "folder": "./Thighs/Quadriceps/lever(plateloaded)",
+    "websiteid": "LVVSquatH"
+  },
+  "ThighsLVLegExtension": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVLegExtension"
+  },
+  "ThighsLVAlternatingLegExtension": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVAlternatingLegExtension"
+  },
+  "ThighsLVAlternatingLegExtensionUnilateral": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVAlternatingLegExtensionUnilateral"
+  },
+  "ThighsLVAlternatingLyingLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVAlternatingLyingLegPress"
+  },
+  "ThighsLVSeatedLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVSeatedLegPress"
+  },
+  "ThighsLVSingleLegLegPress": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVSingleLegLegPress"
+  },
+  "ThighsLVSquat": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVSquat"
+  },
+  "ThighsLVVSquat": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVVSquat"
+  },
+  "ThighsLVSingleLegVSquat": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVSingleLegVSquat"
+  },
+  "ThighsLVSingleLegSplitVSquat": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVSingleLegSplitVSquat"
+  },
+  "ThighsLVAlternatingSingleLegSplitVSquat": {
+    "folder": "./Thighs/Quadriceps/lever(selectorized)",
+    "websiteid": "LVAlternatingSingleLegSplitVSquat"
+  },
+  "ThighsSL45LegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SL45LegPress"
+  },
+  "ThighsSLAlternating45LegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLAlternating45LegPress"
+  },
+  "ThighsSLSingleLeg45LegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSingleLeg45LegPress"
+  },
+  "ThighsSLHackPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLHackPress"
+  },
+  "ThighsSLLyingLegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLLyingLegPress"
+  },
+  "ThighsSLLyingLegPressPL": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLLyingLegPressPL"
+  },
+  "ThighsSLSingleLyingLegPressPL": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSingleLyingLegPressPL"
+  },
+  "ThighsSLSingleLegLyingLegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSingleLegLyingLegPress"
+  },
+  "ThighsSLSeatedLegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSeatedLegPress"
+  },
+  "ThighsSLVerticalLegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLVerticalLegPress"
+  },
+  "ThighsSLSingleLegVerticalLegPress": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSingleLegVerticalLegPress"
+  },
+  "ThighsSLSquat": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSquat"
+  },
+  "ThighsSLHackSquat": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLHackSquat"
+  },
+  "ThighsSLSingleLegHackSquat": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLSingleLegHackSquat"
+  },
+  "ThighsSLRearLunge": {
+    "folder": "./Thighs/Quadriceps/sled",
+    "websiteid": "SLRearLunge"
+  },
+  "ThighsSMRearLunge": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMRearLunge"
+  },
+  "ThighsSMSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMSingleLegSplitSquat"
+  },
+  "ThighsSMSplitSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMSplitSquat"
+  },
+  "ThighsSMSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMSquat"
+  },
+  "ThighsSMSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMSingleLegSquat"
+  },
+  "ThighsSMFrontSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMFrontSquat"
+  },
+  "ThighsSMHackSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMHackSquat"
+  },
+  "ThighsSMWideSquat": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMWideSquat"
+  },
+  "ThighsSMStepDown": {
+    "folder": "./Thighs/Quadriceps/smith",
+    "websiteid": "SMStepDown"
+  },
+  "ThighsWtSquat": {
+    "folder": "./Thighs/Quadriceps/weighted",
+    "websiteid": "WtSquat"
+  },
+  "ThighsWTFrontSquat": {
+    "folder": "./Thighs/Quadriceps/weighted",
+    "websiteid": "WTFrontSquat"
+  },
+  "ThighsWTSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/weighted",
+    "websiteid": "WTSingleLegSquat"
+  },
+  "ThighsWTSissySquat": {
+    "folder": "./Thighs/Quadriceps/weighted",
+    "websiteid": "WTSissySquat"
+  },
+  "ThighsWTSissySquatAp": {
+    "folder": "./Thighs/Quadriceps/weighted",
+    "websiteid": "WTSissySquatAp"
+  },
+  "ThighsBWLunge": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWLunge"
+  },
+  "ThighsBWSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSingleLegSquat"
+  },
+  "ThighsBWSingleLegBoxSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSingleLegBoxSquat"
+  },
+  "ThighsBWSingleLegSquatLegBack": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSingleLegSquatLegBack"
+  },
+  "ThighsBWSingleLegRecliningSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSingleLegRecliningSquat"
+  },
+  "ThighsBWSissySquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSissySquat"
+  },
+  "ThighsBWSissySquatAp": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSissySquatAp"
+  },
+  "ThighsBWSplitSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSplitSquat"
+  },
+  "ThighsBWSingleLegSplitSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSingleLegSplitSquat"
+  },
+  "ThighsBWSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWSquat"
+  },
+  "ThighsBalanceBoardSquat": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BalanceBoardSquat"
+  },
+  "ThighsBWStepUp": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWStepUp"
+  },
+  "ThighsBWLateralStepUp": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWLateralStepUp"
+  },
+  "ThighsBWStepDown": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWStepDown"
+  },
+  "ThighsBWAlternatingStepDown": {
+    "folder": "./Thighs/Quadriceps/bodyweight",
+    "websiteid": "BWAlternatingStepDown"
+  },
+  "ThighsASSingleLegSquatSelf": {
+    "folder": "./Thighs/Quadriceps/self-assisted",
+    "websiteid": "ASSingleLegSquatSelf"
+  },
+  "ThighsASSingleLegSquatSelfPole": {
+    "folder": "./Thighs/Quadriceps/self-assisted",
+    "websiteid": "ASSingleLegSquatSelfPole"
+  },
+  "ThighsASSingleLegSquatSelfLeg": {
+    "folder": "./Thighs/Quadriceps/self-assisted",
+    "websiteid": "ASSingleLegSquatSelfLeg"
+  },
+  "ThighsASStepDownSelf": {
+    "folder": "./Thighs/Quadriceps/self-assisted",
+    "websiteid": "ASStepDownSelf"
+  },
+  "ThighsSTSingleLegSquat": {
+    "folder": "./Thighs/Quadriceps/suspended",
+    "websiteid": "STSingleLegSquat"
+  },
+  "ThighsSTSplitSquat": {
+    "folder": "./Thighs/Quadriceps/suspended",
+    "websiteid": "STSplitSquat"
+  },
+  "ThighsSTSingleLegSplitSquatSelfAss": {
+    "folder": "./Thighs/Quadriceps/suspended",
+    "websiteid": "STSingleLegSplitSquatSelfAss"
+  },
+  "ThighsKneeling": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "Kneeling"
+  },
+  "ThighsPCQuad": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "PCQuad"
+  },
+  "ThighsProneLying": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "ProneLying"
+  },
+  "ThighsPNFProneLying": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "PNFProneLying"
+  },
+  "ThighsSideLying": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "SideLying"
+  },
+  "ThighsStanding": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "Standing"
+  },
+  "ThighsStandingTowel": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "StandingTowel"
+  },
+  "ThighsStandingGroinApparatus": {
+    "folder": "./Thighs/Quadriceps/stretch",
+    "websiteid": "StandingGroinApparatus"
+  },
+  "ThighsWalkingQuadStretch": {
+    "folder": "./Thighs/Quadriceps/dynamicstretch",
+    "websiteid": "WalkingQuadStretch"
+  },
+  "ThighsBBGoodMorning": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBGoodMorning"
+  },
+  "ThighsBBGluteHamRaise": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBGluteHamRaise"
+  },
+  "ThighsBBHamstringRaise": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBHamstringRaise"
+  },
+  "ThighsBBHyperextension": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBHyperextension"
+  },
+  "ThighsBBHipExtension": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBHipExtension"
+  },
+  "ThighsBB45Hyperextension": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BB45Hyperextension"
+  },
+  "ThighsBB45HipExtension": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BB45HipExtension"
+  },
+  "ThighsBBStraightLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBStraightLegDeadlift"
+  },
+  "ThighsBBStrBackStrLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "BBStrBackStrLegDeadlift"
+  },
+  "ThighsTBStraightLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "TBStraightLegDeadlift"
+  },
+  "ThighsTBStrBackStrLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/barbell",
+    "websiteid": "TBStrBackStrLegDeadlift"
+  },
+  "ThighsCBBentOverLegCurl": {
+    "folder": "./Thighs/Hamstrings/cable",
+    "websiteid": "CBBentOverLegCurl"
+  },
+  "ThighsCBLyingLegCurl": {
+    "folder": "./Thighs/Hamstrings/cable",
+    "websiteid": "CBLyingLegCurl"
+  },
+  "ThighsCBStandingLegCurl": {
+    "folder": "./Thighs/Hamstrings/cable",
+    "websiteid": "CBStandingLegCurl"
+  },
+  "ThighsCBStraightLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/cable",
+    "websiteid": "CBStraightLegDeadlift"
+  },
+  "ThighsCBStrBackStrLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/cable",
+    "websiteid": "CBStrBackStrLegDeadlift"
+  },
+  "ThighsDBStraightLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/dumbbell",
+    "websiteid": "DBStraightLegDeadlift"
+  },
+  "ThighsDBStrBackStrLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/dumbbell",
+    "websiteid": "DBStrBackStrLegDeadlift"
+  },
+  "ThighsLVKneelingLegCurlH": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVKneelingLegCurlH"
+  },
+  "ThighsLVLyingLegCurlH": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVLyingLegCurlH"
+  },
+  "ThighsLVAlternatingLyingLegCurlH": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVAlternatingLyingLegCurlH"
+  },
+  "ThighsLVLyingLegCurlRevHyperMachPL": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVLyingLegCurlRevHyperMachPL"
+  },
+  "ThighsLVSeatedLegCurlH": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVSeatedLegCurlH"
+  },
+  "ThighsLVSingleLegSeatedLegCurlHammer": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVSingleLegSeatedLegCurlHammer"
+  },
+  "ThighsLVStraightLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVStraightLegDeadlift"
+  },
+  "ThighsLVStrBackStrLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/lever(plateloaded)",
+    "websiteid": "LVStrBackStrLegDeadlift"
+  },
+  "ThighsLVBentOverLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVBentOverLegCurl"
+  },
+  "ThighsLVAlternationgBentOverLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVAlternationgBentOverLegCurl"
+  },
+  "ThighsLVKneelingLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVKneelingLegCurl"
+  },
+  "ThighsLVLyingLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVLyingLegCurl"
+  },
+  "ThighsLVAlternatingLyingLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVAlternatingLyingLegCurl"
+  },
+  "ThighsLVSeatedLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVSeatedLegCurl"
+  },
+  "ThighsLVStandingLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVStandingLegCurl"
+  },
+  "ThighsLVAlternatingStandingLegCurl": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVAlternatingStandingLegCurl"
+  },
+  "ThighsLVStandingLegCurlLegExt": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVStandingLegCurlLegExt"
+  },
+  "ThighsLVStandingLegCurlMultiHip": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVStandingLegCurlMultiHip"
+  },
+  "ThighsLVStraightLegLyingHipExtension": {
+    "folder": "./Thighs/Hamstrings/lever(selectorized)",
+    "websiteid": "LVStraightLegLyingHipExtension"
+  },
+  "ThighsSMGoodMorning": {
+    "folder": "./Thighs/Hamstrings/smith",
+    "websiteid": "SMGoodMorning"
+  },
+  "ThighsSMStraightLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/smith",
+    "websiteid": "SMStraightLegDeadlift"
+  },
+  "ThighsSMStrBackStrLegDeadlift": {
+    "folder": "./Thighs/Hamstrings/smith",
+    "websiteid": "SMStrBackStrLegDeadlift"
+  },
+  "ThighsWTGluteHamRaise": {
+    "folder": "./Thighs/Hamstrings/weighted",
+    "websiteid": "WTGluteHamRaise"
+  },
+  "ThighsWTHamstringRaise": {
+    "folder": "./Thighs/Hamstrings/weighted",
+    "websiteid": "WTHamstringRaise"
+  },
+  "ThighsWtHyperextension": {
+    "folder": "./Thighs/Hamstrings/weighted",
+    "websiteid": "WtHyperextension"
+  },
+  "ThighsWTHipExtension": {
+    "folder": "./Thighs/Hamstrings/weighted",
+    "websiteid": "WTHipExtension"
+  },
+  "ThighsWt45Hyperextension": {
+    "folder": "./Thighs/Hamstrings/weighted",
+    "websiteid": "Wt45Hyperextension"
+  },
+  "ThighsWT45HipExtension": {
+    "folder": "./Thighs/Hamstrings/weighted",
+    "websiteid": "WT45HipExtension"
+  },
+  "ThighsASInverseLegCurlBands": {
+    "folder": "./Thighs/Hamstrings/band-assisted",
+    "websiteid": "ASInverseLegCurlBands"
+  },
+  "ThighsBWGluteHamRaiseHead": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWGluteHamRaiseHead"
+  },
+  "ThighsBWGluteHamRaiseHips": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWGluteHamRaiseHips"
+  },
+  "ThighsBWHangingHamstringBridge": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWHangingHamstringBridge"
+  },
+  "ThighsBWSingleLegHangingHamstringBridge": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWSingleLegHangingHamstringBridge"
+  },
+  "ThighsBWHangingHamstringBridgeCurl": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWHangingHamstringBridgeCurl"
+  },
+  "ThighsBWSingleLegHangingHamstringBridgeCurl": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWSingleLegHangingHamstringBridgeCurl"
+  },
+  "ThighsBWHangingLegCurl": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWHangingLegCurl"
+  },
+  "ThighsBWHangingStraightHipLegCurl": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWHangingStraightHipLegCurl"
+  },
+  "ThighsBWHamstringRaise": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWHamstringRaise"
+  },
+  "ThighsBWBallLegCurl": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWBallLegCurl"
+  },
+  "ThighsBWWheelLegCurl": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWWheelLegCurl"
+  },
+  "ThighsBWSingleLeg45Hyperextension": {
+    "folder": "./Thighs/Hamstrings/bodyweight",
+    "websiteid": "BWSingleLeg45Hyperextension"
+  },
+  "ThighsASHamstringRaiseSelf": {
+    "folder": "./Thighs/Hamstrings/self-assisted",
+    "websiteid": "ASHamstringRaiseSelf"
+  },
+  "ThighsASHamstringRaiseSelfFloor": {
+    "folder": "./Thighs/Hamstrings/self-assisted",
+    "websiteid": "ASHamstringRaiseSelfFloor"
+  },
+  "ThighsSTLegCurl": {
+    "folder": "./Thighs/Hamstrings/suspended",
+    "websiteid": "STLegCurl"
+  },
+  "ThighsSTStraightHipLegCurl": {
+    "folder": "./Thighs/Hamstrings/suspended",
+    "websiteid": "STStraightHipLegCurl"
+  },
+  "ThighsSTHamstringRunner": {
+    "folder": "./Thighs/Hamstrings/suspended",
+    "websiteid": "STHamstringRunner"
+  },
+  "ThighsSTHangingLegCurl": {
+    "folder": "./Thighs/Hamstrings/suspended",
+    "websiteid": "STHangingLegCurl"
+  },
+  "ThighsSTHangingStraightHipLegCurl": {
+    "folder": "./Thighs/Hamstrings/suspended",
+    "websiteid": "STHangingStraightHipLegCurl"
+  },
+  "ThighsSTHyperextension": {
+    "folder": "./Thighs/Hamstrings/suspended",
+    "websiteid": "STHyperextension"
+  },
+  "ThighsPCHamstring": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "PCHamstring"
+  },
+  "ThighsLVLyingHamstring": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "LVLyingHamstring"
+  },
+  "ThighsLyingSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "LyingSingleLeg"
+  },
+  "ThighsPNFLyingSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "PNFLyingSingleLeg"
+  },
+  "ThighsLyingTowel": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "LyingTowel"
+  },
+  "ThighsLyingVerticalHamstring": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "LyingVerticalHamstring"
+  },
+  "ThighsSeated": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "Seated"
+  },
+  "ThighsPNFSeated": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "PNFSeated"
+  },
+  "ThighsSeatedSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "SeatedSingleLeg"
+  },
+  "ThighsSeatedChair": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "SeatedChair"
+  },
+  "ThighsSeatedChairSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "SeatedChairSingleLeg"
+  },
+  "ThighsSeatedBenchSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "SeatedBenchSingleLeg"
+  },
+  "ThighsStanding": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "Standing"
+  },
+  "ThighsStandingCrossLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "StandingCrossLeg"
+  },
+  "ThighsStandingSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "StandingSingleLeg"
+  },
+  "ThighsStandingBenchSingleLeg": {
+    "folder": "./Thighs/Hamstrings/stretch",
+    "websiteid": "StandingBenchSingleLeg"
+  },
+  "ThighsSoldierKick": {
+    "folder": "./Thighs/Hamstrings/dynamicstretch",
+    "websiteid": "SoldierKick"
+  },
+  "ThighsSoldierKickIntermittent": {
+    "folder": "./Thighs/Hamstrings/dynamicstretch",
+    "websiteid": "SoldierKickIntermittent"
+  },
+  "ThighsCBHipAdduction": {
+    "folder": "./Thighs/HipAdductors/cable",
+    "websiteid": "CBHipAdduction"
+  },
+  "ThighsCBLyingHipAdduction": {
+    "folder": "./Thighs/HipAdductors/cable",
+    "websiteid": "CBLyingHipAdduction"
+  },
+  "ThighsLVSeatedHipAdductionH": {
+    "folder": "./Thighs/HipAdductors/lever(plateloaded)",
+    "websiteid": "LVSeatedHipAdductionH"
+  },
+  "ThighsLVLyingHipAdduction": {
+    "folder": "./Thighs/HipAdductors/lever(selectorized)",
+    "websiteid": "LVLyingHipAdduction"
+  },
+  "ThighsLVSeatedHipAdduction": {
+    "folder": "./Thighs/HipAdductors/lever(selectorized)",
+    "websiteid": "LVSeatedHipAdduction"
+  },
+  "ThighsLVStandHipAdduction": {
+    "folder": "./Thighs/HipAdductors/lever(selectorized)",
+    "websiteid": "LVStandHipAdduction"
+  },
+  "ThighsWTLyingHipAdduction": {
+    "folder": "./Thighs/HipAdductors/weighted",
+    "websiteid": "WTLyingHipAdduction"
+  },
+  "ThighsLyingGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "LyingGroin"
+  },
+  "ThighsKneelingSideLunge": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "KneelingSideLunge"
+  },
+  "ThighsPNFStraightLeg": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "PNFStraightLeg"
+  },
+  "ThighsPNFBentLeg": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "PNFBentLeg"
+  },
+  "ThighsSeatedGroinFloor": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SeatedGroinFloor"
+  },
+  "ThighsSeatedAdductorMagnus": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SeatedAdductorMagnus"
+  },
+  "ThighsSideLunge": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SideLunge"
+  },
+  "ThighsMachSeatedGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "MachSeatedGroin"
+  },
+  "ThighsKneelingGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "KneelingGroin"
+  },
+  "ThighsSeatedGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SeatedGroin"
+  },
+  "ThighsSeatedGroinApparatus": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SeatedGroinApparatus"
+  },
+  "ThighsBentoverAdductorMagnus": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "BentoverAdductorMagnus"
+  },
+  "ThighsLyingWallGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "LyingWallGroin"
+  },
+  "ThighsSeatedSingleLegAdductorMagnus": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SeatedSingleLegAdductorMagnus"
+  },
+  "ThighsStandingGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "StandingGroin"
+  },
+  "ThighsPCGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "PCGroin"
+  },
+  "ThighsSeatedAdductorMagnusFloor": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SeatedAdductorMagnusFloor"
+  },
+  "ThighsSquattingGroin": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "SquattingGroin"
+  },
+  "ThighsLyingAdductorMagnus": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "LyingAdductorMagnus"
+  },
+  "ThighsKneelingAdductorMagnus": {
+    "folder": "./Thighs/HipAdductors/stretch",
+    "websiteid": "KneelingAdductorMagnus"
+  },
+  "CalvesSBStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/barbell",
+    "websiteid": "SBStandingCalfRaise"
+  },
+  "CalvesBBStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/barbell",
+    "websiteid": "BBStandingCalfRaise"
+  },
+  "CalvesCBStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/cable",
+    "websiteid": "CBStandingCalfRaise"
+  },
+  "CalvesCBSingleLegCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/cable",
+    "websiteid": "CBSingleLegCalfRaise"
+  },
+  "CalvesCBOneArmSingleLegCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/cable",
+    "websiteid": "CBOneArmSingleLegCalfRaise"
+  },
+  "CalvesDBStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/dumbbell",
+    "websiteid": "DBStandingCalfRaise"
+  },
+  "CalvesDBSingleLegCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/dumbbell",
+    "websiteid": "DBSingleLegCalfRaise"
+  },
+  "CalvesLV45CalfPress": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LV45CalfPress"
+  },
+  "CalvesLV45CalfRaisePL": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LV45CalfRaisePL"
+  },
+  "CalvesLVSeatedCalfExtensionHammer": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LVSeatedCalfExtensionHammer"
+  },
+  "CalvesLVDonkeyCalfRaisePL": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LVDonkeyCalfRaisePL"
+  },
+  "CalvesLVSeatedCalfPressH": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LVSeatedCalfPressH"
+  },
+  "CalvesLVStandingCalfRaisePL": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LVStandingCalfRaisePL"
+  },
+  "CalvesLVVCalfRaiseH": {
+    "folder": "./Calves/Gastrocnemius/lever(plateloaded)",
+    "websiteid": "LVVCalfRaiseH"
+  },
+  "CalvesLV45CalfRaise": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LV45CalfRaise"
+  },
+  "CalvesLVSeatedCalfExtension": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVSeatedCalfExtension"
+  },
+  "CalvesLVSeatedCalfExtensionBi": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVSeatedCalfExtensionBi"
+  },
+  "CalvesLVAlternatingSeatedCalfExt": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVAlternatingSeatedCalfExt"
+  },
+  "CalvesLVDonkeyCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVDonkeyCalfRaise"
+  },
+  "CalvesLVSeatedCalfPress": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVSeatedCalfPress"
+  },
+  "CalvesLVStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVStandingCalfRaise"
+  },
+  "CalvesLVStandingCalfRaiseBelt": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVStandingCalfRaiseBelt"
+  },
+  "CalvesLVForwardAngledCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/lever(selectorized)",
+    "websiteid": "LVForwardAngledCalfRaise"
+  },
+  "CalvesSL45CalfPress": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SL45CalfPress"
+  },
+  "CalvesSL45AlternatingCalfPress": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SL45AlternatingCalfPress"
+  },
+  "CalvesSL45CalfRaise": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SL45CalfRaise"
+  },
+  "CalvesSL45CalfPressPL": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SL45CalfPressPL"
+  },
+  "CalvesSLDonkeyCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLDonkeyCalfRaise"
+  },
+  "CalvesSLHackCalfPress": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLHackCalfPress"
+  },
+  "CalvesSLLyingCalfPress": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLLyingCalfPress"
+  },
+  "CalvesSLLyingCalfPressPL": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLLyingCalfPressPL"
+  },
+  "CalvesSLSeatedCalfPress": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLSeatedCalfPress"
+  },
+  "CalvesSLStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLStandingCalfRaise"
+  },
+  "CalvesSLForwardAngledCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLForwardAngledCalfRaise"
+  },
+  "CalvesSLVerticalCalfPress": {
+    "folder": "./Calves/Gastrocnemius/sled",
+    "websiteid": "SLVerticalCalfPress"
+  },
+  "CalvesSMDonkeyCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/smith",
+    "websiteid": "SMDonkeyCalfRaise"
+  },
+  "CalvesSMStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/smith",
+    "websiteid": "SMStandingCalfRaise"
+  },
+  "CalvesWTDonkeyCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/weighted",
+    "websiteid": "WTDonkeyCalfRaise"
+  },
+  "CalvesWTSingleLegCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/weighted",
+    "websiteid": "WTSingleLegCalfRaise"
+  },
+  "CalvesBWStandingCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/bodyweight",
+    "websiteid": "BWStandingCalfRaise"
+  },
+  "CalvesBWSingleLegCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/bodyweight",
+    "websiteid": "BWSingleLegCalfRaise"
+  },
+  "CalvesBWSingleLegForwardAngledCalfRaise": {
+    "folder": "./Calves/Gastrocnemius/bodyweight",
+    "websiteid": "BWSingleLegForwardAngledCalfRaise"
+  },
+  "CalvesASSingleLegCalfRaiseSelf": {
+    "folder": "./Calves/Gastrocnemius/self-assisted",
+    "websiteid": "ASSingleLegCalfRaiseSelf"
+  },
+  "CalvesASSingleLegCalfRaiseSelfFoot": {
+    "folder": "./Calves/Gastrocnemius/self-assisted",
+    "websiteid": "ASSingleLegCalfRaiseSelfFoot"
+  },
+  "CalvesFloorBoard": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "FloorBoard"
+  },
+  "CalvesLunging": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "Lunging"
+  },
+  "CalvesBentover": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "Bentover"
+  },
+  "CalvesSingleLegBentover": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "SingleLegBentover"
+  },
+  "CalvesStep": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "Step"
+  },
+  "CalvesTowel": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "Towel"
+  },
+  "CalvesWall": {
+    "folder": "./Calves/Gastrocnemius/stretch",
+    "websiteid": "Wall"
+  },
+  "CalvesSBSeatedCalfRaise": {
+    "folder": "./Calves/Soleus/barbell",
+    "websiteid": "SBSeatedCalfRaise"
+  },
+  "CalvesLVSeatedCalfRaiseH": {
+    "folder": "./Calves/Soleus/lever(plateloaded)",
+    "websiteid": "LVSeatedCalfRaiseH"
+  },
+  "CalvesLVBentKneeSeatedCalfExtension": {
+    "folder": "./Calves/Soleus/lever(selectorized)",
+    "websiteid": "LVBentKneeSeatedCalfExtension"
+  },
+  "CalvesLVAltBentKneeSeatedCalfExt": {
+    "folder": "./Calves/Soleus/lever(selectorized)",
+    "websiteid": "LVAltBentKneeSeatedCalfExt"
+  },
+  "CalvesLVSeatedCalfRaise": {
+    "folder": "./Calves/Soleus/lever(selectorized)",
+    "websiteid": "LVSeatedCalfRaise"
+  },
+  "CalvesLVSeatedCalfExtension": {
+    "folder": "./Calves/Soleus/lever(selectorized)",
+    "websiteid": "LVSeatedCalfExtension"
+  },
+  "CalvesSMSeatedCalfRaise": {
+    "folder": "./Calves/Soleus/smith",
+    "websiteid": "SMSeatedCalfRaise"
+  },
+  "CalvesFloorBoard": {
+    "folder": "./Calves/Soleus/stretch",
+    "websiteid": "FloorBoard"
+  },
+  "CalvesLunging": {
+    "folder": "./Calves/Soleus/stretch",
+    "websiteid": "Lunging"
+  },
+  "CalvesBentover": {
+    "folder": "./Calves/Soleus/stretch",
+    "websiteid": "Bentover"
+  },
+  "CalvesSingleLegBentover": {
+    "folder": "./Calves/Soleus/stretch",
+    "websiteid": "SingleLegBentover"
+  },
+  "CalvesKneeling": {
+    "folder": "./Calves/Soleus/stretch",
+    "websiteid": "Kneeling"
+  },
+  "CalvesSeated": {
+    "folder": "./Calves/Soleus/stretch",
+    "websiteid": "Seated"
+  },
+  "CalvesStep": { "folder": "./Calves/Soleus/stretch", "websiteid": "Step" },
+  "CalvesTowel": { "folder": "./Calves/Soleus/stretch", "websiteid": "Towel" },
+  "CalvesWall": { "folder": "./Calves/Soleus/stretch", "websiteid": "Wall" },
+  "CalvesBBReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/barbell",
+    "websiteid": "BBReverseCalfRaise"
+  },
+  "CalvesSBReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/barbell",
+    "websiteid": "SBReverseCalfRaise"
+  },
+  "CalvesCBReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/cable",
+    "websiteid": "CBReverseCalfRaise"
+  },
+  "CalvesCBSingleLegReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/cable",
+    "websiteid": "CBSingleLegReverseCalfRaise"
+  },
+  "CalvesDBReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/dumbbell",
+    "websiteid": "DBReverseCalfRaise"
+  },
+  "CalvesDBSingleLegRevCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/dumbbell",
+    "websiteid": "DBSingleLegRevCalfRaise"
+  },
+  "CalvesLV45ReverseCalfPress": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LV45ReverseCalfPress"
+  },
+  "CalvesLV45ReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LV45ReverseCalfRaise"
+  },
+  "CalvesLVReverseCalfRaisePL": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LVReverseCalfRaisePL"
+  },
+  "CalvesLVReverseVCalfRaiseH": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LVReverseVCalfRaiseH"
+  },
+  "CalvesLVSeatedReverseCalfExtHammer": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LVSeatedReverseCalfExtHammer"
+  },
+  "CalvesLVSeatedTibiaRaisePL": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LVSeatedTibiaRaisePL"
+  },
+  "CalvesLVSingleLegSeatedSeatedTibiaRaisePL": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LVSingleLegSeatedSeatedTibiaRaisePL"
+  },
+  "CalvesLVStandingTibiaRaisePL": {
+    "folder": "./Calves/TibialisAnterior/lever(plateloaded)",
+    "websiteid": "LVStandingTibiaRaisePL"
+  },
+  "CalvesLVDonkeyReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/lever(selectorized)",
+    "websiteid": "LVDonkeyReverseCalfRaise"
+  },
+  "CalvesLVReverseCalfExtension": {
+    "folder": "./Calves/TibialisAnterior/lever(selectorized)",
+    "websiteid": "LVReverseCalfExtension"
+  },
+  "CalvesLVReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/lever(selectorized)",
+    "websiteid": "LVReverseCalfRaise"
+  },
+  "CalvesLVSeatedReverseCalfPress": {
+    "folder": "./Calves/TibialisAnterior/lever(selectorized)",
+    "websiteid": "LVSeatedReverseCalfPress"
+  },
+  "CalvesSL45ReverseCalfPress": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SL45ReverseCalfPress"
+  },
+  "CalvesSL45ReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SL45ReverseCalfRaise"
+  },
+  "CalvesSL45ReverseCalfRaisePL": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SL45ReverseCalfRaisePL"
+  },
+  "CalvesSL45ReverseCalfRaiseHackPress": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SL45ReverseCalfRaiseHackPress"
+  },
+  "CalvesSLDonkeyReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLDonkeyReverseCalfRaise"
+  },
+  "CalvesSLHackReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLHackReverseCalfRaise"
+  },
+  "CalvesSLLyingReverseCalfPress": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLLyingReverseCalfPress"
+  },
+  "CalvesSLLyingReverseCalfPressPL": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLLyingReverseCalfPressPL"
+  },
+  "CalvesSLReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLReverseCalfRaise"
+  },
+  "CalvesSLReverseCalfRaisePL": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLReverseCalfRaisePL"
+  },
+  "CalvesSLSeatedReverseCalfPress": {
+    "folder": "./Calves/TibialisAnterior/sled",
+    "websiteid": "SLSeatedReverseCalfPress"
+  },
+  "CalvesSMReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/smith",
+    "websiteid": "SMReverseCalfRaise"
+  },
+  "CalvesBWReverseCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/bodyweight",
+    "websiteid": "BWReverseCalfRaise"
+  },
+  "CalvesBWSingleLegRevCalfRaise": {
+    "folder": "./Calves/TibialisAnterior/bodyweight",
+    "websiteid": "BWSingleLegRevCalfRaise"
+  },
+  "CalvesKneeling": {
+    "folder": "./Calves/TibialisAnterior/stretch",
+    "websiteid": "Kneeling"
+  },
+  "CalvesLying": {
+    "folder": "./Calves/TibialisAnterior/stretch",
+    "websiteid": "Lying"
+  },
+  "CalvesSeated": {
+    "folder": "./Calves/TibialisAnterior/stretch",
+    "websiteid": "Seated"
+  },
+  "CalvesStanding": {
+    "folder": "./Calves/TibialisAnterior/stretch",
+    "websiteid": "Standing"
+  }
+}

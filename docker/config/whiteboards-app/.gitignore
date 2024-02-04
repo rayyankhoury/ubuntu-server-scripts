@@ -1,0 +1,25 @@
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+*.mp4
+app/assets/exercisedata/*
+web-build/
+
+# macOS
+.DS_Store
+
+# Multimedia
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.avi
+*.mov
+*.mkv

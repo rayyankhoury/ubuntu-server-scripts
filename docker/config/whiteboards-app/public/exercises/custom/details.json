@@ -1,0 +1,51 @@
+{
+  "CustomClamshell": {
+    "id": "0",
+    "exerciseid": "Clamshell",
+    "target": "gluteusmedius",
+    "synergists": "gluteusmaximus"
+  },
+  "CustomForearmMachine": {
+    "id": "1",
+    "exerciseid": "ForearmMachine",
+    "utility": "Auxiliary",
+    "mechanics": "Isolated",
+    "force": "Pull",
+    "target": "forearm#pronation"
+  },
+  "CustomLyingObliqueReach": {
+    "id": "2",
+    "exerciseid": "LyingObliqueReach",
+    "target": "obliques",
+    "synergists": "erectorspinae, rectusabdominis, quadratuslumborum"
+  },
+  "CustomMcGillCurlUp": {
+    "id": "3",
+    "exerciseid": "McGillCurlUp",
+    "target": "rectusabdominis",
+    "synergists": "obliques"
+  },
+  "CustomQuadrupedThoracicRotation": {
+    "id": "4",
+    "exerciseid": "QuadrupedThoracicRotation",
+    "target": "latissimusdorsi",
+    "synergists": "obliques, deltoidlateral, subscapularis, uppertrapezius, lowertrapezius, rhomboids, pectoralisminor, serratusanterior, rectusabdominis, erectorspinae "
+  },
+  "CustomResistanceBandDorsiflexion": {
+    "id": "5",
+    "exerciseid": "ResistanceBandDorsiflexion",
+    "target": "tibialisanterior"
+  },
+  "CustomScarecrow": {
+    "id": "6",
+    "exerciseid": "Scarecrow",
+    "target": "teresmajor",
+    "synergists": "supraspinatus, infraspinatus, subscapularis, teresminor",
+    "antagonist stabilizers": "latissimusdorsi"
+  },
+  "CustomStandAndReach": {
+    "id": "7",
+    "exerciseid": "StandAndReach",
+    "target": "quadratuslumborum"
+  }
+}
