@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Permission denied errors: sh -c 
+# Permission denied errors: sh -c
 
 export GIT_USERNAME="metalconker"
 export GIT_EMAIL="2914720+metalconker@users.noreply.github.com"
@@ -27,10 +27,9 @@ export CURRENT_USER=$(whoami)
 #                ||----w |
 #                ||     ||
 
-
 #endregion
 function developer_banner() {
-cat <<"EOF"
+    cat <<"EOF"
 
 
 oooooooooo.                              .oooooo.               
@@ -91,7 +90,7 @@ function setup_environment() {
     lightgray=$'\033[0;37m'   # light gray
     white=$'\033[1;37m'       # white
     brown=$'\033[0;33m'       # brown
-    yellow=$'\033[1;33m'      # yellow              
+    yellow=$'\033[1;33m'      # yellow
     darkgray=$'\033[1;30m'    # dark gray
     black=$'\033[0;30m'       # black
     nocolor=$'\e[0m'          # no color
@@ -178,7 +177,7 @@ function check_distro() {
 function begin_log() {
     # Create Log File and Begin
     sudo touch $LOGFILE
-    sudo >| "$LOGFILE"
+    sudo >|"$LOGFILE"
     sudo chown $CURRENT_USER "$LOGFILE"
     echo $CURRENT_USER
     chmod 755 "$LOGFILE"
@@ -222,7 +221,7 @@ function begin_log() {
 #endregion
 function update_ubuntu() {
     pca $start $'Starting system update...'
-    pca $action $'Updating Ubuntu 20.04'
+    pca $action $'Updating Ubuntu 22.04'
 
     leca $"sudo apt-get install language-pack-en-base"
     leca $"sudo locale-gen en_US.UTF-8"
@@ -232,7 +231,49 @@ function update_ubuntu() {
     leca $'sudo apt-get full-upgrade -y -o Acquire::ForceIPv4=true -qq'
 
     pca $success $'Ubuntu Successfully Updated!'
-    pca $end $'System updated!'   
+    pca $end $'System updated!'
+}
+
+#region
+#===========================================================================
+# SET MOTD
+#===========================================================================
+#
+# Description:
+#   Sets the MOTD with customization options.
+#
+# Arguments:
+#   None
+#===========================================================================
+#endregion
+function set_motd() {
+    pca $start $'Starting MOTD creation...'
+    pca $action $'Setting MOTD'
+
+    ## @TODO
+    pca $action $'Enabling MOTD'
+    ########
+    pca $success $'MOTD succesfully enabled!'
+
+    ########
+    # Add legal banner to /etc/motd
+    if [ -f /etc/motd ]; then
+        pca $action $'Adding MOTD to /etc/motd'
+        leca $"sudo touch /etc/motd"
+        leca $"sudo chmod 755 /etc/motd"
+        leca $"sudo sh -c \">| /etc/motd\""
+        leca $"sudo sh -c \"echo \"\" >> /etc/motd\""
+        leca $"sudo sh -c 'echo \"Custom Commands:\" >> /etc/motd'"
+        leca $"sudo sh -c 'echo \"1) cd_docker: navigate to the location 
+            where docker should be initiated\" >> /etc/motd'"
+        leca $"sudo sh -c \"echo \"\" >> /etc/motd\""
+        pca $success $'Warnings added to /etc/motd'
+    fi
+
+    # @TODO
+
+    pca $success $'MOTD successfully set!'
+    pca $end $'MOTD created!'
 }
 
 #region
@@ -241,7 +282,7 @@ function update_ubuntu() {
 #===========================================================================
 #
 # Description:
-#   UFW (Uncomplicated Firewall) is a user-friendly front-end to iptables, 
+#   UFW (Uncomplicated Firewall) is a user-friendly front-end to iptables,
 #   the Linux kernel's built-in firewall facility.
 #   This script will set up a basic firewall using UFW.
 #
@@ -250,7 +291,7 @@ function update_ubuntu() {
 #
 #===========================================================================
 #endregion
-function set_firewall_ufw(){
+function set_firewall_ufw() {
 
     declare -A loopbacks=(
         ["allow_loopback_in"]="allow in on lo"
@@ -294,26 +335,26 @@ function set_firewall_ufw(){
 
     pca $neutral $'Setting loopbacks...'
     # Loopbacks
-    for loopback in "${!loopbacks[@]}" ; do
+    for loopback in "${!loopbacks[@]}"; do
         pca $action $"Applying ${loopbacks[$loopback]}"
         leca $"sudo ufw ${loopbacks[$loopback]}"
     done
 
     # Set ports
-    for port in "${!ports[@]}" ; do
+    for port in "${!ports[@]}"; do
         add_rule_to_ufw ${ports[$port]}
     done
 
     pca $neutral $'Setting default policies'
     # Sets the default policies
-    for default in "${!defaults[@]}" ; do
+    for default in "${!defaults[@]}"; do
         pca $action $"Applying ${defaults[$default]}"
         leca $"sudo ufw ${defaults[$default]}"
     done
 
     pca $neutral $'Setting logging policies'
     # Sets the default policies
-    for logging in "${!loggings[@]}" ; do
+    for logging in "${!loggings[@]}"; do
         pca $action $"Applying ${loggings[$logging]}"
         leca $"sudo ufw ${loggings[$logging]}"
     done
@@ -340,10 +381,6 @@ function set_firewall_ufw(){
 function install_system_packages() {
     pca $start $'Installing useful system packages...'
 
-    #First, update the package list
-    pca $action $'Updating package list...'
-    leca $"sudo apt-get -qqy update 2>/dev/null"
-
     install_helper $'ufw'
     install_helper $'aptitude'
     install_helper $'lsb-core'
@@ -368,10 +405,6 @@ function install_system_packages() {
 function install_services() {
     pca $start $'Installing and enabling services...'
 
-    #First, update the package list
-    pca $action $'Updating package list...'
-    leca $"sudo apt-get -qqy update 2>/dev/null"
-
     install_helper $'sysstat'
     enable_service_helper $'sysstat'
 
@@ -383,20 +416,16 @@ function install_services() {
 # INSTALL_ROOTKIT_CHECKERS
 #===========================================================================
 #
-# Description: 
+# Description:
 #   Installs rootkit checkers and scans for suspicious activity
 #
 # Arguments:
 #   None
 #===========================================================================
 #endregion
-function install_rootkit_checkers(){
-    
-    pca $start $'Installing rootkit checkers...'
+function install_rootkit_checkers() {
 
-    #First, update the package list
-    pca $action $'Updating package list...'
-    leca $"sudo apt-get -qqy update 2>/dev/null"
+    pca $start $'Installing rootkit checkers...'
 
     # Install dependencies
     install_helper $'libz-dev'
@@ -404,10 +433,6 @@ function install_rootkit_checkers(){
     install_helper $'libpcre2-dev'
     install_helper $'build-essential'
     install_helper $'libsystemd-dev'
-
-    #First, update the package list
-    pca $action $'Updating package list...'
-    leca $"sudo apt-get -qqy update 2>/dev/null"
 
     #Install packages
     install_helper $'rkhunter'
@@ -417,8 +442,8 @@ function install_rootkit_checkers(){
     pca $action $'Updating rkhunter config...'
     leca $"sudo sed -i
         \"s/SCRIPTWHITELIST=.*$/SCRIPTWHITELIST=/g\" /etc/rkhunter.conf"
-	leca $"sudo sed -i '/WEB_CMD=/d' /etc/rkhunter.conf"
-	leca $"sudo rkhunter --propupd"
+    leca $"sudo sed -i '/WEB_CMD=/d' /etc/rkhunter.conf"
+    leca $"sudo rkhunter --propupd"
 
     pca $end $'Rootkit checkers installed!'
 
@@ -439,11 +464,6 @@ function install_rootkit_checkers(){
 function install_unofficial_packages() {
 
     pca $start $'Installing unofficial packages!'
-
-    # Update apt package list
-    pca $action $'Updating apt package list'
-    leca $"sudo apt-get -qqy update 2>/dev/null"
-    pca $success $'Apt package list updated'
 
     # #Removes
     # remove_helper $'docker'
@@ -510,11 +530,6 @@ function install_unofficial_packages() {
         | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null"
     pca $success $'github-cli.list created'
 
-    # Update apt package list
-    pca $action $'Updating apt package list'
-    leca $"sudo apt-get -qqy update 2>/dev/null"
-    pca $success $'Apt package list updated'
-
     #Installs
     install_helper $'lynis'
     install_helper $'aide'
@@ -533,7 +548,7 @@ function install_unofficial_packages() {
     # GIT CONFIGS
     git_configs
     docker_configs
-    
+
     pca $end $'Unofficial packages installed and configured for use!'
 }
 
@@ -549,7 +564,7 @@ function install_unofficial_packages() {
 #   None
 #===========================================================================
 #endregion
-function git_configs(){
+function git_configs() {
     pca $start $'Starting git configs process'
     pca $action $'Configuring git user and email'
     leca $"git config --global user.name $GIT_USERNAME"
@@ -569,7 +584,6 @@ function git_configs(){
     pca $end $'Ending git configs process'
 }
 
-
 #region
 #===========================================================================
 # FUNCTION: docker_configs
@@ -582,7 +596,7 @@ function git_configs(){
 #   None
 #===========================================================================
 #endregion
-function docker_configs(){
+function docker_configs() {
     pca $start $'Starting Docker Configs'
     pca $action $'Adding docker group'
     leca $"sudo groupadd docker > /dev/null"
@@ -671,7 +685,6 @@ function docker_configs(){
 #     pca $end $'Ending AIDE configs process'
 # }
 
-
 #region
 #===========================================================================
 # HARDEN_COMPILERS
@@ -705,7 +718,7 @@ function docker_configs(){
 #===========================================================================
 #
 # Description:
-#   Hardens the kernel settings by setting values in the 
+#   Hardens the kernel settings by setting values in the
 #   /etc/sysctl.d/10-kernel-hardening.conf file.
 #
 # Arguments:
@@ -757,7 +770,7 @@ function docker_configs(){
 #===========================================================================
 #
 # Description:
-#   Hardens IPv4 network settings by setting/adding specified variables and 
+#   Hardens IPv4 network settings by setting/adding specified variables and
 #   their values to the '/etc/sysctl.d/10-network-security.conf' file
 #
 # Arguments:
@@ -809,7 +822,7 @@ function docker_configs(){
 #===========================================================================
 #
 # Description:
-#   Harden SSH configuration by disabling password authentication, 
+#   Harden SSH configuration by disabling password authentication,
 #   enabling public key authentication, allowing TCP forwarding, setting
 #   maximum client alive count, disabling agent forwarding, setting  verbose
 #   logging level, setting maximum authentication tries, setting maximum
@@ -829,17 +842,17 @@ function harden_ssh() {
     verify=0
     declare -A values
     values=(
-        ["PasswordAuthentication"]="no" 
-        ["PubkeyAuthentication"]="yes" 
-        ["Protocol"]="2" 
-        ["AllowTcpForwarding"]="yes" 
-        ["ClientAliveCountMax"]="2" 
-        ["AllowAgentForwarding"]="no" 
-        ["LogLevel"]="VERBOSE" 
-        ["MaxAuthTries"]="3" 
-        ["MaxSessions"]="2" 
-        ["TCPKeepAlive"]="no" 
-        ["PermitRootLogin"]="no" 
+        ["PasswordAuthentication"]="no"
+        ["PubkeyAuthentication"]="yes"
+        ["Protocol"]="2"
+        ["AllowTcpForwarding"]="yes"
+        ["ClientAliveCountMax"]="2"
+        ["AllowAgentForwarding"]="no"
+        ["LogLevel"]="VERBOSE"
+        ["MaxAuthTries"]="3"
+        ["MaxSessions"]="2"
+        ["TCPKeepAlive"]="no"
+        ["PermitRootLogin"]="no"
         ["X11Forwarding"]="no"
     )
 
@@ -847,14 +860,15 @@ function harden_ssh() {
     duplicate_check_helper $file
 
     # # Performs changes/additions
-    for key in "${!values[@]}" ; do
+    for key in "${!values[@]}"; do
         sysctl_config_helper $key ${values[$key]} $file "$spacing"
     done
 
     # Verify the modifications have been made
-    for key in "${!values[@]}" ; do
-        if [[ $(sudo grep -E "^[^#]*$key" $file | \
-            sudo grep -Ec "${values[$key]}$") -eq 1 ]]; then continue
+    for key in "${!values[@]}"; do
+        if [[ $(sudo grep -E "^[^#]*$key" $file |
+            sudo grep -Ec "${values[$key]}$") -eq 1 ]]; then
+            continue
         else
             verify=1
         fi
@@ -871,7 +885,7 @@ function harden_ssh() {
 #===========================================================================
 #
 # Description:
-#   Harden SSH configuration by disabling password authentication, 
+#   Harden SSH configuration by disabling password authentication,
 #   enabling public key authentication, allowing TCP forwarding, setting
 #   maximum client alive count, disabling agent forwarding, setting  verbose
 #   logging level, setting maximum authentication tries, setting maximum
@@ -908,7 +922,7 @@ function harden_ssh() {
 #   None
 #===========================================================================
 #endregion
-function remove_information_disclosure_smtp_banner(){
+function remove_information_disclosure_smtp_banner() {
     pca $start $'Removing information disclosure in SMTP banner...'
 
     # Check duplicates
@@ -970,8 +984,8 @@ function remove_information_disclosure_smtp_banner(){
 #         leca $'sudo php -i | grep allow_url_fopen'
 #         if [ $? -eq 0 ]; then
 #             pca $action $'Disabling allow_url_fopen...'
-#             leca $"sudo sed -i 
-#                 \"s/allow_url_fopen = On/allow_url_fopen = Off/g\" 
+#             leca $"sudo sed -i
+#                 \"s/allow_url_fopen = On/allow_url_fopen = Off/g\"
 #                 /etc/php/7.4/cli/php.ini"
 #             if [ $? -eq 0 ]; then
 #                 pca $success $'allow_url_fopen disabled successfully!'
@@ -1000,19 +1014,18 @@ function remove_information_disclosure_smtp_banner(){
 #     pca $start $'Explicitly disabling core dump...'
 #     pca $check $'Checking /etc/security/limits.conf...'
 #     # Check if the entry already exists
-#     if sudo grep -q "\*\s\+hard\s\+core\s\+0" /etc/security/limits.conf; 
+#     if sudo grep -q "\*\s\+hard\s\+core\s\+0" /etc/security/limits.conf;
 #     then
 #         pca $positive $'Core dump is already disabled!'
 #     else
 #         pca $action $'Disabling core dump...'
 #         # Append the entry to the end of the file
-#         leca $"sudo echo \"  *                hard    core            0\" 
+#         leca $"sudo echo \"  *                hard    core            0\"
 #             >> /etc/security/limits.conf"
 #         pca $success $'Core dump disabled!'
 #     fi
 #     pca $end $'Completed explicit disabling of the core dump!'
 # }
-
 
 #region
 #===========================================================================
@@ -1026,7 +1039,7 @@ function remove_information_disclosure_smtp_banner(){
 #   None
 #===========================================================================
 #endregion
-function disable_ip_protocols(){
+function disable_ip_protocols() {
     pca $start $'Disabling unnecessary IP protocols...'
 
     #check to see if dccp has been disabled
@@ -1074,8 +1087,8 @@ function disable_ip_protocols(){
     fi
 
     #check to see if completed successfully
-    if [ -f /etc/modprobe.d/nodccp ] && [ -f /etc/modprobe.d/nosctp ] && 
-    [ -f /etc/modprobe.d/nords ] &&  [ -f /etc/modprobe.d/notipc ]; then
+    if [ -f /etc/modprobe.d/nodccp ] && [ -f /etc/modprobe.d/nosctp ] &&
+        [ -f /etc/modprobe.d/nords ] && [ -f /etc/modprobe.d/notipc ]; then
         pca $success $'Unnecessary IP protocols successfully disabled.'
     else
         pca $failure $'Unnecessary IP protocols not successfully disabled.'
@@ -1090,23 +1103,22 @@ function disable_ip_protocols(){
 #===========================================================================
 #
 # Description:
-#   Checks if sudo nano /etc/modprobe.d/blacklist.conf contains blacklist 
-#   usb_storage and if not, adds it with a simple comment above, and then 
-#   checks if it contains blacklist uas and if not, adds it with a simple 
+#   Checks if sudo nano /etc/modprobe.d/blacklist.conf contains blacklist
+#   usb_storage and if not, adds it with a simple comment above, and then
+#   checks if it contains blacklist uas and if not, adds it with a simple
 #   comment above
 #
 # Arguments:
 #   None
 #===========================================================================
 #endregion
-function disable_usb(){
+function disable_usb() {
     pca $start $'Starting USB blacklisting...'
 
     # USB Storage
     pca $check $'Checking if blacklist.conf contains blacklist usb_storage'
     if sudo grep -q "blacklist usb_storage" \
-        "/etc/modprobe.d/blacklist.conf" ; 
-    then
+        "/etc/modprobe.d/blacklist.conf"; then
         pca $positive $'Blacklist usb_storage found'
     else
         pca $negative $'Blacklist usb_storage not found'
@@ -1120,8 +1132,7 @@ function disable_usb(){
 
     # USB Attached SCSI
     pca $check $'Checking if blacklist.conf contains blacklist uas'
-    if sudo grep -q "blacklist uas" "/etc/modprobe.d/blacklist.conf" ; 
-    then
+    if sudo grep -q "blacklist uas" "/etc/modprobe.d/blacklist.conf"; then
         pca $positive $'Blacklist uas found'
     else
         pca $negative $'Blacklist uas not found'
@@ -1133,8 +1144,8 @@ function disable_usb(){
         pca $success $'Blacklist uas added'
     fi
     if sudo grep -q "blacklist usb_storage" \
-    "/etc/modprobe.d/blacklist.conf" && grep -q "blacklist uas" \
-    "/etc/modprobe.d/blacklist.conf"; then
+        "/etc/modprobe.d/blacklist.conf" && grep -q "blacklist uas" \
+        "/etc/modprobe.d/blacklist.conf"; then
         pca $success $'Entries added successfully!'
     else
         pca $failure $'Failed to add entries'
@@ -1165,10 +1176,9 @@ function disable_usb(){
 
 #     sysctl_config_helper $"SystemMaxUse" $"100M" "$file" "$spacing"
 
-
 #     # pca $action $'Setting Systemd Journal Max File Size to 100mb'
-#     # leca $"sudo sed -i 
-#     #     '/SystemMaxUse/s/^#//g;s/SystemMaxUse=.*/SystemMaxUse=100M/' 
+#     # leca $"sudo sed -i
+#     #     '/SystemMaxUse/s/^#//g;s/SystemMaxUse=.*/SystemMaxUse=100M/'
 #     #     /etc/systemd/journald.conf"
 #     leca $"sudo systemctl restart systemd-journald"
 
@@ -1192,7 +1202,7 @@ function disable_usb(){
 #===========================================================================
 #
 # Description:
-#   Updates the value of SHA_CRYPT_MIN_ROUNDS, SHA_CRYPT_MAX_ROUNDS, 
+#   Updates the value of SHA_CRYPT_MIN_ROUNDS, SHA_CRYPT_MAX_ROUNDS,
 #   PASS_MAX_DAYS, PASS_MIN_DAYS, and PASS_WARN_AGE in the login.defs file
 #
 # Arguments:
@@ -1202,25 +1212,25 @@ function disable_usb(){
 # function change_login_defs(){
 #     pca $start $'Starting change_login_defs process'
 #     pca $action $"Updating SHA_CRYPT_MIN_ROUNDS, SHA_CRYPT_MAX_ROUNDS,
-#         PASS_MAX_DAYS, PASS_MIN_DAYS, and PASS_WARN_AGE in the login.defs 
+#         PASS_MAX_DAYS, PASS_MIN_DAYS, and PASS_WARN_AGE in the login.defs
 #         file"
-#     leca $"sudo sed -i 's/#[ ]*SHA_CRYPT_MIN_ROUNDS/SHA_CRYPT_MIN_ROUNDS/g' 
+#     leca $"sudo sed -i 's/#[ ]*SHA_CRYPT_MIN_ROUNDS/SHA_CRYPT_MIN_ROUNDS/g'
 #         /etc/login.defs"
-#     leca $"sudo sed -i 's/#[ ]*SHA_CRYPT_MAX_ROUNDS/SHA_CRYPT_MAX_ROUNDS/g' 
+#     leca $"sudo sed -i 's/#[ ]*SHA_CRYPT_MAX_ROUNDS/SHA_CRYPT_MAX_ROUNDS/g'
 #         /etc/login.defs"
-#     leca $"sudo sed -i 's/PASS_MAX_DAYS\s[0-9]*/PASS_MAX_DAYS 99998/g' 
+#     leca $"sudo sed -i 's/PASS_MAX_DAYS\s[0-9]*/PASS_MAX_DAYS 99998/g'
 #         /etc/login.defs"
-#     leca $"sudo sed -i 's/PASS_MIN_DAYS\s[0-9]*/PASS_MIN_DAYS 1/g' 
+#     leca $"sudo sed -i 's/PASS_MIN_DAYS\s[0-9]*/PASS_MIN_DAYS 1/g'
 #         /etc/login.defs"
-#     leca $"sudo sed -i 's/PASS_WARN_AGE\s[0-9]*/PASS_WARN_AGE 8/g' 
+#     leca $"sudo sed -i 's/PASS_WARN_AGE\s[0-9]*/PASS_WARN_AGE 8/g'
 #         /etc/login.defs"
 #     if [ $? -eq 0 ]; then
-#         pca $success $'Successfully updated SHA_CRYPT_MIN_ROUNDS, 
-#             SHA_CRYPT_MAX_ROUNDS, PASS_MAX_DAYS, PASS_MIN_DAYS, 
+#         pca $success $'Successfully updated SHA_CRYPT_MIN_ROUNDS,
+#             SHA_CRYPT_MAX_ROUNDS, PASS_MAX_DAYS, PASS_MIN_DAYS,
 #             and PASS_WARN_AGE in the login.defs file'
 #     else
-#         pca $failure $'Failed to update SHA_CRYPT_MIN_ROUNDS, 
-#             SHA_CRYPT_MAX_ROUNDS, PASS_MAX_DAYS, PASS_MIN_DAYS, 
+#         pca $failure $'Failed to update SHA_CRYPT_MIN_ROUNDS,
+#             SHA_CRYPT_MAX_ROUNDS, PASS_MAX_DAYS, PASS_MIN_DAYS,
 #             and PASS_WARN_AGE in the login.defs file'
 #     fi
 #     pca $end $'Ending change_login_defs process'
@@ -1244,7 +1254,7 @@ function disable_usb(){
 
 #     # Replacement
 #     pca $action $'Replacing umask value in login file'
-#     leca $"sudo sed -i '/UMASK[[:blank:]]\{1,\}[0-9]\{3\}/s/[0-9]\{3\}/027/' 
+#     leca $"sudo sed -i '/UMASK[[:blank:]]\{1,\}[0-9]\{3\}/s/[0-9]\{3\}/027/'
 #         /etc/login.defs"
 #     if [ $? -eq 0 ]; then
 #         pca $success $'Umask value successfully replaced!'
@@ -1276,11 +1286,11 @@ function disable_usb(){
 #   None
 #===========================================================================
 #endregion
-function add_legal_warnings(){
+function add_legal_warnings() {
     pca $start $'Starting adding legal warnings...'
 
     # Add legal banner to /etc/issue
-    if [ -f /etc/issue ]; then 
+    if [ -f /etc/issue ]; then
         pca $action $'Adding legal warnings to /etc/issue'
         leca $"sudo touch /etc/issue"
         leca $"sudo chmod 755 /etc/issue"
@@ -1297,7 +1307,7 @@ function add_legal_warnings(){
     fi
 
     # Add legal banner to /etc/issue.net
-    if [ -f /etc/issue.net ]; then 
+    if [ -f /etc/issue.net ]; then
         pca $action $'Adding legal warnings to /etc/issue.net'
         leca $"sudo touch /etc/issue.net"
         leca $"sudo chmod 755 /etc/issue.net"
@@ -1315,10 +1325,9 @@ function add_legal_warnings(){
         leca $"sudo sh -c \"echo \"\" >> /etc/issue.net\""
         pca $success $'Warnings added to /etc/issue.net'
     fi
-    
+
     pca $end $'Legal warnings added!'
 }
-
 
 #  ___________
 # |           |
@@ -1377,7 +1386,7 @@ function leca() {
 
     #sleep 0.2
     echo -e -n "${nocolor}"
-    eval "$trimmed" > /dev/null
+    eval "$trimmed" >/dev/null
     return $?
 }
 
@@ -1403,11 +1412,11 @@ function leca_print_to_log() {
         string=${string:$((limit - ${#last_space}))}
 
         echo "$sub_string" | tee -a "$LOGFILE"
-        i=$((i+1))
+        i=$((i + 1))
         # Add 4 whitespace indentations for substrings after the first substring
         if [ "$i" -gt 0 ]; then
             string="    ${string}"
-            limit=$((limit-4))
+            limit=$((limit - 4))
         fi
     done
     echo "$string" | tee -a "$LOGFILE"
@@ -1429,7 +1438,7 @@ function leca_print_to_log() {
 function char_limit_helper() {
     local -r LINE="$1"
     local -i MAX_LEN=76
-    time_length=$((("$(echo -n  $(date +%m.%d.%Y_%H:%M:%S) : | wc -m)")+2))
+    time_length=$((("$(echo -n $(date +%m.%d.%Y_%H:%M:%S) : | wc -m)") + 2))
 
     # Check if the line is already short enough
     if [[ ${#LINE} -le $MAX_LEN ]]; then
@@ -1437,13 +1446,13 @@ function char_limit_helper() {
         return
     fi
 
-    words=`echo $LINE | tr " " "\n"`
+    words=$(echo $LINE | tr " " "\n")
     newLine=" "
 
     for word in $words; do
         # Check if the length of the line plus the length of the next word
         # is greater than the character limit
-        if [ $((${#newLine}+${#word})) -gt $MAX_LEN ]; then
+        if [ $((${#newLine} + ${#word})) -gt $MAX_LEN ]; then
             #Print the line and add a new line
             echo -e "$newLine" | tee -a "$LOGFILE"
             newLine="$(printf '%*s' "$time_length")""$word "
@@ -1541,8 +1550,8 @@ function duplicate_check_helper() {
     file="$1"
 
     pca $check $"Checking for duplicate entries in $file"
-    sudo awk 'NF && $1!~/^(#|HostKey)/{print $1}' $file \
-    | sort | uniq -c | grep -v ' 1 ' | while read line; do
+    sudo awk 'NF && $1!~/^(#|HostKey)/{print $1}' $file |
+        sort | uniq -c | grep -v ' 1 ' | while read line; do
         key=$(echo $line | awk '{$1=$1;print}' | tr -d ' ')
         pca $action $"Removing duplicate $key"
         # leca $"sudo sed -i \"\/$key\/,1!d\" $file"
@@ -1589,11 +1598,11 @@ function verify_helper() {
 #   $1: Package name
 #===========================================================================
 #endregion
-function install_helper(){
+function install_helper() {
     package=$1
     pca $check $"Checking if $package is installed"
     leca $"sudo dpkg -s $package
-        | grep \"Status: install ok installed\" &>/dev/null" 
+        | grep \"Status: install ok installed\" &>/dev/null"
     if [ $? -eq 0 ]; then
         pca $positive $"$package is already installed"
     else
@@ -1619,7 +1628,7 @@ function install_helper(){
 #   $1: Package name
 #===========================================================================
 #endregion
-function purge_helper(){
+function purge_helper() {
     package=$1
     pca $check $"Checking if $package is installed"
     leca $"sudo dpkg -s $package &>/dev/null"
@@ -1654,7 +1663,7 @@ function purge_helper(){
 #   $1: Package name
 #===========================================================================
 #endregion
-function remove_helper(){
+function remove_helper() {
     package=$1
     pca $check $"Checking if $package is installed"
     leca $"sudo dpkg -s &>/dev/null $package"
@@ -1677,7 +1686,6 @@ function remove_helper(){
 
 }
 
-
 #region
 #===========================================================================
 # ENABLE SERVICE HELPER
@@ -1690,7 +1698,7 @@ function remove_helper(){
 #   $1 - Name of service to enable
 #===========================================================================
 #endregion
-function enable_service_helper(){
+function enable_service_helper() {
     service=$1
     # Enables, if disabled
     pca $check $"Checking if $service is enabled"
@@ -1714,9 +1722,9 @@ function enable_service_helper(){
 #===========================================================================
 #
 # Description:
-#   Takes three inputs, checks if the first is 
-#   deny/allow/reject, checks if the second is a port, and checks if the 
-#   third is a protocol,  then checks to see if this rule already exists 
+#   Takes three inputs, checks if the first is
+#   deny/allow/reject, checks if the second is a port, and checks if the
+#   third is a protocol,  then checks to see if this rule already exists
 #   in the ufw chain, and if not, adds to the ruleset
 #
 # Arguments:
@@ -1725,7 +1733,7 @@ function enable_service_helper(){
 #   $3 - Protocol
 #===========================================================================
 #endregion
-function add_rule_to_ufw(){
+function add_rule_to_ufw() {
 
     # Check if the rule already exists in the ufw chain
     pca $check $"Checking if rule $1 $2 $3 already exists in the ufw chain"
@@ -1759,6 +1767,7 @@ setup_environment
 check_distro
 begin_log
 update_ubuntu
+set_motd
 # preferences
 #  ___________
 # |           |

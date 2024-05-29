@@ -1,5 +1,4 @@
-version:
-  "3.7"
+version: "3.7"
 
 services:
   # NGINX Proxy
@@ -15,11 +14,8 @@ services:
       - nextcloud-network
       - wordpress-network
       - vaultwarden-network
-      - cryptpad-network
       - whiteboards-network
-      - CK_proxy-network
-      - CK_wordpress-network
-      - protonvpn-network
+      - searxng-network
     volumes:
       - ./volumes/nginx/html:/usr/share/nginx/html
       - ./volumes/nginx/conf:/etc/nginx/conf.d:rw
@@ -37,7 +33,7 @@ services:
 
   # ACME Companion
   acme-companion:
-    image: nginxproxy/acme-companion:2.2.4
+    image: nginxproxy/acme-companion
     container_name: acme-companion
     networks:
       - proxy-network
@@ -86,7 +82,7 @@ services:
 
   # Nextcloud app
   nextcloud-app:
-    image: nextcloud:apache
+    image: nextcloud:26-apache
     container_name: nextcloud-app
     # ports:
     #   - 8080:80
@@ -114,7 +110,7 @@ services:
 
   # Nextcloud cron
   nextcloud-cron:
-    image: nextcloud:apache
+    image: nextcloud:26-apache
     entrypoint: /cron.sh
     container_name: nextcloud-cron
     networks:
@@ -170,7 +166,6 @@ services:
       - wordpress-mariadb
     restart: always
 
- 
   # SearXNG
   searxng-app:
     build: ./config/searxng-app
@@ -193,25 +188,25 @@ services:
     environment:
       - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
       - SEARXNG_BASE_URL=https://${SEARXNG_VIRTUAL_HOST:-localhost}/
+      - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
       - BIND_ADDRESS=0.0.0.0:8080
       - INSTANCE_NAME=searxng-app
       - TZ=Europe/London
       - user=1000:1000
     depends_on:
       - searxng-redis
-      - protonvpn
-    # networks:
-    #   - searxng-network
-    network_mode: service:protonvpn
+    networks:
+      - searxng-network
     restart: always
 
   # Redis SearXNG
   searxng-redis:
     image: "redis:alpine"
     container_name: searxng-redis
-    # networks:
-    #   - searxng-network
-    network_mode: service:protonvpn
+    networks:
+      - searxng-network
     cap_drop:
       - ALL
     cap_add:
@@ -219,48 +214,6 @@ services:
       - SETUID
       - DAC_OVERRIDE
     command: redis-server --save "" --appendonly "no"
-    restart: always
-    depends_on:
-      - protonvpn
-
-  # Wordpress DB
-  CK_wordpress-mariadb:
-    image: mariadb:10.10
-    container_name: CK_wordpress-mariadb
-    networks:
-      - CK_wordpress-network
-    volumes:
-      - ./volumes/CK_wordpress-mariadb:/var/lib/mysql
-      - /etc/localtime:/etc/localtime:ro
-    environment:
-      - MYSQL_ROOT_PASSWORD=${CK_WORDPRESS_MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${CK_WORDPRESS_MYSQL_DATABASE}
-      - MYSQL_USER=${CK_WORDPRESS_MYSQL_USER}
-      - MYSQL_PASSWORD=${CK_WORDPRESS_MYSQL_PASSWORD}
-    restart: always
-
-  # Wordpress app
-  CK_wordpress-app:
-    image: wordpress:latest
-    container_name: CK_wordpress-app
-    networks:
-      - CK_wordpress-network
-    volumes:
-      - ./volumes/CK_wordpress-app:/var/www/html
-    environment:
-      - OVERWRITEPROTOCOL=${CK_WORDPRESS_OVERWRITEPROTOCOL}
-      - WORDPRESS_DB_HOST=${CK_WORDPRESS_WORDPRESS_DB_HOST}
-      - WORDPRESS_DB_USER=${CK_WORDPRESS_WORDPRESS_DB_USER}
-      - WORDPRESS_DB_PASSWORD=${CK_WORDPRESS_WORDPRESS_DB_PASSWORD}
-      - WORDPRESS_DB_NAME=${CK_WORDPRESS_WORDPRESS_DB_NAME}
-      - VIRTUAL_HOST=${CK_WORDPRESS_VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${CK_WORDPRESS_LETSENCRYPT_HOST}
-      - LETSENCRYPT_EMAIL=${CK_WORDPRESS_LETSENCRYPT_EMAIL}
-      - LETSENCRYPT_TEST=${CK_WORDPRESS_LETSENCRYPT_TEST}
-    depends_on:
-      - acme-companion
-      - nginx-proxy
-      - CK_wordpress-mariadb
     restart: always
 
   # vaultwarden app
@@ -288,55 +241,26 @@ services:
       - ./volumes/vaultwarden-app:/data/
     restart: always
 
-  protonvpn:
-    image: ghcr.io/tprasadtp/protonvpn:5.2.1
-    container_name: protonvpn
-    environment:
-      - PROTONVPN_USERNAME=${PROTONVPN_USERNAME}
-      - PROTONVPN_PASSWORD=${PROTONVPN_PASSWORD}
-      - PROTONVPN_SERVER=${PROTONVPN_SERVER}
-      - PROTONVPN_TIER=${PROTONVPN_TIER}
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/London
-      - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
-      - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
-      - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
-    networks:
-      - protonvpn-network
-      - searxng-network
-    cap_add:
-      - NET_ADMIN
-    devices:
-      - /dev/net/tun:/dev/net/tun
-    expose:
-      - 8080 #SearXNG container port
-    restart: always
-    depends_on:
-      - nginx-proxy
-      - acme-companion
-
-  whiteboards-app:
-    build: ./config/whiteboards-app
-    # entrypoint: sh entrypoint.sh
-    working_dir: /home/node
-    container_name: whiteboards-app
-    environment:
-      - VIRTUAL_HOST=${WHITEBOARDS_VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${WHITEBOARDS_LETSENCRYPT_HOST}
-      - LETSENCRYPT_EMAIL=${WHITEBOARDS_LETSENCRYPT_EMAIL}
-      - LETSENCRYPT_TEST=${WHITEBOARDS_LETSENCRYPT_TEST}
-    networks:
-      - whiteboards-network
-    # ports:
-    #   - 3004:3004
-    depends_on:
-      - acme-companion
-      - nginx-proxy
-    volumes:
-      - ./volumes/whiteboards-app:/home/node
-    restart: always
+  # whiteboards-app:
+  #   build: ./config/whiteboards-app
+  #   # entrypoint: sh entrypoint.sh
+  #   working_dir: /home/node
+  #   container_name: whiteboards-app
+  #   environment:
+  #     - VIRTUAL_HOST=${WHITEBOARDS_VIRTUAL_HOST}
+  #     - LETSENCRYPT_HOST=${WHITEBOARDS_LETSENCRYPT_HOST}
+  #     - LETSENCRYPT_EMAIL=${WHITEBOARDS_LETSENCRYPT_EMAIL}
+  #     - LETSENCRYPT_TEST=${WHITEBOARDS_LETSENCRYPT_TEST}
+  #   networks:
+  #     - whiteboards-network
+  #   # ports:
+  #   #   - 3004:3004
+  #   depends_on:
+  #     - acme-companion
+  #     - nginx-proxy
+  #   volumes:
+  #     - ./volumes/whiteboards-app:/home/node
+  #   restart: always
 
 # Networks
 networks:
@@ -346,14 +270,6 @@ networks:
   wordpress-network:
   vaultwarden-network:
   searxng-network:
-    ipam:
-      driver: default
-  send-network:
-  cryptpad-network:
-  standardnotes-network:
+    # ipam:
+    #   driver: default
   whiteboards-network:
-  protonvpn-network:
-
-  #Chadz
-  CK_proxy-network:
-  CK_wordpress-network:
