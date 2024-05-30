@@ -1,6 +1,9 @@
-sudo mega-logout
-sudo mega-login $$PUT_EMAIL_HERE$$ $$PUT_PASSWORD_HERE$$
+#!/bin/bash
+#
+# This script logs into MEGA, creates directories in MEGA for backup,
+# and sets up periodic backups for specified local directories.
 
+# Create directories on MEGA cloud for backups
 sudo mega-mkdir /etc
 sudo mega-mkdir /home
 sudo mega-mkdir /root
@@ -16,6 +19,7 @@ sudo mega-mkdir /usr/local/scripts
 sudo mega-mkdir /srv
 sudo mega-mkdir /opt
 
+# Set up periodic backups for specified local directories to MEGA cloud
 sudo mega-backup /etc /etc --period="0 0 4 * * *" --num-backups=10
 sudo mega-backup /home /home --period="0 0 4 * * *" --num-backups=10
 sudo mega-backup /root /root --period="0 0 4 * * *" --num-backups=10

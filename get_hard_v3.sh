@@ -447,6 +447,23 @@ function install_rootkit_checkers() {
 
     pca $end $'Rootkit checkers installed!'
 
+    pca $action $'Setting rkhunter to run automatically at midnight'
+
+    CRON_JOB="0 0 * * * rkhunter --update && rkhunter -C --enable all --disable none"
+
+    # Check if the cron job already exists
+    sudo crontab -l | grep -Fx "$CRON_JOB" >/dev/null 2>&1
+
+    # If the cron job does not exist, add it
+    if [ $? -ne 0 ]; then
+        (
+            sudo crontab -l
+            echo "$CRON_JOB"
+        ) | sudo crontab -
+        echo "Cron job added: $CRON_JOB"
+    else
+        echo "Cron job already exists."
+    fi
 }
 
 #region

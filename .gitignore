@@ -1,7 +1,6 @@
 *.env
 /docker/compose-backups/*
 /backups/data
-/backups/mega_backup.sh
 /docker/config/searxng-app/*settings*
 *password*
 *login*
