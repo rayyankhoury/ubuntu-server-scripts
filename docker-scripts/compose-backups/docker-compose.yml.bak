@@ -1,0 +1,626 @@
+version: '3.7'  
+
+  # NGINX Proxy
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy:alpine
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - proxy-network
+      - nextcloud-network
+      - wordpress-network
+      - standardnotes-network
+      - bitwarden-network
+      - send-network
+      - lingva-network
+      - cryptpad-network
+      - searxng-network
+      - pastefy-network
+      - chadenkhoury_proxy-network
+      - chadenkhoury_wordpress-network
+    volumes:
+      - ./volumes/nginx/html:/usr/share/nginx/html
+      - ./volumes/nginx/conf:/etc/nginx/conf.d:rw
+      - ./volumes/nginx/vhost:/etc/nginx/vhost.d:rw
+      - ./volumes/nginx/certs:/etc/nginx/certs:ro
+      - ./volumes/nginx/logs:/var/log/nginx
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    restart: unless-stopped
+    environment:
+      - DEFAULT_HOST=${DEFAULT_HOST}
+      - VIRTUAL_HOST_RESOLVER=${VIRTUAL_HOST_RESOLVER}
+      - RESOLVER=stg-r3.o.lencr.org
+      - TRUST_DOWNSTREAM_PROXY=true
+      - ENABLE_IPV6=false
+  #     # - HSTS=off
+
+  # ACME Companion
+  acme-companion:
+    image: nginxproxy/acme-companion:2.2.4
+    container_name: acme-companion
+    depends_on:
+      - nginx-proxy
+    networks:
+      - proxy-network
+    volumes_from:
+      - nginx-proxy
+    volumes:
+      - ./volumes/nginx/certs:/etc/nginx/certs:rw
+      - ./volumes/nginx/acme:/etc/acme.sh
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - NGINX_PROXY_CONTAINER=nginx-proxy
+      - DEFAULT_EMAIL=noreply@rayyankhoury.com
+      # - DHPARAM_GENERATION=false
+    restart: unless-stopped
+
+  # Nextcloud DB
+  nextcloud-mariadb:
+    image: mariadb
+    container_name: nextcloud-mariadb
+    networks:
+      - nextcloud-network
+    volumes:
+      - ./volumes/nextcloud-mariadb:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=${NEXT_CLOUD_MYSQL_ROOT_PASSWORD}
+      - MYSQL_PASSWORD=${NEXT_CLOUD_MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${NEXT_CLOUD_MYSQL_DATABASE}
+      - MYSQL_USER=${NEXT_CLOUD_MYSQL_USER}
+    restart: unless-stopped
+
+  # Nextcloud app
+  nextcloud-app:
+    image: nextcloud:latest
+    container_name: nextcloud-app
+    networks:
+      - nextcloud-network
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+      - nextcloud-mariadb
+    volumes:
+      - ./volumes/nextcloud-app:/var/www/html
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - OVERWRITEPROTOCOL=${NEXT_CLOUD_OVERWRITEPROTOCOL}
+      - VIRTUAL_HOST=${NEXT_CLOUD_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${NEXT_CLOUD_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${NEXT_CLOUD_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${NEXT_CLOUD_LETSENCRYPT_TEST}
+    restart: unless-stopped
+
+  # Wordpress DB
+  wordpress-mariadb:
+    image: mariadb
+    container_name: wordpress-mariadb
+    networks:
+      - wordpress-network
+    volumes:
+      - ./volumes/wordpress-mariadb:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=${WORDPRESS_MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${WORDPRESS_MYSQL_DATABASE}
+      - MYSQL_USER=${WORDPRESS_MYSQL_USER}
+      - MYSQL_PASSWORD=${WORDPRESS_MYSQL_PASSWORD}
+    restart: unless-stopped
+
+# Wordpress app
+  wordpress-app:
+    image: wordpress:latest
+    container_name: wordpress-app
+    networks:
+      - wordpress-network
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+      - wordpress-mariadb
+    volumes:
+      - ./volumes/wordpress-app:/var/www/html
+    environment:
+      - OVERWRITEPROTOCOL=${WORDPRESS_OVERWRITEPROTOCOL}
+      - WORDPRESS_DB_HOST=${WORDPRESS_WORDPRESS_DB_HOST}
+      - WORDPRESS_DB_USER=${WORDPRESS_WORDPRESS_DB_USER}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_WORDPRESS_DB_PASSWORD}
+      - WORDPRESS_DB_NAME=${WORDPRESS_WORDPRESS_DB_NAME}
+      - VIRTUAL_HOST=${WORDPRESS_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${WORDPRESS_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${WORDPRESS_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${WORDPRESS_LETSENCRYPT_TEST}
+    restart: unless-stopped
+
+  # Bitwarden DB
+  bitwarden-mariadb:
+    image: mariadb:latest
+    container_name: bitwarden-mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=${BITWARDEN_MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${BITWARDEN_MYSQL_DATABASE}
+      - MYSQL_USER=${BITWARDEN_MYSQL_USER}
+      - MYSQL_PASSWORD=${BITWARDEN_MYSQL_PASSWORD}
+    networks:
+      - bitwarden-network
+    volumes:
+      - ./volumes/bitwarden-mariadb:/var/lib/mysql
+    restart: unless-stopped
+
+  # Bitwarden app
+  bitwarden-app:
+    image: bitwardenrs/server:latest
+    container_name: bitwarden-app
+    environment:      
+      - WEB_VAULT_ENABLED=${BITWARDEN_WEB_VAULT_ENABLED}
+      - SIGNUPS_ALLOWED=${BITWARDEN_SIGNUPS_ALLOWED}
+      - OVERWRITEPROTOCOL=${BITWARDEN_OVERWRITEPROTOCOL}
+      - VIRTUAL_HOST=${BITWARDEN_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${BITWARDEN_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${BITWARDEN_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${BITWARDEN_LETSENCRYPT_TEST}
+    networks:
+      - bitwarden-network
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+      - bitwarden-mariadb
+    restart: unless-stopped
+
+  searxng:
+    image: searxng/searxng
+    container_name: searxng
+    networks:
+      - searxng-network
+      - protonvpn-network
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+      - redis-searxng
+      - protonvpn
+    volumes:
+      - ./volumes/searxng/data:/srv/searxng/data:rw
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    environment:
+      - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
+      - VIRTUAL_PORT=${SEARXNG_VIRTUAL_PORT}
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    network_mode: service:protonvpn
+
+  redis-searxng:
+    container_name: redis-searxng
+    image: "redis:alpine"
+    command: redis-server --save "" --appendonly "no"
+    networks:
+      - searxng-network
+      - protonvpn-network
+    tmpfs:
+      - /var/lib/redis
+    cap_drop:
+      - ALL
+    cap_add:
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+    restart: unless-stopped
+
+
+  lingva-app:
+    container_name: lingva-app
+    image: thedaviddelta/lingva-translate:latest
+    restart: unless-stopped
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+    networks:
+      - lingva-network
+    environment:
+      - VIRTUAL_HOST=${LINGVA_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${LINGVA_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${LINGVA_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${LINGVA_LETSENCRYPT_TEST}
+      - site_domain=${LINGVA_site_domain}
+      - force_default_theme=${LINGVA_force_default_theme}
+      - default_source_lang=${LINGVA_default_source_lang}
+      - default_target_lang=${LINGVA_default_target_lang}
+      - VIRTUAL_PORT=3000
+
+  cryptpad-app:
+    container_name: cryptpad-app
+    image: "promasu/cryptpad:latest"
+    restart: unless-stopped
+    networks:
+      - cryptpad-network
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+    environment:
+      - VIRTUAL_HOST=${CRYPTPAD_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${CRYPTPAD_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${CRYPTPAD_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${CRYPTPAD_LETSENCRYPT_TEST}
+      - CPAD_MAIN_DOMAIN=${CRYPTPAD_CPAD_MAIN_DOMAIN}
+      - CPAD_SANDBOX_DOMAIN=${CRYPTPAD_CPAD_SANDBOX_DOMAIN}
+      - CPAD_HTTP2_DISABLE=${CRYPTPAD_CPAD_HTTP2_DISABLE}
+      - VIRTUAL_PORT=${CRYPTPAD_VIRTUAL_PORT}
+    ports:
+      - "0.0.0.0:3000:3000"
+      - "0.0.0.0:3001:3001"
+    volumes:
+      - ./volumes/cryptpad/blob:/cryptpad/blob
+      - ./volumes/cryptpad/block:/cryptpad/block
+      - ./volumes/cryptpad/customize:/cryptpad/customize
+      - ./volumes/cryptpad/data:/cryptpad/data
+      - ./volumes/cryptpad/datastore:/cryptpad/datastore
+      - ./volumes/cryptpad/config/config.js:/cryptpad/config/config.js
+
+  pastefy-db:
+    networks:
+      - pastefy-network
+    image: mariadb:latest
+    volumes:
+     - ./volumes/pastefy-db:/var/lib/mysql
+    environment:
+     - MYSQL_ROOT_PASSWORD=pastefy
+     - MYSQL_DATABASE=pastefy
+     - MYSQL_USER=pastefy
+     - MYSQL_PASSWORD=pastefy
+
+  # # Lingva
+  # lingva-app:
+  #   container_name: lingva-app
+  #   image: thedaviddelta/lingva-translate:latest
+  #   restart: unless-stopped
+  #   depends_on:
+  #     - acme-companion
+  #     - nginx-proxy
+  #   networks:
+  #     - lingva-network
+  #   environment:
+  #     - VIRTUAL_HOST=${LINGVA_VIRTUAL_HOST}
+  #     - LETSENCRYPT_HOST=${LINGVA_LETSENCRYPT_HOST}
+  #     - LETSENCRYPT_EMAIL=${LINGVA_LETSENCRYPT_EMAIL}
+  #     - LETSENCRYPT_TEST=${LINGVA_LETSENCRYPT_TEST}
+  #     - site_domain=${LINGVA_site_domain}
+  #     - force_default_theme=${LINGVA_force_default_theme}
+  #     - default_source_lang=${LINGVA_default_source_lang}
+  #     - default_target_lang=${LINGVA_default_target_lang}
+  #     - VIRTUAL_PORT=${LINGVA_VIRTUAL_PORT}
+
+
+  pastefy:
+    container_name: pastefy
+    image: interaapps/pastefy:latest
+    restart: unless-stopped
+    # ports:
+    #      # Host Post:Container Port. You only want to change the host port
+    #    - "9999:80"
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+      - pastefy-db
+    networks:
+      - pastefy-network
+    environment:
+      - VIRTUAL_HOST=${PASTEBIN_VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${PASTEBIN_LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${PASTEBIN_LETSENCRYPT_EMAIL}
+      - LETSENCRYPT_TEST=${PASTEBIN_LETSENCRYPT_TEST}
+      - HTTP_SERVER_PORT=80
+      - HTTP_SERVER_CORS="*"
+      - DATABASE_DRIVER=mysql
+      - DATABASE_NAME=pastefy
+      - DATABASE_USER=pastefy
+      - DATABASE_PASSWORD=pastefy
+      - DATABASE_HOST=pastefy-db
+      - DATABASE_PORT=3306
+       # Set this to your domain
+      - SERVER_NAME=http://rayyankhoury.com
+      - VIRTUAL_PORT=9999
+       # There is INTERAAPPS, GOOGLE, GITHUB, DISCORD, TWITCH
+      #  OAUTH2_PROVIDER_CLIENT_ID:
+      #  OAUTH2_PROVIDER_CLIENT_SECRET:      
+
+  # Wordpress DB
+  chadenkhoury_wordpress-mariadb:
+    image: mariadb
+    container_name: chadenkhoury_wordpress-mariadb
+    networks:
+      - chadenkhoury_wordpress-network
+    volumes:
+      - ./volumes/chadenkhoury_wordpress-mariadb:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=somewordpress
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    restart: unless-stopped
+
+# Wordpress app
+  chadenkhoury_wordpress-app:
+    image: wordpress:latest
+    container_name: chadenkhoury_wordpress-app
+    networks:
+      - chadenkhoury_wordpress-network
+    depends_on:
+      - acme-companion
+      - nginx-proxy
+      - chadenkhoury_wordpress-mariadb
+    volumes:
+      - ./volumes/chadenkhoury_wordpress-app:/var/www/html
+    environment:
+      - OVERWRITEPROTOCOL=https
+      - WORDPRESS_DB_HOST=chadenkhoury_wordpress-mariadb
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_NAME=wordpress
+      - VIRTUAL_HOST=chadenkhoury.com,www.chadenkhoury.com
+      - LETSENCRYPT_HOST=chadenkhoury.com,www.chadenkhoury.com
+      - LETSENCRYPT_EMAIL=noreply@chadenkhoury.com
+      - LETSENCRYPT_TEST=false
+    restart: unless-stopped
+
+  #ProtonVPN
+  protonvpn:
+    container_name: protonvpn
+    environment:
+      # Credentials
+      PROTONVPN_USERNAME: pmgG05fkqOgoUThk
+      PROTONVPN_PASSWORD: YBLWpI4IHWr6odRDGGGjxmVudbasryGB
+      # Override these where applicable
+      PROTONVPN_SERVER: SE
+      PROTONVPN_TIER: 2
+      # PROTONVPN_TIER Yes Proton VPN Tier (0=Free, 1=Basic, 2=Pro, 3=Visionary)
+      # PROTONVPN_USERNAME Yes OpenVPN Username. This is NOT your Proton Account Username.
+      # PROTONVPN_PASSWORD Yes OpenVPN Password. This is NOT your Proton Account Password.
+      # PROTONVPN_SERVER Yes ProtonVPN server to connect to. See PROTONVPN_SERVER for more info.
+      # PROTONVPN_PROTOCOL No Protocol to use. By default udp is used.
+      # PROTONVPN_EXCLUDE_CIDRS No Comma separated list of CIDRs to exclude from VPN. Uses split tunnel. Default is set to 169.254.169.254/32,169.254.170.2/32
+      # PROTONVPN_DNS_LEAK_PROTECT No (Integer) Setting this to 0 will disable DNS leak protection. If you wish to specify custom DNS server via --dns option or running on k8s, you MUST set this to 0.
+      # PROTONVPN_CHECK_INTERVAL No(Integer) Interval between internal healthcheck in seconds. Defaults to 90 if not specified or invalid.
+      # PROTONVPN_IPCHECK_ENDPOINT No Healthcheck endpoint to determine if you are connected via VPN. Defaults to https://icanhazip.com/. Must return Your public IP
+      # PROTONVPN_FAIL_THRESHOLD No (Integer) Number of allowed consecutive internal healthcheck failures before an attempt to reconnect is made. Defaults to 3 if invalid or not specified.
+    image: ghcr.io/tprasadtp/protonvpn:5.2.1
+    networks:
+      - protonvpn-network
+      - proxy-network
+      - searxng-network
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    # Expose pyload container's port here!
+    expose:
+      - 8080
+    ports:
+     - "0.0.0.0:8080:8080"
+    restart: unless-stopped
+    depends_on:
+      - nginx-proxy
+      - acme-companion
+
+networks:
+  proxy-network:
+  nextcloud-network:
+  wordpress-network:
+  bitwarden-network:
+  searxng-network:
+    ipam:
+      driver: default
+  send-network:
+  lingva-network:
+  cryptpad-network:
+  standardnotes-network:
+  pastefy-network:
+  protonvpn-network:
+
+  chadenkhoury_proxy-network:
+  chadenkhoury_wordpress-network:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #Proton VPN
+
+
+  # Joplin DB
+  # joplin-postgresdb:
+  #   image: postgres:latest
+  #   container_name: joplin-postgresdb
+  #   networks:
+  #       - joplin-network
+  #   volumes:
+  #       - joplin-postgresdb:/var/lib/postgresql/
+  #       - /etc/localtime:/etc/localtime:ro
+  #   ports:
+  #       - "5421:5421"
+  #   environment:
+  #       - POSTGRES_USER=joplin
+  #       - POSTGRES_PASSWORD=joplin
+  #       - POSTGRES_DB=joplin
+  #   restart: unless-stopped
+
+  # # Joplin app
+  # joplin-app:
+  #   image: joplin/server:latest
+  #   container_name: joplin-app
+  #   networks:
+  #     - joplin-network
+  #   ports:
+  #     - "41184:41184"
+  #   depends_on:
+  #     - nginx-proxy
+  #     - joplin-postgresdb
+  #     - acme-companion
+  #   volumes:
+  #     - joplin-app:/var/lib/joplin
+  #     - /etc/localtime:/etc/localtime:ro
+  #   environment:
+  #       - OVERWRITEPROTOCOL=https
+  #       - APP_PORT=41184
+  #       - PROXY_SET_HEADER_HOST=rayyankhoury.com
+  #       - APP_BASE_URL=https://joplin.rayyankhoury.com
+  #       - POSTGRES_HOST=joplin-postgresdb
+  #       - POSTGRES_PORT=5421
+  #       - VIRTUAL_HOST=joplin.rayyankhoury.com
+  #       - LETSENCRYPT_HOST=joplin.rayyankhoury.com
+  #       - LETSENCRYPT_EMAIL=noreply@rayyankhoury.com
+  #       - LETSENCRYPT_TEST=true
+  #   restart: unless-stopped
+
+
+# # Standard Notes
+#   standard-notes:
+#     image: standardnotes/standardnotes:latest
+#     container_name: standard-notes
+#     networks:
+#       - standardnotes-network
+#     depends_on:
+#       - acme-companion
+#       - nginx-proxy
+#     volumes:
+#       - standard-notes:/data
+#     environment:
+#       - OVERWRITEPROTOCOL=https
+#       - VIRTUAL_HOST=notes.rayyankhoury.com
+#       - LETSENCRYPT_HOST=notes.rayyankhoury.com
+#       - LETSENCRYPT_EMAIL=noreply@rayyankhoury.com
+#       - LETSENCRYPT_TEST=true
+#     restart: unless-stopped
+
+
+  # cryptpad-app:
+  #   container_name: cryptpad-app
+  #   image: "promasu/cryptpad:latest"
+  #   networks:
+  #     - cryptpad-network
+  #   depends_on:
+  #     - acme-companion
+  #     - nginx-proxy
+  #   environment:
+  #     - VIRTUAL_HOST=cryptpad.rayyankhoury.com
+  #     - LETSENCRYPT_HOST=cryptpad.rayyankhoury.com
+  #     - LETSENCRYPT_EMAIL=noreply@rayyankhoury.com
+  #     - LETSENCRYPT_TEST=true
+    # hostname: cryptpad
+    # volumes:
+    #   - ./data/blob:/cryptpad/blob
+    #   - ./data/block:/cryptpad/block
+    #   - ./customize:/cryptpad/customize
+    #   - ./data/data:/cryptpad/data
+    #   - ./data/files:/cryptpad/datastore
+    #   - ./data/config.js:/cryptpad/config/config.js
+      # - NGINX_PROXY_CONTAINER=nginx-proxy
+      # - CRYPTPAD_TITLE=Cryptpad
+      # - CRYPTPAD_HOST=cryptpad.rayyankhoury.com
+      # - CRYPTPAD_PORT=443
+      # - CRYPTPAD_PROTOCOL=https
+
+
+
+  #     - CPAD_MAIN_DOMAIN=cryptpad.rayyankhoury.com
+  #     - CPAD_SANDBOX_DOMAIN=cryptpad2.rayyankhoury.com
+  #   #   # Traefik can't use HTTP2 to communicate with cryptpad_websocket
+  #   #   # A workaround is to disable HTTP2 in Nginx
+  #   #   # - CPAD_HTTP2_DISABLE=true
+  #   #   - VIRTUAL_HOST=cryptpad.rayyankhoury.com
+  #   #   - LETSENCRYPT_HOST=cryptpad.rayyankhoury.com
+  #   #   - LETSENCRYPT_EMAIL=noreply@rayyankhoury.com
+  #   #   - LETSENCRYPT_TEST=true
+  #   #   # - CPAD_TRUSTED_PROXY=10.0.0.0/8
+  #   #   # - CPAD_REALIP_HEADER=X-Forwarded-For
+  #   #   # - CPAD_REALIP_RECURSIVE=on
+  #   expose:
+  #     - "80"
+  #     - "443"
+  #   ports:
+  #     - 3000:3000
+  #     - 3001:3001
+  #   # ulimits:
+  #   #   nofile:
+  #   #     soft: 1000000
+  #   #     hard: 1000000
+
+
+  
+  # send-app:
+  #   container_name: send-app
+  #   image: "registry.gitlab.com/timvisee/send:latest"
+  #   restart: always
+  #   # ports:
+  #   #   - '1234:1234'
+  #   volumes:
+  #     - /var/lib/docker/volumes/send-app/uploads:/uploads:rw
+  #   networks:
+  #     - send-network
+  #   depends_on:
+  #     - acme-companion
+  #     - nginx-proxy
+  #     - redis-send
+  #   environment:
+  #     - VIRTUAL_HOST=${SEND_VIRTUAL_HOST}
+  #     - LETSENCRYPT_HOST=${SEND_LETSENCRYPT_HOST}
+  #     - LETSENCRYPT_EMAIL=${SEND_LETSENCRYPT_EMAIL}
+  #     - LETSENCRYPT_TEST=${SEND_LETSENCRYPT_TEST}
+  #     # - VIRTUAL_PORT=1234
+  #     - DHPARAM_GENERATION=${SEND_DHPARAM_GENERATION}
+  #     - NODE_ENV=${SEND_NODE_ENV}
+  #     - BASE_URL=${SEND_BASE_URL}
+  #     # - PORT=1234
+  #     - REDIS_HOST=${SEND_REDIS_HOST}
+
+  #     # For local uploads storage
+  #     - FILE_DIR=${SEND_FILE_DIR}
+  #     - MAX_EXPIRE_SECONDS=31536000
+  #     - DEFAULT_EXPIRE_SECONDS=86400
+  #     - MAX_FILE_SIZE=10747904000
+  #     # For S3 object storage (disable volume and FILE_DIR variable)
+  #     # - AWS_ACCESS_KEY_ID=********
+  #     # - AWS_SECRET_ACCESS_KEY=********
+  #     # - S3_BUCKET=send
+  #     # - S3_ENDPOINT=s3.us-west-2.amazonaws.com
+  #     # - S3_USE_PATH_STYLE_ENDPOINT=true
+
+  #     # To customize upload limits
+  #     # - EXPIRE_TIMES_SECONDS=3600,86400,604800,2592000,31536000
+  #     # - DEFAULT_EXPIRE_SECONDS=3600
+  #     # - MAX_EXPIRE_SECONDS=31536000
+  #     # - DOWNLOAD_COUNTS=1,2,5,10,15,25,50,100,1000
+  #     # - MAX_DOWNLOADS=1000
+  #     # - MAX_FILE_SIZE=2684354560
+  #   restart: unless-stopped
+
+  # redis-send:
+  #   image: 'redis:alpine'
+  #   restart: always
+  #   volumes:
+  #     - /var/lib/docker/volumes/send-redis:/data
