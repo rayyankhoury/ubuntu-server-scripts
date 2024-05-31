@@ -1,0 +1,18 @@
+###############################
+###############################
+To edit:
+    sudo crontab -e
+###############################
+After finishing:
+    sudo systemctl restart cron
+###############################
+###############################
+
+# 0: The minute (0th minute).
+# 2: The hour (2 AM).
+# *: Every day of the month.
+# *: Every month.
+# 0: The day of the week (0 represents Sunday).
+
+0 2 * * 0 /usr/local/scripts/cron-scripts/update_ubuntu.sh
+0 0 * * * rkhunter --update && rkhunter -C --enable all --disable none

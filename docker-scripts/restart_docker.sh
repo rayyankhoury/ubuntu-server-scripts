@@ -23,7 +23,7 @@ fi
 docker compose down
 
 # Set the path to the folder to be watched
-WATCH_PATH="/usr/local/scripts/docker"
+WATCH_PATH="/usr/local/scripts/docker-scripts"
 
 # Set the path to the destination
 DEST_PATH="/var/lib/docker"
@@ -35,4 +35,5 @@ sudo cp -r "$WATCH_PATH/config" "$DEST_PATH/"
 sleep 0.2
 
 # Start containers using docker-compose
-docker compose up -d
+docker compose build --pull
+docker compose up --force-recreate

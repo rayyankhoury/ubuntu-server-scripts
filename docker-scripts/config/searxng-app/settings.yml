@@ -12,6 +12,17 @@ server:
   port: 8080
 
 redis:
-  # URL to connect redis database. Is overwritten by ${SEARXNG_REDIS_URL}.
-  # https://redis-py.readthedocs.io/en/stable/connections.html#redis.client.Redis.from_url
-  url: redis://redis:6379/
+  url: redis://searxng-valkey:6379/0
+
+ui:
+  # infinite_scroll: When true, automatically loads the next page when scrolling to bottom of the current page.
+  infinite_scroll: true
+  # center the results ?
+  center_alignment: true
+  theme_args:
+    # style of simple theme: auto, light, dark
+    simple_style: light
+
+outgoing:
+  # default timeout in seconds, can be override by engine
+  request_timeout: 10.0
