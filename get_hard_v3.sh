@@ -10,7 +10,7 @@ export CURRENT_USER=$(whoami)
 # NOTES
 # NOTE 1 : can be changed to no for better security
 
-# Script to Harden Security on Ubuntu 20.04 LTS (untested on anything else)
+# Script to Harden Security on Ubuntu 22.04 LTS (untested on anything else)
 # This VPS Server Hardening script is designed to be run on new VPS
 # deployments to simplify a lot of the basic hardening that can be done to
 # protect your server.
@@ -32,6 +32,12 @@ function developer_banner() {
     cat <<"EOF"
 
 
+
+
+
+
+
+
 oooooooooo.                              .oooooo.               
 `888'   `Y8b                            d8P'  `Y8b              
  888      888  .ooooo.  oooo    ooo    888      888 ooo. .oo.   
@@ -39,8 +45,7 @@ oooooooooo.                              .oooooo.
  888      888 888ooo888   `88..8'      888      888  888   888  
  888     d88' 888    .o    `888'       `88b    d88'  888   888  
 o888bood8P'   `Y8bod8P'     `8'         `Y8bood8P'  o888o o888o 
-                                                                
-                                                                
+                                                                                                                                
                                                                 
 oooooo   oooooo     oooo oooo                            oooo           
  `888.    `888.     .8'  `888                            `888           
@@ -49,8 +54,7 @@ oooooo   oooooo     oooo oooo                            oooo
     `888.8'  `888.8'      888   888  888ooo888 888ooo888  888  `"Y88b.  
      `888'    `888'       888   888  888    .o 888    .o  888  o.  )88b 
       `8'      `8'       o888o o888o `Y8bod8P' `Y8bod8P' o888o 8""888P' 
-                                                                        
-                                                                        
+                                                                                                                                                
 EOF
 }
 
@@ -73,9 +77,6 @@ function setup_environment() {
         echo "Please run as user, not root or sudo"
         exit
     fi
-
-    echo "Setting up environment..."
-    echo "Defining colors..."
     ### define colors ###
     lightred=$'\033[1;31m'    # light red
     red=$'\033[0;31m'         # red
@@ -150,7 +151,6 @@ function setup_environment() {
 #endregion
 function check_distro() {
     # Check the current distribution to ensure that it is Ubuntu 22.04
-    echo "Checking distribution..."
     distro=$(lsb_release -a | grep Release | awk '{print $2}')
     if [ $distro = "22.04" ]; then
         echo
@@ -177,34 +177,59 @@ function check_distro() {
 function begin_log() {
     # Create Log File and Begin
     sudo touch $LOGFILE
-    sudo >|"$LOGFILE"
+    #sudo >|"$LOGFILE"
     sudo chown $CURRENT_USER "$LOGFILE"
-    echo $CURRENT_USER
     chmod 755 "$LOGFILE"
     echo -e -n "$lightpurple"
     echo | developer_banner | tee -a "$LOGFILE"
-    sleep 2
+    sleep 3
 
-    echo -e -n "$lightgray"
-    echo -e "\
-    \
-    \
-                        _  _ ___  ____    \n\
-                        |  | |__] [__     \n\
-                         \\/  |    ___]    \n\
-                                           \n\
-           _  _ ____ ____ ___  ____ _  _ _ _  _ ____    \n\
-           |__| |__| |__/ |  \\ |___ |\\ | | |\\ | | __    \n\
-           |  | |  | |  \\ |__/ |___ | \\| | | \\| |__]    \n\
-                                                       \n\
-                    ____ ____ ____ _ ___  ___ \n\
-                    [__  |    |__/ | |__]  |  \n\
-                    ___] |___ |  \\ | |     |  \
-                    \
-                    " | tee -a "$LOGFILE"
+    end_time=$((SECONDS + 2))
 
+    while [ $SECONDS -lt $end_time ]; do
+        echo -e -n "$blue"
+        echo -e "\
+                        \n
+                        \n
+                           _  _ ___  ____    \n\
+                           |  | |__] [__     \n\
+                            \\/  |    ___]    \n\
+                                            \n\
+            _  _ ____ ____ ___  ____ _  _ _ _  _ ____    \n\
+            |__| |__| |__/ |  \\ |___ |\\ | | |\\ | | __    \n\
+            |  | |  | |  \\ |__/ |___ | \\| | | \\| |__]    \n\
+                                                        \n\
+                        ____ ____ ____ _ ___  ___ \n\
+                        [__  |    |__/ | |__]  |  \n\
+                        ___] |___ |  \\ | |     |  \
+                        \
+                        \n
+                        \n
+                        "
+        sleep 0.1
+
+        echo -e -n "$red"
+        echo -e "\
+                        \n
+                        \n
+                           _  _ ___  ____    \n\
+                           |  | |__] [__     \n\
+                            \\/  |    ___]    \n\
+                                            \n\
+            _  _ ____ ____ ___  ____ _  _ _ _  _ ____    \n\
+            |__| |__| |__/ |  \\ |___ |\\ | | |\\ | | __    \n\
+            |  | |  | |  \\ |__/ |___ | \\| | | \\| |__]    \n\
+                                                        \n\
+                        ____ ____ ____ _ ___  ___ \n\
+                        [__  |    |__/ | |__]  |  \n\
+                        ___] |___ |  \\ | |     |  \
+                        \
+                        \n
+                        \n
+                        "
+        sleep 0.1
+    done
     pca $success $'Script Started Successfully'
-    sleep 2
 }
 
 #region
@@ -263,14 +288,14 @@ function set_motd() {
         leca $"sudo chmod 755 /etc/motd"
         leca $"sudo sh -c \">| /etc/motd\""
         leca $"sudo sh -c \"echo \"\" >> /etc/motd\""
-        leca $"sudo sh -c 'echo \"Custom Commands:\" >> /etc/motd'"
-        leca $"sudo sh -c 'echo \"1) cd_docker: navigate to the location 
-            where docker should be initiated\" >> /etc/motd'"
+        leca $"sudo sh -c 'echo \"Use alias to see custom commands\"
+         >> /etc/motd'"
         leca $"sudo sh -c \"echo \"\" >> /etc/motd\""
-        pca $success $'Warnings added to /etc/motd'
+        pca $success $'MOTD added to /etc/motd'
     fi
 
     # @TODO
+    grep -qxF 'cat /etc/motd' ~/.bashrc || echo 'cat /etc/motd' >>~/.bashrc
 
     pca $success $'MOTD successfully set!'
     pca $end $'MOTD created!'
@@ -1376,7 +1401,6 @@ function pca() {
     printf '%*s\n' "$hyphens" | tr ' ' '=' | tee -a "$LOGFILE"
     char_limit_helper " $(date +%m.%d.%Y_%H:%M:%S) : $2 "
     printf '%*s\n' "$hyphens" | tr ' ' '=' | tee -a "$LOGFILE"
-    #sleep 0.2
     echo -e -n "${nocolor}"
 }
 
@@ -1779,7 +1803,7 @@ function add_rule_to_ufw() {
 #            (__)\       )\/\
 #                ||----w |
 #                ||     ||
-developer_banner
+#developer_banner
 setup_environment
 check_distro
 begin_log
