@@ -1,3 +1,13 @@
+###############################
+###############################
+To edit:
+    sudo crontab -e
+###############################
+After finishing:
+    sudo systemctl restart cron
+###############################
+###############################
+
 # 0: The minute (0th minute).
 # 2: The hour (2 AM).
 # *: Every day of the month.

@@ -29,7 +29,7 @@ services:
 
   # ACME Companion
   acme-companion:
-    image: nginxproxy/acme-companion
+    image: nginxproxy/acme-companion:latest
     container_name: acme-companion
     networks:
       - proxy-network
@@ -74,11 +74,13 @@ services:
     container_name: nextcloud-redis
     networks:
       - nextcloud-network
+    volumes:
+      - ./volumes/nextcloud-redis:/data
     restart: unless-stopped
 
   # Nextcloud app
   nextcloud-app:
-    image: nextcloud:apache
+    build: ./config/nextcloud-app
     container_name: nextcloud-app
     networks:
       - nextcloud-network
@@ -86,10 +88,6 @@ services:
       - ./volumes/nextcloud-app:/var/www/html
       - /etc/localtime:/etc/localtime:ro
     environment:
-      - OVERWRITEPROTOCOL=${NEXT_CLOUD_OVERWRITEPROTOCOL}
-      - MYSQL_PASSWORD=${NEXT_CLOUD_MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${NEXT_CLOUD_MYSQL_DATABASE}
-      - MYSQL_USER=${NEXT_CLOUD_MYSQL_USER}
       - VIRTUAL_HOST=${NEXT_CLOUD_VIRTUAL_HOST}
       - LETSENCRYPT_HOST=${NEXT_CLOUD_LETSENCRYPT_HOST}
       - LETSENCRYPT_EMAIL=${NEXT_CLOUD_LETSENCRYPT_EMAIL}
@@ -97,20 +95,14 @@ services:
       - MYSQL_HOST=${NEXT_CLOUD_MYSQL_HOST}
       - NEXTCLOUD_TRUSTED_DOMAINS=${NEXT_CLOUD_NEXTCLOUD_TRUSTED_DOMAINS}
       - REDIS_HOST=${NEXT_CLOUD_REDIS_HOST}
+      - OVERWRITEPROTOCOL=${NEXT_CLOUD_OVERWRITEPROTOCOL}
+      - MYSQL_PASSWORD=${NEXT_CLOUD_MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${NEXT_CLOUD_MYSQL_DATABASE}
+      - MYSQL_USER=${NEXT_CLOUD_MYSQL_USER}
     depends_on:
       - nextcloud-mariadb
       - nextcloud-redis
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost"]
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: "0.50"
-    #       memory: "512M"
 
   # Nextcloud cron
   nextcloud-cron:
@@ -147,12 +139,11 @@ services:
 
   # Wordpress app
   wordpress-app:
-    image: wordpress:latest
+    build: ./config/wordpress-app
     container_name: wordpress-app
     networks:
       - wordpress-network
     volumes:
-      - ./config/wordpress-app/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./volumes/wordpress-app:/var/www/html
       - /etc/localtime:/etc/localtime:ro
     environment:
@@ -170,71 +161,61 @@ services:
       - nginx-proxy
       - wordpress-mariadb
     restart: unless-stopped
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: "0.50"
-    #       memory: "512M"
 
   # SearXNG
   searxng-app:
     build: ./config/searxng-app
     container_name: searxng-app
-    volumes:
-      - ./volumes/searxng-app/searxng:/etc/searxng:rw
-      - ./config/searxng-app/logo.png:/usr/local/searxng/searx/static/themes/simple/img/searxng.png:rwx
-      - /etc/localtime:/etc/localtime:ro
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "1m"
-        max-file: "1"
     environment:
       - SEARXNG_BASE_URL=https://${SEARXNG_VIRTUAL_HOST:-localhost}/
+      - SEARXNG_SECRET_KEY=${SEARXNG_SECRET_KEY}
       - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
       - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
       - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
       - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
-      - BIND_ADDRESS=0.0.0.0:8080
-      - INSTANCE_NAME=searxng-app
-      - TZ=Europe/London
-      - user=1000:1000
     depends_on:
-      - searxng-redis
+      - searxng-valkey
     networks:
       - searxng-network
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080"]
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: "0.50"
-    #       memory: "256M"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: "256M"
     cap_drop:
       - ALL
     cap_add:
       - CHOWN
       - SETGID
       - SETUID
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
 
   # Redis SearXNG
-  searxng-redis:
-    image: "redis:alpine"
-    container_name: searxng-redis
+  searxng-valkey:
+    image: docker.io/valkey/valkey:7-alpine
+    container_name: searxng-valkey
     networks:
       - searxng-network
+    volumes:
+      - ./volumes/searxng-valkey:/data
+    command: redis-server --save "" --appendonly "no"
+    restart: unless-stopped
     cap_drop:
       - ALL
     cap_add:
       - SETGID
       - SETUID
       - DAC_OVERRIDE
-    command: redis-server --save "" --appendonly "no"
-    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
 
 # Networks
 networks:

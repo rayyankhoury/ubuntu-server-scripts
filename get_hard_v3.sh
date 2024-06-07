@@ -2,8 +2,6 @@
 
 # Permission denied errors: sh -c
 
-export GIT_USERNAME="metalconker"
-export GIT_EMAIL="2914720+metalconker@users.noreply.github.com"
 export CURRENT_USER=$(whoami)
 
 #region intro text
@@ -187,48 +185,30 @@ function begin_log() {
     end_time=$((SECONDS + 2))
 
     while [ $SECONDS -lt $end_time ]; do
-        echo -e -n "$blue"
-        echo -e "\
-                        \n
-                        \n
-                           _  _ ___  ____    \n\
-                           |  | |__] [__     \n\
-                            \\/  |    ___]    \n\
-                                            \n\
-            _  _ ____ ____ ___  ____ _  _ _ _  _ ____    \n\
-            |__| |__| |__/ |  \\ |___ |\\ | | |\\ | | __    \n\
-            |  | |  | |  \\ |__/ |___ | \\| | | \\| |__]    \n\
-                                                        \n\
-                        ____ ____ ____ _ ___  ___ \n\
-                        [__  |    |__/ | |__]  |  \n\
-                        ___] |___ |  \\ | |     |  \
-                        \
-                        \n
-                        \n
-                        "
-        sleep 0.1
-
-        echo -e -n "$red"
-        echo -e "\
-                        \n
-                        \n
-                           _  _ ___  ____    \n\
-                           |  | |__] [__     \n\
-                            \\/  |    ___]    \n\
-                                            \n\
-            _  _ ____ ____ ___  ____ _  _ _ _  _ ____    \n\
-            |__| |__| |__/ |  \\ |___ |\\ | | |\\ | | __    \n\
-            |  | |  | |  \\ |__/ |___ | \\| | | \\| |__]    \n\
-                                                        \n\
-                        ____ ____ ____ _ ___  ___ \n\
-                        [__  |    |__/ | |__]  |  \n\
-                        ___] |___ |  \\ | |     |  \
-                        \
-                        \n
-                        \n
-                        "
-        sleep 0.1
+        for color in $blue $red; do
+            echo -e -n "$color"
+            echo -e "\
+                            \n
+                            \n
+                            _  _ ___  ____    \n\
+                            |  | |__] [__     \n\
+                                \\/  |    ___]    \n\
+                                                \n\
+                _  _ ____ ____ ___  ____ _  _ _ _  _ ____    \n\
+                |__| |__| |__/ |  \\ |___ |\\ | | |\\ | | __    \n\
+                |  | |  | |  \\ |__/ |___ | \\| | | \\| |__]    \n\
+                                                            \n\
+                            ____ ____ ____ _ ___  ___ \n\
+                            [__  |    |__/ | |__]  |  \n\
+                            ___] |___ |  \\ | |     |  \
+                            \
+                            \n
+                            \n
+                            "
+            sleep 0.1
+        done
     done
+
     pca $success $'Script Started Successfully'
 }
 
@@ -257,48 +237,6 @@ function update_ubuntu() {
 
     pca $success $'Ubuntu Successfully Updated!'
     pca $end $'System updated!'
-}
-
-#region
-#===========================================================================
-# SET MOTD
-#===========================================================================
-#
-# Description:
-#   Sets the MOTD with customization options.
-#
-# Arguments:
-#   None
-#===========================================================================
-#endregion
-function set_motd() {
-    pca $start $'Starting MOTD creation...'
-    pca $action $'Setting MOTD'
-
-    ## @TODO
-    pca $action $'Enabling MOTD'
-    ########
-    pca $success $'MOTD succesfully enabled!'
-
-    ########
-    # Add legal banner to /etc/motd
-    if [ -f /etc/motd ]; then
-        pca $action $'Adding MOTD to /etc/motd'
-        leca $"sudo touch /etc/motd"
-        leca $"sudo chmod 755 /etc/motd"
-        leca $"sudo sh -c \">| /etc/motd\""
-        leca $"sudo sh -c \"echo \"\" >> /etc/motd\""
-        leca $"sudo sh -c 'echo \"Use alias to see custom commands\"
-         >> /etc/motd'"
-        leca $"sudo sh -c \"echo \"\" >> /etc/motd\""
-        pca $success $'MOTD added to /etc/motd'
-    fi
-
-    # @TODO
-    grep -qxF 'cat /etc/motd' ~/.bashrc || echo 'cat /etc/motd' >>~/.bashrc
-
-    pca $success $'MOTD successfully set!'
-    pca $end $'MOTD created!'
 }
 
 #region
@@ -489,185 +427,6 @@ function install_rootkit_checkers() {
     else
         echo "Cron job already exists."
     fi
-}
-
-#region
-#===========================================================================
-# INSTALL_UNOFFICIAL_PACKAGES
-#===========================================================================
-#
-# Description:
-#   Installs unofficial packages.
-#
-# Arguments:
-#   None
-#===========================================================================
-#endregion
-function install_unofficial_packages() {
-
-    pca $start $'Installing unofficial packages!'
-
-    # #Removes
-    # remove_helper $'docker'
-    # remove_helper $'docker-engine'
-    # remove_helper $'docker.io'
-    # remove_helper $'containerd'
-    # remove_helper $'runc'
-
-    pca $action $'Creating etc/apt/keyrings'
-    leca $"sudo mkdir -p /etc/apt/keyrings"
-    pca $success $'etc/apt/keyrings created'
-
-    # This script will check for an update for the Lynis security tool
-    pca $action $'Downloading cisofy-key.asc'
-    leca $"sudo wget -qO /etc/apt/trusted.gpg.d/cisofy-key.asc 
-        https://packages.cisofy.com/keys/cisofy-software-public.key"
-    pca $success $'cisofy-key.asc downloaded'
-
-    pca $action $'Disabling translations for lynis'
-    leca $"sudo echo 'Acquire::Languages \"none\";' 
-        | sudo tee /etc/apt/apt.conf.d/99disable-translations"
-    pca $success $'99disable-translations created'
-
-    pca $action $'Creating cisofy-lynis.list'
-    leca $"sudo echo 
-        'deb https://packages.cisofy.com/community/lynis/deb/ stable main'
-        | sudo tee /etc/apt/sources.list.d/cisofy-lynis.list"
-    pca $success $'cisofy-lynis.list created'
-
-    # Docker pre steps
-    pca $action $'Downloading docker.gpg'
-    leca $"sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg 
-        | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg --yes"
-    pca $success $'docker.gpg downloaded'
-
-    pca $action $'Creating docker.list'
-    leca $"sudo echo 
-        \"deb [arch=$(dpkg --print-architecture) 
-        signed-by=/etc/apt/keyrings/docker.gpg] 
-        https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" 
-        | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null"
-    pca $success $"docker.list created"
-
-    pca $action $'Setting permissions for docker.gpg'
-    leca $"sudo chmod a+r /etc/apt/keyrings/docker.gpg"
-    pca $success $'Permissions for docker.gpg set'
-
-    # Github pre steps
-    pca $action $'Downloading githubcli-archive-keyring.gpg'
-    leca $"sudo curl -fsSL 
-        https://cli.github.com/packages/githubcli-archive-keyring.gpg 
-        | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg"
-    pca $success $'githubcli-archive-keyring.gpg downloaded'
-
-    pca $action $'Setting permissions for githubcli-archive-keyring.gpg'
-    leca $"sudo chmod go+r 
-        /usr/share/keyrings/githubcli-archive-keyring.gpg"
-    pca $success $'Permissions for githubcli-archive-keyring.gpg set'
-
-    pca $action $'Creating github-cli.list'
-    leca $"sudo echo \"deb [arch=$(dpkg --print-architecture) 
-        signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] 
-        https://cli.github.com/packages stable main\" 
-        | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null"
-    pca $success $'github-cli.list created'
-
-    #Installs
-    install_helper $'lynis'
-    install_helper $'aide'
-    install_helper $'git'
-    install_helper $'curl'
-    install_helper $'ca-certificates'
-    install_helper $'gnupg'
-    install_helper $'lsb-release'
-    install_helper $'docker-ce'
-    install_helper $'docker-ce-cli'
-    install_helper $'containerd.io'
-    install_helper $'docker-compose-plugin'
-    install_helper $'gh'
-    install_helper $'bash-completion'
-
-    # GIT CONFIGS
-    git_configs
-    docker_configs
-
-    pca $end $'Unofficial packages installed and configured for use!'
-}
-
-#region
-#===========================================================================
-# GIT CONFIGS
-#===========================================================================
-#
-# Description:
-#   This function will configure the git user and email
-#
-# Arguments:
-#   None
-#===========================================================================
-#endregion
-function git_configs() {
-    pca $start $'Starting git configs process'
-    pca $action $'Configuring git user and email'
-    leca $"git config --global user.name $GIT_USERNAME"
-    leca $"sudo git config --global user.name $GIT_USERNAME"
-    if [ $? -eq 0 ]; then
-        pca $success $'Git user configured successfully'
-    else
-        pca $failure $'Git user configuration failed'
-    fi
-    leca $"git config --global user.email $GIT_EMAIL"
-    leca $"sudo git config --global user.email $GIT_EMAIL"
-    if [ $? -eq 0 ]; then
-        pca $success $'Git email configured successfully'
-    else
-        pca $failure'Git email configuration failed'
-    fi
-    pca $end $'Ending git configs process'
-}
-
-#region
-#===========================================================================
-# FUNCTION: docker_configs
-#===========================================================================
-#
-# Description:
-#   This function configures docker
-#
-# Arguments:
-#   None
-#===========================================================================
-#endregion
-function docker_configs() {
-    pca $start $'Starting Docker Configs'
-    pca $action $'Adding docker group'
-    leca $"sudo groupadd docker > /dev/null"
-
-    pca $action $'Adding user to docker group'
-    leca $"sudo usermod -aG docker $CURRENT_USER"
-    if [ $? -eq 0 ]; then
-        pca $success $'User added to docker group successfully'
-    else
-        pca $failure $'Failed to add user to docker group'
-    fi
-
-    pca $action $'Enabling docker service'
-    leca $"sudo systemctl enable docker.service"
-    if [ $? -eq 0 ]; then
-        pca $success $'Docker service enabled successfully'
-    else
-        pca $failure $'Failed to enable docker service'
-    fi
-
-    pca $action $'Enabling containerd service'
-    leca $"sudo systemctl enable containerd.service"
-    if [ $? -eq 0 ]; then
-        pca $success $'Containerd service enabled successfully'
-    else
-        pca $failure $'Failed to enable containerd service'
-    fi
-
-    pca $end $'Ending Docker Configs'
 }
 
 #region
@@ -920,35 +679,6 @@ function harden_ssh() {
 
     pca $end $'SSH hardened!'
 }
-
-#region harden redis commented out
-#===========================================================================
-# HARDEN REDIS
-#===========================================================================
-#
-# Description:
-#   Harden SSH configuration by disabling password authentication,
-#   enabling public key authentication, allowing TCP forwarding, setting
-#   maximum client alive count, disabling agent forwarding, setting  verbose
-#   logging level, setting maximum authentication tries, setting maximum
-#   sessions, disabling TCP keep alive, disabling root login and disabling
-#   X11 forwarding.
-#
-# Arguments:
-#   None
-#
-#===========================================================================
-# function harden_redis() {
-#     pca $start $'Hardening Redis...'
-
-#     # Update Redis configuration to set the password
-#     leca $"sed -i \"s/^\# requirepass/requirepass $REDIS_PASSWORD/\"
-#      /etc/redis/redis.conf"
-
-#     # Restart Redis service to apply the changes
-#     systemctl restart redis
-# }
-#endregion
 
 #region
 #===========================================================================
@@ -1803,13 +1533,10 @@ function add_rule_to_ufw() {
 #            (__)\       )\/\
 #                ||----w |
 #                ||     ||
-#developer_banner
 setup_environment
 check_distro
 begin_log
 update_ubuntu
-set_motd
-# preferences
 #  ___________
 # |           |
 # |  PACKAGES |
@@ -1822,7 +1549,6 @@ set_motd
 install_system_packages
 install_services
 install_rootkit_checkers
-install_unofficial_packages
 #  ___________
 # |           |
 # | HARDENING |

@@ -1,17 +1,30 @@
 # see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
-use_default_settings: true
+use_default_settings:
+  engines:
+    keep_only:
+      - brave
+      - duckduckgo
+      - startpage
+      - qwant
 
 general:
   instance_name: "RayXNG"
 
 server:
   # base_url is defined in the SEARXNG_BASE_URL environment variable, see .env and docker-compose.yml
-  secret_key: "2a87a45544e6edce8c8065a059a01512b95ccb25a54cc5dbbea9f670c2c78c4b" # change this!
+  secret_key: $SEARXNG_SECRET_KEY
   limiter: true
   bind_address: "0.0.0.0"
   port: 8080
 
 redis:
-  # URL to connect redis database. Is overwritten by ${SEARXNG_REDIS_URL}.
-  # https://redis-py.readthedocs.io/en/stable/connections.html#redis.client.Redis.from_url
-  url: redis://redis:6379/
+  url: redis://searxng-valkey:6379/0
+
+ui:
+  # infinite_scroll: When true, automatically loads the next page when scrolling to bottom of the current page.
+  infinite_scroll: true
+  # center the results ?
+  center_alignment: true
+  theme_args:
+    # style of simple theme: auto, light, dark
+    simple_style: light

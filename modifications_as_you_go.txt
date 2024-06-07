@@ -1,0 +1,3 @@
+Set journal limit:
+    /etc/systemd/journald.conf
+    SystemMaxUse=500M
