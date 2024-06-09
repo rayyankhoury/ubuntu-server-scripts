@@ -680,35 +680,6 @@ function harden_ssh() {
     pca $end $'SSH hardened!'
 }
 
-#region harden redis commented out
-#===========================================================================
-# HARDEN REDIS
-#===========================================================================
-#
-# Description:
-#   Harden SSH configuration by disabling password authentication,
-#   enabling public key authentication, allowing TCP forwarding, setting
-#   maximum client alive count, disabling agent forwarding, setting  verbose
-#   logging level, setting maximum authentication tries, setting maximum
-#   sessions, disabling TCP keep alive, disabling root login and disabling
-#   X11 forwarding.
-#
-# Arguments:
-#   None
-#
-#===========================================================================
-# function harden_redis() {
-#     pca $start $'Hardening Redis...'
-
-#     # Update Redis configuration to set the password
-#     leca $"sed -i \"s/^\# requirepass/requirepass $REDIS_PASSWORD/\"
-#      /etc/redis/redis.conf"
-
-#     # Restart Redis service to apply the changes
-#     systemctl restart redis
-# }
-#endregion
-
 #region
 #===========================================================================
 # REMOVE INFORMATION DISCLOSURE IN SMTP BANNER

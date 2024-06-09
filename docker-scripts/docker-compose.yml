@@ -81,7 +81,7 @@ services:
 
   # Nextcloud app
   nextcloud-app:
-    image: nextcloud:apache
+    build: ./config/nextcloud-app
     container_name: nextcloud-app
     networks:
       - nextcloud-network
@@ -89,10 +89,6 @@ services:
       - ./volumes/nextcloud-app:/var/www/html
       - /etc/localtime:/etc/localtime:ro
     environment:
-      - OVERWRITEPROTOCOL=${NEXT_CLOUD_OVERWRITEPROTOCOL}
-      - MYSQL_PASSWORD=${NEXT_CLOUD_MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${NEXT_CLOUD_MYSQL_DATABASE}
-      - MYSQL_USER=${NEXT_CLOUD_MYSQL_USER}
       - VIRTUAL_HOST=${NEXT_CLOUD_VIRTUAL_HOST}
       - LETSENCRYPT_HOST=${NEXT_CLOUD_LETSENCRYPT_HOST}
       - LETSENCRYPT_EMAIL=${NEXT_CLOUD_LETSENCRYPT_EMAIL}
@@ -100,15 +96,14 @@ services:
       - MYSQL_HOST=${NEXT_CLOUD_MYSQL_HOST}
       - NEXTCLOUD_TRUSTED_DOMAINS=${NEXT_CLOUD_NEXTCLOUD_TRUSTED_DOMAINS}
       - REDIS_HOST=${NEXT_CLOUD_REDIS_HOST}
+      - OVERWRITEPROTOCOL=${NEXT_CLOUD_OVERWRITEPROTOCOL}
+      - MYSQL_PASSWORD=${NEXT_CLOUD_MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${NEXT_CLOUD_MYSQL_DATABASE}
+      - MYSQL_USER=${NEXT_CLOUD_MYSQL_USER}
     depends_on:
       - nextcloud-mariadb
       - nextcloud-redis
     restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          cpus: "0.50"
-          memory: "512M"
 
   # Nextcloud cron
   nextcloud-cron:
@@ -167,11 +162,6 @@ services:
       - nginx-proxy
       - wordpress-mariadb
     restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          cpus: "0.50"
-          memory: "512M"
 
   # SearXNG
   searxng-app:
@@ -179,12 +169,11 @@ services:
     container_name: searxng-app
     environment:
       - SEARXNG_BASE_URL=https://${SEARXNG_VIRTUAL_HOST:-localhost}/
+      - SEARXNG_SECRET_KEY=${SEARXNG_SECRET_KEY}
       - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
       - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
       - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
       - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
-      # - TZ=Europe/London
-      # - user=1000:1000
     depends_on:
       - searxng-valkey
     networks:
@@ -228,50 +217,6 @@ services:
       options:
         max-size: "1m"
         max-file: "1"
-
-  # ProtonVPN
-  protonvpn:
-    image: ghcr.io/tprasadtp/protonwire:latest
-    container_name: protonvpn
-    init: true
-    environment:
-      - PROTONVPN_USERNAME=${PROTONVPN_USERNAME}
-      - PROTONVPN_PASSWORD=${PROTONVPN_PASSWORD}
-      - PROTONVPN_SERVER=${PROTONVPN_SERVER}
-      - WIREGUARD_PRIVATE_KEY=${PROTONVPN_WIREGUARD_PRIVATE_KEY}
-      - PROTONVPN_TIER=${PROTONVPN_TIER}
-      # - PUID=1000
-      # - PGID=1000
-      # - TZ=Europe/London
-      # - VIRTUAL_HOST=${SEARXNG_VIRTUAL_HOST}
-      # - LETSENCRYPT_HOST=${SEARXNG_LETSENCRYPT_HOST}
-      # - LETSENCRYPT_EMAIL=${SEARXNG_LETSENCRYPT_EMAIL}
-      # - LETSENCRYPT_TEST=${SEARXNG_LETSENCRYPT_TEST}
-    volumes:
-      - type: tmpfs
-        target: /tmp
-      # - type: bind
-      #   source: private.key
-      #   target: /etc/protonwire/private-key
-      #   read_only: true
-    networks:
-      - protonvpn-network
-      # - searxng-network
-    cap_add:
-      - NET_ADMIN
-    sysctls:
-      net.ipv4.conf.all.rp_filter: 2
-      net.ipv6.conf.all.disable_ipv6: 1
-    # devices:
-    #   - /dev/net/tun:/dev/net/tun
-    expose:
-      - 8080 #SearXNG container port
-    ports:
-      - 8000:80
-    restart: always
-    depends_on:
-      - nginx-proxy
-      - acme-companion
 
 # Networks
 networks:

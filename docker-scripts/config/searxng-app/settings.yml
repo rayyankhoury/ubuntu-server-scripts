@@ -1,12 +1,18 @@
 # see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
-use_default_settings: true
+use_default_settings:
+  engines:
+    keep_only:
+      - brave
+      - duckduckgo
+      - startpage
+      - qwant
 
 general:
   instance_name: "RayXNG"
 
 server:
   # base_url is defined in the SEARXNG_BASE_URL environment variable, see .env and docker-compose.yml
-  secret_key: "2a87a45544e6edce8c8065a059a01512b95ccb25a54cc5dbbea9f670c2c78c4b" # change this!
+  secret_key: $SEARXNG_SECRET_KEY
   limiter: true
   bind_address: "0.0.0.0"
   port: 8080
@@ -22,7 +28,3 @@ ui:
   theme_args:
     # style of simple theme: auto, light, dark
     simple_style: light
-
-outgoing:
-  # default timeout in seconds, can be override by engine
-  request_timeout: 10.0
